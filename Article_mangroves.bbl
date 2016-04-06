@@ -1,0 +1,344 @@
+\begin{thebibliography}{54}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+
+\bibitem[{Adame et~al.(2013)Adame, Kauffman, Medina, Gamboa, Torres, Caamal,
+  Reza, and Herrera-Silveira}]{Adame2013}
+Adame, M.~F., Kauffman, J.~B., Medina, I., Gamboa, J.~N., Torres, O., Caamal,
+  J.~P., Reza, M., Herrera-Silveira, J.~a., Jan. 2013. {Carbon Stocks of
+  Tropical Coastal Wetlands within the Karstic Landscape of the Mexican
+  Caribbean.} PloS one 8~(2), e56569.
+\newline\urlprefix\url{http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=3572964\&tool=pmcentrez\&rendertype=abstract}
+
+\bibitem[{Alongi(2011)}]{Alongi2011}
+Alongi, D.~M., Jun. 2011. {Carbon payments for mangrove conservation: ecosystem
+  constraints and uncertainties of sequestration potential}. Environmental
+  Science \& Policy 14~(4), 462--470.
+\newline\urlprefix\url{http://linkinghub.elsevier.com/retrieve/pii/S1462901111000177}
+
+\bibitem[{Alongi(2014)}]{Alongi2014}
+Alongi, D.~M., 2014. {Carbon cycling and storage in mangrove forests.} Annual
+  review of marine science 6, 195--219.
+\newline\urlprefix\url{http://www.ncbi.nlm.nih.gov/pubmed/24405426}
+
+\bibitem[{Anaya et~al.(2009)Anaya, Chuvieco, and Palacios-Orueta}]{Anaya2009}
+Anaya, J.~a., Chuvieco, E., Palacios-Orueta, A., 2009. {Aboveground biomass
+  assessment in Colombia: A remote sensing approach}. Forest Ecology and
+  Management 257~(4), 1237--1246.
+
+\bibitem[{Arag\~{a}o et~al.(2009)Arag\~{a}o, Malhi, Metcalfe, Silva-Espejo,
+  Jim\'{e}nez, Navarrete, Almeida, Costa, Salinas, Phillips, Anderson, Baker,
+  Goncalvez, Huam\'{a}n-Ovalle, Mamani-Sol\'{o}rzano, Meir, Monteagudo,
+  Pe\~{n}uela, Prieto, Quesada, Rozas-D\'{a}vila, Rudas, {Silva Junior}, and
+  V\'{a}squez}]{Aragao2009}
+Arag\~{a}o, L. E. O.~C., Malhi, Y., Metcalfe, D.~B., Silva-Espejo, J.~E.,
+  Jim\'{e}nez, E., Navarrete, D., Almeida, S., Costa, a. C.~L., Salinas, N.,
+  Phillips, O.~L., Anderson, L. O.~., Baker, T.~R., Goncalvez, P.~H.,
+  Huam\'{a}n-Ovalle, J., Mamani-Sol\'{o}rzano, M., Meir, P., Monteagudo, A.,
+  Pe\~{n}uela, M.~C., Prieto, A., Quesada, C.~a., Rozas-D\'{a}vila, A., Rudas,
+  A., {Silva Junior}, J.~a., V\'{a}squez, R., 2009. {Above- and below-ground
+  net primary productivity across ten Amazonian forests on contrasting soils}.
+  Biogeosciences Discussions 6~(1), 2441--2488.
+
+\bibitem[{Bates et~al.(2015)Bates, Maechler, Bolker, and Walker}]{Bates:2015aa}
+Bates, D., Maechler, M., Bolker, B.~M., Walker, S., 2015. Fitting linear
+  mixed-effects models using {lme4}. ArXiv e-print; in press, \emph{Journal of
+  Statistical Software}.
+\newline\urlprefix\url{http://arxiv.org/abs/1406.5823}
+
+\bibitem[{Blanco et~al.(2012)Blanco, Estrada, Ortiz, and Urrego}]{Blanco2012}
+Blanco, J.~F., Estrada, E.~a., Ortiz, L.~F., Urrego, L.~E., 2012.
+  {Ecosystem-Wide Impacts of Deforestation in Mangroves: The Urab\'{a} Gulf
+  (Colombian Caribbean) Case Study}. ISRN Ecology 2012, 1--14.
+
+\bibitem[{Bolivar et~al.(In preparation)Bolivar, Yepes, Sierra, Urrego, Moreno,
+  Monsalve, Espinosa, Agudelo, Betancur, Posada, Herrera, Mira, and
+  Sierra-Correa}]{Bolivar_inpreparation}
+Bolivar, J., Yepes, A., Sierra, C.~A., Urrego, L., Moreno, F., Monsalve, A.,
+  Espinosa, S., Agudelo, C., Betancur, S., Posada, J., Herrera, D., Mira, J.,
+  Sierra-Correa, P., In preparation. Carbon stock in mangroves of cispat{\'a}
+  delta estuarine system., in preparation.
+
+\bibitem[{Boucher et~al.(2014)Boucher, Garcia-Huidobro, Herr, Laffoley, and
+  Podvin}]{Boucher2014}
+Boucher, J., Garcia-Huidobro, T., Herr, D., Laffoley, D., Podvin, K., 2014.
+  {Panama and Colombia Blue Carbon Preparedness Report of the Panama City
+  workshop , March 2014 Advanced draft Panama and Colombia Blue Carbon
+  Preparedness - the Action Plan}. Tech. rep., IUCN.
+
+\bibitem[{{Carbono \& Bosques}(2015)}]{Malaga2015}
+{Carbono \& Bosques}, 2015. Caracterizaci{\'o}n de la estructura y contenido de
+  carbono de diez parcelas permanentes establecidas en el {\'a}rea de
+  jurisdicci{\'o}n del consejo comunitario la plata, bah{\'\i}a m{\'a}laga,
+  valle del cauca. Tech. rep., INVEMAR-Fundaci{\'o}n Natura.
+
+\bibitem[{Chave et~al.(2005)Chave, Andalo, Brown, Cairns, Chambers, Eamus,
+  F\"{o}lster, Fromard, Higuchi, Kira, Lescure, Nelson, Ogawa, Puig, Ri\'{e}ra,
+  and Yamakura}]{Chave2005}
+Chave, J., Andalo, C., Brown, S., Cairns, M.~a., Chambers, J.~Q., Eamus, D.,
+  F\"{o}lster, H., Fromard, F., Higuchi, N., Kira, T., Lescure, J.-P., Nelson,
+  B.~W., Ogawa, H., Puig, H., Ri\'{e}ra, B., Yamakura, T., Aug. 2005. {Tree
+  allometry and improved estimation of carbon stocks and balance in tropical
+  forests.} Oecologia 145~(1), 87--99.
+\newline\urlprefix\url{http://www.ncbi.nlm.nih.gov/pubmed/15971085}
+
+\bibitem[{Chen and Twilley(1999)}]{Chen1999}
+Chen, R., Twilley, R.~R., December 1999. Patterns of mangrove forest structure
+  and soil nutrient dynamics along the shark river estuary, florida. Estuaries
+  22~(4), 955--970.
+
+\bibitem[{Clark et~al.(2001)Clark, Brown, Kicklighter, Chambers, Thomlinson,
+  Ni, and Holland}]{Clark2001}
+Clark, D.~a., Brown, S., Kicklighter, D.~W., Chambers, J.~Q., Thomlinson,
+  J.~R., Ni, J., Holland, E.~a., 2001. {Net primary production in tropical
+  forests: An evaluation and synthesis of existing field data}. Ecological
+  Applications 11~(2), 371--384.
+\newline\urlprefix\url{http://www.esajournals.org/doi/abs/10.1890/1051-0761(2001)011\%5B0371:NPPITF\%5D2.0.CO\%3B2}
+
+\bibitem[{{CNT MIZC} and CCO(2010)}]{CCO_UAC}
+{CNT MIZC}, CCO, 2010. Lineamientos para la Formulaci{\'o}n del Plan Nacional
+  de Manejo Integrado de Zonas Costeras-PNMIZC. Comisi{\'o}n Colombiana del
+  Oc{\'e}ano,
+  http://www.cco.gov.co/documentos/pdf/Lineamientos%20para%20la%20Formulacion%20del%20Plan%20Nacional%20MIZC.pdf.
+
+\bibitem[{CODECHOCO and IIAP(2009)}]{IIAP2009}
+CODECHOCO, IIAP, 2009. Diagn{\'o}stico y zonificaci{\'o}n del ecosistema de
+  manglar del pac{\'\i}fico choano. Convenio de cooperaci{\'o}n
+  interadminsitrativo, Convenio CODECHOCO-IIAP.
+
+\bibitem[{Cohen et~al.(2013)Cohen, Kaino, Okello, Bosire, Kairo, Huxham, and
+  Mencuccini}]{Cohen2013968}
+Cohen, R., Kaino, J., Okello, J., Bosire, J., Kairo, J., Huxham, M.,
+  Mencuccini, M., 2013. Propagating uncertainty to estimates of above-ground
+  biomass for kenyan mangroves: A scaling procedure from tree to landscape
+  level. Forest Ecology and Management 310, 968 -- 982.
+\newline\urlprefix\url{http://www.sciencedirect.com/science/article/pii/S0378112713006610}
+
+\bibitem[{{De la Pe\~{n}a} et~al.(2010){De la Pe\~{n}a}, Rojas, and {De la
+  Pe\~{n}a}}]{DelaPena2010}
+{De la Pe\~{n}a}, A., Rojas, C.~A., {De la Pe\~{n}a}, M., 2010. {Valoraci\'{o}n
+  econ\'{o}mica del manglar por el almacenamiento de carbono ,}. Cl\'{\i}o
+  America 4~(7), 133--150.
+
+\bibitem[{Didan et~al.(2015)Didan, Huete, and SIPS-NASA}]{MODIS2015}
+Didan, K., Huete, A., SIPS-NASA, M., 2015. {MOD13Q1 MODIS and the Terra
+  Vegetation Indices 16-Day L3 Global 250m SIN Grid V006. NASA EOSDIS LP DAAC}.
+\newline\urlprefix\url{http://doi.org/10.5067/MODIS/MOD13Q1.006}
+
+\bibitem[{Donato et~al.(2011)Donato, Kauffman, Murdiyarso, Kurnianto, Stidham,
+  and Kanninen}]{Donato2011}
+Donato, D.~C., Kauffman, J.~B., Murdiyarso, D., Kurnianto, S., Stidham, M.,
+  Kanninen, M., 05 2011. Mangroves among the most carbon-rich forests in the
+  tropics. Nature Geosci 4~(5), 293--297.
+\newline\urlprefix\url{http://dx.doi.org/10.1038/ngeo1123}
+
+\bibitem[{Ewel et~al.(1998)Ewel, Twilley, and Ong}]{Ewel1998}
+Ewel, K., Twilley, R., Ong, J., 1998. Different kinds of mangrove forests
+  provide different goods and services. Global Ecology \& Biogeography Letters
+  7~(1), 83--94.
+\newline\urlprefix\url{http://dx.doi.org/10.1111/j.1466-8238.1998.00275.x}
+
+\bibitem[{{FAO}(2007)}]{FAO2007}
+{FAO}, 2007. {The world´s mangroves 1980-2005. A thematic study prepared in
+  the framework of the Global Forest Resources Assessment 2005}. FAO, Food and
+  Agriculture Organization of the United Nations.
+\newline\urlprefix\url{http://www.fao.org/docrep/010/a1427e/a1427e00.htm}
+
+\bibitem[{Fearnside and Laurance(2004)}]{Fearnside2004}
+Fearnside, P.~M., Laurance, W.~F., 2004. {Tropical deforestation and
+  greenhouse-gas emissions}. Ecological Applications 14~(4), 982--986.
+
+\bibitem[{Giri et~al.(2013)Giri, Ochieng, Tieszen, Zhu, Singh, Loveland, Masek,
+  and Duke}]{Giri2013}
+Giri, C., Ochieng, E., Tieszen, L., Zhu, Z., Singh, A., Loveland, T., Masek,
+  J., Duke, N., 2013. Global mangrove forests distribution, 2000.
+\newline\urlprefix\url{http://dx.doi.org/10.7927/H4J67DW8}
+
+\bibitem[{Giri et~al.(2010)Giri, Ochieng, Tieszen, Zhu, Singh, Loveland, Masek,
+  and Duke}]{Giri2010}
+Giri, C., Ochieng, E., Tieszen, L.~L., Zhu, Z., Singh, A., Loveland, T., Masek,
+  J., Duke, N., 2010. {Status and distribution of mangrove forests of the world
+  using earth observation satellite data}. Global Ecology and Biogeography 20,
+  154--159.
+\newline\urlprefix\url{http://doi.wiley.com/10.1111/j.1466-8238.2010.00584.x}
+
+\bibitem[{Herr et~al.(2012)Herr, Pidgeon, and Laffoley}]{Herr2012}
+Herr, D., Pidgeon, E., Laffoley, D., 2012. {Blue Carbon Policy Framework 2.0:
+  Based on the discussion of the International Blue Carbon Policy Working
+  Group}. IUCN; CI, Gland, Switzerland and Arlington, USA.
+
+\bibitem[{Herz(1999)}]{Herz1999}
+Herz, R., 1999. {Procesamiento digital de im{\'a}genes de sat{\'e}lite para el
+  reconocimiento de patrones en los manglares}. In: Y\'{a}nez-Arancibia, A.,
+  Dom\'{\i}nguez-Lara, L.~A. (Eds.), Ecosistemas de Manglar en Am{\'e}rica
+  Tropical. Instituto de Ecolog\'{i}a A.C. Mexico, Ch.~8.
+
+\bibitem[{Hijmans et~al.(2005)Hijmans, Cameron, Parra, Jones, and
+  Jarvis}]{Hijmans2005}
+Hijmans, R.~J., Cameron, S.~E., Parra, J.~L., Jones, P.~G., Jarvis, A., 2005.
+  {Very high resolution interpolated climate surfaces for global land areas}.
+  International Journal of Climatology 25~(15), 1965--1978.
+
+\bibitem[{Hutchison et~al.(2014)Hutchison, Manica, Swetnam, Balmford, and
+  Spalding}]{CONL:CONL12060}
+Hutchison, J., Manica, A., Swetnam, R., Balmford, A., Spalding, M., 2014.
+  Predicting global patterns in mangrove forest biomass. Conservation Letters
+  7~(3), 233--240.
+\newline\urlprefix\url{http://dx.doi.org/10.1111/conl.12060}
+
+\bibitem[{IDEAM(2015)}]{IDEAM2015}
+IDEAM, July 2015. Entidades ambientales ponen en marcha primera fase de
+  inventario forestal nacional.
+\newline\urlprefix\url{http://www.ideam.gov.co/web/sala-de-prensa/noticias/-/asset_publisher/96oXgZAhHrhJ/content/entidades-ambientales-ponen-en-marcha-primera-fase-de-inventario-forestal-nacional}
+
+\bibitem[{INVEMAR(2007)}]{INVEMAR2007}
+INVEMAR, 2007. {Informe del Estado de los Recursos Marinos y Costeros en
+  Colombia: A\~{n}o 2006}. Tech. rep., Instituto de investigaciones Marinas y
+  Costeras "Jos\'{e} Benito Vives de Andr\'{e}is".
+
+\bibitem[{INVEMAR(2014)}]{INVEMAR2014}
+INVEMAR, 2014. {Informe del Estado de los Recursos Marinos y Costero en
+  Colombia A\~{n}o 2013}. Tech. rep., Instituto de Investigaciones Marinas y
+  Costeras "Jos\'{e} Benito Vives de Andr\'{e}is" - INVEMAR, Santa Marta.
+
+\bibitem[{IPCC(2003)}]{IPCC2003}
+IPCC, 2003. {Intergovernmental Panel on Climate Change Good Practice Guidance
+  for Land Use , Land-Use Change and Forestry}. IGES, Japan.
+\newline\urlprefix\url{the Institute for Global Environmental Strategies (IGES)
+  for the IPCC ?}
+
+\bibitem[{IPCC(2006)}]{IPCC2006}
+IPCC, 2006. {2006 IPCC Guidelines for National Greenhouse Gas Inventories}.
+  Vol. 4: Agriculture, Forestry and Other Land Use. IGES.
+\newline\urlprefix\url{http://www.ipcc-nggip.iges.or.jp/public/2006gl/pdf/4\_Volume4/V4\_04\_Ch4\_Forest\_Land.pdf}
+
+\bibitem[{Jardine and Siikam{\"a}ki(2014)}]{1748-9326-9-10-104013}
+Jardine, S.~L., Siikam{\"a}ki, J.~V., 2014. A global predictive model of carbon
+  in mangrove soils. Environmental Research Letters 9~(10), 104013.
+\newline\urlprefix\url{http://stacks.iop.org/1748-9326/9/i=10/a=104013}
+
+\bibitem[{Kauffman and Donato(2012)}]{Kauffman2012}
+Kauffman, J.~B., Donato, D.~C., 2012. {Protocols for the measurement,
+  monitoring and reporting of structure, biomass and carbon stocks in mangrove
+  forests}. Working Paper~86, CIFOR, Bogor, Indonesia.
+
+\bibitem[{Komiyama et~al.(2008)Komiyama, Ong, and Poungparn}]{Komiyama2008128}
+Komiyama, A., Ong, J.~E., Poungparn, S., 2008. Allometry, biomass, and
+  productivity of mangrove forests: A review. Aquatic Botany 89~(2), 128 --
+  137, mangrove Ecology -- Applications in Forestry and Costal Zone Management.
+\newline\urlprefix\url{http://www.sciencedirect.com/science/article/pii/S0304377007001829}
+
+\bibitem[{Krauss et~al.(2008)Krauss, Lovelock, Mckee, L\'{o}pez-Hoffman, Ewe,
+  Sousa, Lopezhoffman, Ewe, and Sousa}]{Krauss2008}
+Krauss, K.~W., Lovelock, C.~E., Mckee, K.~L., L\'{o}pez-Hoffman, L., Ewe,
+  S.~M., Sousa, W.~P., Lopezhoffman, L., Ewe, S.~M., Sousa, W.~P., Aug. 2008.
+  {Environmental drivers in mangrove establishment and early development: A
+  review}. Aquatic Botany 89~(2), 105--127.
+\newline\urlprefix\url{http://linkinghub.elsevier.com/retrieve/pii/S0304377008000089}
+
+\bibitem[{Kristensen et~al.(2008)Kristensen, Bouillon, Dittmar, and
+  Marchand}]{Kristensen2008}
+Kristensen, E., Bouillon, S., Dittmar, T., Marchand, C., 2008. Organic carbon
+  dynamics in mangrove ecosystems: A review. Aquatic Botany 89~(2), 201 -- 219,
+  mangrove Ecology -- Applications in Forestry and Costal Zone Management.
+\newline\urlprefix\url{http://www.sciencedirect.com/science/article/pii/S0304377007001817}
+
+\bibitem[{Lema and Polan\'{\i}a(2007)}]{Lema2007}
+Lema, L.~F., Polan\'{\i}a, J., 2007. {Estructura y din\'{a}mica del manglar del
+  delta del r\'{\i}o Rancher\'{\i}a , Caribe colombiano}. Revista de
+  Biolog\'{\i}a Tropical 55~(1), 11--21.
+
+\bibitem[{MacDicken(1997)}]{MacDicken1997}
+MacDicken, K.~G., 1997. {A guide to monitoring carbon storage in forestry and
+  agroforestry projects}. Winrock International Institute for Agricultural
+  Development.
+
+\bibitem[{Maniatis and Mollicone(2010)}]{Maniatis2010}
+Maniatis, D., Mollicone, D., 2010. {Options for sampling and stratification for
+  national forest inventories to implement REDD+ under the UNFCCC.} Carbon
+  balance and management 5~(December), 9.
+\newline\urlprefix\url{http://www.cbmjournal.com/content/5/1/9}
+
+\bibitem[{Mazerolle(2015)}]{Mazerolle:2015aa}
+Mazerolle, M.~J., 2015. AICcmodavg: Model selection and multimodel inference
+  based on (Q)AIC(c). R package version 2.0-3.
+\newline\urlprefix\url{http://CRAN.R-project.org/package=AICcmodavg}
+
+\bibitem[{Murray et~al.(2012)Murray, Watt, Cooley, and Pendleton}]{Murray2012}
+Murray, B.~C., Watt, C.~E., Cooley, D.~M., Pendleton, L.~H., 2012. {Coastal
+  Blue Carbon and the United Nations Current Status and Future Directions}.
+  Tech. Rep. NI PB 12-01, Duke Nicholas Institute for Environmental Policy
+  Solutions.
+\newline\urlprefix\url{www.nicholasinstitute.duke.edu}
+
+\bibitem[{Nellemann et~al.(2009)Nellemann, Corcoran, Duarte, Vald{\'e}s, {De
+  Young}, Fonseca, and Grimsditch}]{Nellemann2009}
+Nellemann, C., Corcoran, E., Duarte, C.~M., Vald{\'e}s, L., {De Young}, C.,
+  Fonseca, L., Grimsditch, G., 2009. {Blue carbon: A Rapid Response
+  Assessment.} United Nations Environment Programme, GRID-Arendal,
+  www.grida.no.
+\newline\urlprefix\url{http://www.grida.no/files/publications/blue-carbon/BlueCarbon\_screen.pdf}
+
+\bibitem[{Phillips et~al.(2014)Phillips, Duque, Scott, Pe{\~n}a, Franco,
+  Galindo, Cabrera, {\'A}lvarez, and C{\'a}rdenas}]{Phillips2014}
+Phillips, J.~F., Duque, A., Scott, C., Pe{\~n}a, M.~A., Franco, C.~A., Galindo,
+  G., Cabrera, E., {\'A}lvarez, E., C{\'a}rdenas, D., 2014. Aportes
+  t{\'e}cnicos del sistema de monitoreo de bosques y carbono a la propuesta de
+  preparaci{\'o}n de colombia para redd+: datos de actividad y factores de
+  emisi{\'o}n. Tech. rep., Instituto de Hidrolog{\'\i}a, Meteorolog{\'\i}a, y
+  Estudios Ambientales (IDEAM).
+
+\bibitem[{Phillips et~al.(2011)Phillips, Duque, Yepes, Cabrera, Navarrete,
+  Davila, and Cardenas}]{Phillips2011}
+Phillips, J.~F., Duque, A., Yepes, A., Cabrera, K., Navarrete, D.~A., Davila,
+  E., Cardenas, D., 2011. {Estimacion de las reservas actuales (2010) de
+  carbono almacenadas en la biomasa aerea en bosques naturales de Colombia}.
+  Ministerio de Ambiente, Vivienda y Desarrollo Territorial, IDEAM, Bogot.
+
+\bibitem[{Polan\'{\i}a et~al.(2015)Polan\'{\i}a, , Urrego, and
+  Agudelo}]{Polania2015}
+Polan\'{\i}a, J., , Urrego, L.~E., Agudelo, C.~M., 2015. {Recent advances in
+  understanding Colombian mangroves}. Acta Oecologica 63, 82--90.
+
+\bibitem[{Saenger and Snedaker(1993)}]{Saenger1993}
+Saenger, P., Snedaker, S.~C., 1993. {Pantropical trends in mangrove
+  above-ground biomass and annual litterfall}. Oecologia 96~(3), 293--299.
+
+\bibitem[{Sierra et~al.(2007)Sierra, del Valle, Orrego, Moreno, Harmon, Zapata,
+  Colorado, Herrera, Lara, Restrepo, Berrouet, Loaiza, and
+  Benjumea}]{Sierra2007}
+Sierra, C.~A., del Valle, J.~I., Orrego, S.~A., Moreno, F.~H., Harmon, M.~E.,
+  Zapata, M., Colorado, G.~J., Herrera, M.~A., Lara, W., Restrepo, D.~E.,
+  Berrouet, L.~M., Loaiza, L.~M., Benjumea, J.~F., 2007. Total carbon stocks in
+  a tropical forest landscape of the porce region, colombia. Forest Ecology and
+  Management 243~(2-3), 299--309.
+
+\bibitem[{Spalding et~al.(2010)Spalding, Kainuma, and Collins}]{Spalding2010}
+Spalding, M., Kainuma, M., Collins, L., 2010. World Atlas of Mangroves.
+  Earthscan, London, UK and Washington DC, USA.
+
+\bibitem[{Twilley et~al.(1992)Twilley, Chen, and T.}]{Twilley1992}
+Twilley, R.~R., Chen, R., T., H., 1992. {Carbon sinks in mangroves and their
+  implications to carbon budget of tropical coastal ecosystems}. Water, Air and
+  Soil Pollution 64, 265--288.
+
+\bibitem[{Wang et~al.(2013)Wang, Guan, Peart, Chen, and Peng}]{Wang2013539}
+Wang, G., Guan, D., Peart, M., Chen, Y., Peng, Y., 2013. Ecosystem carbon
+  stocks of mangrove forest in yingluo bay, guangdong province of south china.
+  Forest Ecology and Management 310, 539 -- 546.
+\newline\urlprefix\url{http://www.sciencedirect.com/science/article/pii/S0378112713005720}
+
+\bibitem[{{World Bank}(2010)}]{WorldBank2010}
+{World Bank}, 2010. {Capturing and conserving natural coastal carbon : building
+  mitigation, advancing adaptation}. Tech. rep., World Bank; IUCN; ESA PWA.
+
+\bibitem[{Yee(2010)}]{Yee2010}
+Yee, S.~M., 2010. {Capstone Advisory Committee Final Capstone Project Signature
+  Form REDD and BLUE Carbon : Carbon Payments for Mangrove Conservation Shannon
+  M . Yee Spring 2010 MAS Marine Biodiversity and Conservation Capstone
+  Project}. Tech. rep., MAS Marine Biodiversity and Conservation - Capstone
+  project.
+
+\end{thebibliography}

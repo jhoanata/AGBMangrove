@@ -1,0 +1,46 @@
+This is BibTeX, Version 0.99d (TeX Live 2014)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: Supplementary information.aux
+The style file: elsarticle-harv.bst
+Database file #1: Bibliography/Bibliography_Article_Mangroves.bib
+You've used 6 entries,
+            2821 wiz_defined-function locations,
+            671 strings with 6115 characters,
+and the built_in function-call counts, 3060 in all, are:
+= -- 294
+> -- 208
+< -- 3
++ -- 78
+- -- 72
+* -- 277
+:= -- 585
+add.period$ -- 17
+call.type$ -- 6
+change.case$ -- 57
+chr.to.int$ -- 6
+cite$ -- 6
+duplicate$ -- 100
+empty$ -- 168
+format.name$ -- 88
+if$ -- 580
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 3
+newline$ -- 25
+num.names$ -- 24
+pop$ -- 45
+preamble$ -- 1
+purify$ -- 48
+quote$ -- 0
+skip$ -- 79
+stack$ -- 0
+substring$ -- 128
+swap$ -- 11
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 54
+warning$ -- 0
+while$ -- 24
+width$ -- 0
+write$ -- 71
