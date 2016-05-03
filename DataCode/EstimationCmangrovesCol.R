@@ -9,6 +9,7 @@
 #Set working directory. Set this to the directory where you downloded the supplementary material
 setwd("~/TEE/Manuscripts/Mangroves/")
 setwd("~/SOIL-R/Manuscripts/Mangroves/")
+setwd("C:/Users/PROJECT2/AGBMangrove/")
 
 ##Estimation of C stocks in AGB from available data
 
@@ -286,13 +287,15 @@ min(AGBSamples[which(round(CV_AGB_Colombia,2)==0.1)])
 ##Extract data from WorldClim for AGB data available for Colombia
 
 # Load required packages
+install.packages("raster")
 library(raster)
 
 #Extract data from Worldclim
 w = getData('worldclim', var='bio', res=0.5, lon=-75, lat=10) #extract data from bioclimatic variables, with a res=0.5 (minutes of a degree). For res=0.5 it is necessary to provide a lon and lat for the tile which include the study area.
 
 # Import data with coordinates, biomass data, and soil carbon for all available plots and sites
-plots<-read.table("All plots.txt",header=TRUE,dec=".")
+#plots<-read.table("All plots.txt",header=TRUE,dec=".")
+plots<-read.table("C:/Users/PROJECT2/Documents/GitHub/ManVic/All plots.txt",header=TRUE,dec=".")
 
 Tab=data.frame(X=-1*plots[,1], Y=plots[,2]) #Extract only the coordinates and transform relative to GMZ
 
@@ -427,19 +430,26 @@ MODISSummaries(LoadDat = modis.subset, Product = "MOD13Q1", Bands = "250m_16_day
 #MODISSummaries(LoadDat = modis.subset, Product = "MOD13Q1", Bands = "250m_16_days_NDVI", ValidRange = c(-2000,10000), NoDataFill = -3000, ScaleFactor = 0.0001, QualityScreen = TRUE, QualityBand = "250m_16_days_pixel_reliability", QualityThreshold = 0)
 
 #Calculating EVI mean for each coordinate (mean of 81 pixels)
-Mod1=read.csv("MODIS_Data_MOD13Q1_2016-02-09_h17-m3-s20.csv") 
-head(Mod1)
+#Mod1=read.csv("MODIS_Data_MOD13Q1_2016-02-09_h17-m3-s20.csv") 
+#head(Mod1)
 
-meanMod1=data.frame(Mod1[,1:2],meanEVI=apply(Mod1[,6:86],1,mean,na.rm=TRUE))
-meanMod1
-boxplot(meanMod1[,3])
-dim(meanMod1)
+#meanMod1=data.frame(Mod1[,1:2],meanEVI=apply(Mod1[,6:86],1,mean,na.rm=TRUE))
+#meanMod1
+#boxplot(meanMod1[,3])
+#dim(meanMod1)
 
 #Calculating NDVI mean for each coordinate (mean of 81 pixels)
 #Mod2=read.csv("MODIS_Data_MOD13Q1_2015-06-23_h12-m0-s60.csv")
 
 #meanMod2=data.frame(Mod1[,1:2],meanNDVI=apply(Mod1[,6:86],1,mean,na.rm=TRUE))
 #meanMod2
+
+# Import EVI data Victor OJO ACA ME TIENEN QUE QUEDAR 46 DATOS
+NewEVI<-read.table("C:/Users/PROJECT2/Documents/GitHub/ManVic/MeanEVIPlots.txt",header=TRUE,dec=".")
+head(NewEVI)
+NewEVI46=NewEVI[!is.na(NewEVI[,4]),]
+dim(NewEVI46)
+
 
 ######################################################################################
 #Extract data from Worldclim only for 46 plots with AGB data
@@ -465,6 +475,8 @@ dim(dat46)
 DataSet=cbind(plots46,EVI=meanMod1[,3],dat46) #plots46 (data base with AGB data for Colombian mangroves), dat46 (data base with bioclimatic variables downloaded from WorldClim)
 dim(DataSet)
 head(DataSet)
+
+DataSetVic=cbind(plots46,EVI=NewEVI[,4],dat46) #plots46 (data base with AGB data for Colombian mangroves), dat46 (data base with bioclimatic variables downloaded from WorldClim)
 
 ##############################################################################
 
