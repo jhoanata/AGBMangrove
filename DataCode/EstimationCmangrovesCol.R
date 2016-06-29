@@ -11,6 +11,10 @@ setwd("~/TEE/Manuscripts/Mangroves/")
 setwd("~/SOIL-R/Manuscripts/Mangroves/")
 setwd("C:/Users/PROJECT2/AGBMangrove/")
 
+# Import data with coordinates, biomass data, and soil carbon for all available plots and sites
+#plots<-read.table("All plots.txt",header=TRUE,dec=".")
+plots<-read.table("C:/Users/PROJECT2/Documents/GitHub/ManVic/All plots.txt",header=TRUE,dec=".")
+
 ##Estimation of C stocks in AGB from available data
 
 #Mangrove area with uncertainty
@@ -292,11 +296,6 @@ library(raster)
 
 #Extract data from Worldclim
 w = getData('worldclim', var='bio', res=0.5, lon=-75, lat=10) #extract data from bioclimatic variables, with a res=0.5 (minutes of a degree). For res=0.5 it is necessary to provide a lon and lat for the tile which include the study area.
-
-# Import data with coordinates, biomass data, and soil carbon for all available plots and sites
-#plots<-read.table("All plots.txt",header=TRUE,dec=".")
-plots<-read.table("C:/Users/PROJECT2/Documents/GitHub/ManVic/All plots.txt",header=TRUE,dec=".")
-
 Tab=data.frame(X=-1*plots[,1], Y=plots[,2]) #Extract only the coordinates and transform relative to GMZ
 
 # #Introduce coordinates and transform them to spatial object
@@ -447,8 +446,7 @@ MODISSummaries(LoadDat = modis.subset, Product = "MOD13Q1", Bands = "250m_16_day
 # Import EVI data Victor OJO ACA ME TIENEN QUE QUEDAR 46 DATOS
 NewEVI<-read.table("C:/Users/PROJECT2/Documents/GitHub/ManVic/MeanEVIPlots.txt",header=TRUE,dec=".")
 head(NewEVI)
-NewEVI46=NewEVI[!is.na(NewEVI[,4]),]
-dim(NewEVI46)
+dim(NewEVI)
 
 
 ######################################################################################
@@ -472,12 +470,17 @@ dim(dat46)
 
 #########################################################################################
 #Conforming an only data base with information of bioclimatic variables, EVI and AGB data for Colombia
-DataSet=cbind(plots46,EVI=meanMod1[,3],dat46) #plots46 (data base with AGB data for Colombian mangroves), dat46 (data base with bioclimatic variables downloaded from WorldClim)
-dim(DataSet)
-head(DataSet)
+#DataSet=cbind(plots46,EVI=meanMod1[,3],dat46) #plots46 (data base with AGB data for Colombian mangroves), dat46 (data base with bioclimatic variables downloaded from WorldClim)
+#dim(DataSet)
+#head(DataSet)
 
-DataSetVic=cbind(plots46,EVI=NewEVI[,4],dat46) #plots46 (data base with AGB data for Colombian mangroves), dat46 (data base with bioclimatic variables downloaded from WorldClim)
+v=cbind(plots, EVI=NewEVI[,4])
+v46=v[!is.na(v[,3]),]
+dim(v46)
+head(v46)
 
+DataSetVic=cbind(v46,dat46) #plots46 (data base with AGB data for Colombian mangroves), dat46 (data base with bioclimatic variables downloaded from WorldClim)
+head(DataSetVic)
 ##############################################################################
 
 ##Regression analysis
@@ -490,7 +493,7 @@ library(lmtest)
 # DataSet<-read.table("~/TEE/Manuscripts/Mangroves/DataSetAGB.txt",header=T,dec=".")
 # DataSet
 
-summary (DataSet)
+summary (DataSetVic)
 
 #Confirm data are numeric
 #names(DataSet) 
@@ -501,220 +504,182 @@ summary (DataSet)
 #is.numeric(DataSet$bio1_23)
 
 #Twilley AGB model parametrization
-Twilleymodel=lm(AGB~Y, data=DataSet)
+Twilleymodel=lm(AGB~Y, data=DataSetVic)
 Twilleymodel
 summary(Twilleymodel)
 AIC(Twilleymodel)
 
 #Hutchison AGB model parametrization
-Hutchisonmodel=lm(AGB~bio10_23+bio11_23+bio16_23+bio17_23, data=DataSet)
+Hutchisonmodel=lm(AGB~bio10_23+bio11_23+bio16_23+bio17_23, data=DataSetVic)
 Hutchisonmodel
 summary(Hutchisonmodel)
 
 #New models
 
 ##Model1 (extreme climatic data + EVI)
-Model1=lm(AGB~bio10_23+bio11_23+bio16_23+bio17_23+EVI, data=DataSet)
+Model1=lm(AGB~bio10_23+bio11_23+bio16_23+bio17_23+EVI, data=DataSetVic)
 Model1
 summary(Model1)
 summary.aov(Model1)
 
 #Model2 (mean climatic data)
-Model2=lm(AGB~bio1_23+bio4_23+bio12_23+bio15_23,data=DataSet)
+Model2=lm(AGB~bio1_23+bio4_23+bio12_23+bio15_23,data=DataSetVic)
 Model2
 summary(Model2)
 summary.aov(Model2)
 
 #Model3 (mean climatic data + EVI)
-Model3=lm(AGB~bio1_23+bio4_23+bio12_23+bio15_23+EVI,data=DataSet)
+Model3=lm(AGB~bio1_23+bio4_23+bio12_23+bio15_23+EVI,data=DataSetVic)
 Model3
 summary(Model3)
 summary.aov(Model3)
 
 #Model4 (extreme climatic data + EVI + latitude)
-Model4=lm(AGB~Y+bio10_23+bio11_23+bio16_23+bio17_23+EVI, data=DataSet)
+Model4=lm(AGB~Y+bio10_23+bio11_23+bio16_23+bio17_23+EVI, data=DataSetVic)
 Model4
 summary(Model4)
 summary.aov(Model4)
 
 #Model5 (extreme climatic data + latitude)
-Model5=lm(AGB~bio10_23+bio11_23+bio16_23+bio17_23+Y, data=DataSet)
+Model5=lm(AGB~bio10_23+bio11_23+bio16_23+bio17_23+Y, data=DataSetVic)
 Model5
 summary(Model5)
 summary.aov(Model5)
 
 #Model6 (mean climatic data + latitude)
-Model6=lm(AGB~Y+bio1_23+bio4_23+bio12_23+bio15_23,data=DataSet)
+Model6=lm(AGB~Y+bio1_23+bio4_23+bio12_23+bio15_23,data=DataSetVic)
 Model6
 summary(Model6)
 summary.aov(Model6)
 
 #Model7 (mean climatic data + EVI + latitude)
-Model7=lm(AGB~Y+bio1_23+bio4_23+bio12_23+bio15_23+EVI,data=DataSet)
+Model7=lm(AGB~Y+bio1_23+bio4_23+bio12_23+bio15_23+EVI,data=DataSetVic)
 Model7
 summary(Model7)
 summary.aov(Model7)
 
 #Model8 (jardine variables)
-a=abs(DataSet$Y)
-b=(DataSet$bio1_23/10)
-c=(DataSet$bio1_23/10)^2
-d=(DataSet$bio11_23/10)
-e=(DataSet$bio12_23)
-f=(DataSet$bio15_23)
-AGB=(DataSet$AGB)
+a=abs(DataSetVic$Y)
+b=(DataSetVic$bio1_23/10)
+c=(DataSetVic$bio1_23/10)^2
+d=(DataSetVic$bio11_23/10)
+e=(DataSetVic$bio12_23)
+f=(DataSetVic$bio15_23)
+AGB=(DataSetVic$AGB)
 Model8=lm(AGB~a+b+c+d+e+f)
 Model8
 summary(Model8)
 summary.aov(Model8)
 
 #Model9 (jardine variables + EVI)
-a=abs(DataSet$Y)
-b=(DataSet$bio1_23/10)
-c=(DataSet$bio1_23/10)^2
-d=(DataSet$bio11_23/10)
-e=(DataSet$bio12_23)
-f=(DataSet$bio15_23)
-g=(DataSet$EVI)
-AGB=(DataSet$AGB)
+a=abs(DataSetVic$Y)
+b=(DataSetVic$bio1_23/10)
+c=(DataSetVic$bio1_23/10)^2
+d=(DataSetVic$bio11_23/10)
+e=(DataSetVic$bio12_23)
+f=(DataSetVic$bio15_23)
+g=(DataSetVic$EVI)
+AGB=(DataSetVic$AGB)
 Model9=lm(AGB~a+b+c+d+e+f+g)
 Model9
 summary(Model9)
 summary.aov(Model9)
 
 #Model10 (precipitation and temperature associated to driest quarter)
-Model10=lm(AGB~bio9_23+bio17_23,data=DataSet)
+Model10=lm(AGB~bio9_23+bio17_23,data=DataSetVic)
 Model10
 summary(Model10)
 summary.aov(Model10)
 
 #Model11 (precipitation and temperature associated to driest quarter + latitude)
-Model11=lm(AGB~Y+bio9_23+bio17_23,data=DataSet)
+Model11=lm(AGB~Y+bio9_23+bio17_23,data=DataSetVic)
 Model11
 summary(Model11)
 summary.aov(Model11)
 
 #Model12 (precipitation and temperature associated to driest quarter + latitude + EVI)
-Model12=lm(AGB~Y+bio9_23+bio17_23+EVI,data=DataSet)
+Model12=lm(AGB~Y+bio9_23+bio17_23+EVI,data=DataSetVic)
 Model12
 summary(Model12)
 summary.aov(Model12)
 
 #Model13 (temperature associated to driest quarter + latitude + EVI)
-Model13=lm(AGB~Y+bio9_23+EVI,data=DataSet)
+Model13=lm(AGB~Y+bio9_23+EVI,data=DataSetVic)
 Model13
 summary(Model13)
 summary.aov(Model13)
 
 #Model14 (temperature associated to driest quarter +  EVI)
-Model14=lm(AGB~bio9_23+EVI,data=DataSet)
+Model14=lm(AGB~bio9_23+EVI,data=DataSetVic)
 Model14
 summary(Model14)
 summary.aov(Model14)
 
 #Model15 (temperature associated to driest quarter + latitude)
-Model15=lm(AGB~bio9_23+Y,data=DataSet)
+Model15=lm(AGB~bio9_23+Y,data=DataSetVic)
 Model15
 summary(Model15)
 summary.aov(Model15)
 
 #Model16 (temperature associated to driest quarter)
-Model16=lm(AGB~bio9_23,data=DataSet)
+Model16=lm(AGB~bio9_23,data=DataSetVic)
 Model16
 summary(Model16)
 summary.aov(Model16)
 
 #Model17 
-Model17=lm(AGB~bio11_23+bio16_23+bio9_23+EVI,data=DataSet)
+Model17=lm(AGB~bio11_23+bio16_23+bio9_23+EVI,data=DataSetVic)
 Model17
 summary(Model17)
 summary.aov(Model17)
-plot(Model17)
-
-##T test (Obs vs. Est.)
-exp(fitted(Model17))
-t.test(exp(fitted(Model17)), exp(a))
-
-##Shapiro-Wilk Test (Normality)
-shapiro.test(rstandard(Model17))
-
-##Durbin-Watson Test (Autocorrelation of residuals)
-dwtest(Model17) 
-
-##Goldfeld-Quandt Test (Homocedasticity)
-gqtest(Model17)
-
-## Cook's distance (detection of influential variables)
-cook<-cooks.distance(Model17)
-significants<-cook>1
-significants
 
 #Model18 (Model1 only with significant variables + EVI)
-Model18=lm(AGB~bio11_23+bio16_23+EVI,data=DataSet)
+Model18=lm(AGB~bio11_23+bio16_23+EVI,data=DataSetVic)
 Model18
 summary(Model18)
 summary.aov(Model18)
 
 #Model19 (Hutchison parametrized only with significant variables)
-Model19=lm(AGB~bio11_23+bio16_23+bio17_23,data=DataSet)
+Model19=lm(AGB~bio11_23+bio16_23+bio17_23,data=DataSetVic)
 Model19
 summary(Model19)
 summary.aov(Model19)
 
 #Model20 (Model17 + annual mean Temperature)
-Model20=lm(AGB~bio11_23+bio16_23+bio9_23+bio1_23+EVI,data=DataSet)
+Model20=lm(AGB~bio11_23+bio16_23+bio9_23+bio1_23+EVI,data=DataSetVic)
 Model20
 summary(Model20)
 summary.aov(Model20)
 
 #Model21 (Model17 + annual mean Temperature)
-a=(DataSet$bio11_23/10)
-b=(DataSet$bio9_23/10)
-c=(DataSet$bio1_23/10)
-d=(DataSet$bio1_23/10)^2
-Model21=lm(AGB~a+bio16_23+b+c+d+EVI,data=DataSet)
+a=(DataSetVic$bio11_23/10)
+b=(DataSetVic$bio9_23/10)
+c=(DataSetVic$bio1_23/10)
+d=(DataSetVic$bio1_23/10)^2
+Model21=lm(AGB~a+bio16_23+b+c+d+EVI,data=DataSetVic)
 Model21
 summary(Model21)
 summary.aov(Model21)
-plot(Model21)
-
-##T test (Obs vs. Est.)
-exp(fitted(Model21))
-t.test(exp(fitted(Model21)), exp(a))
-
-##Shapiro-Wilk Test (Normality)
-shapiro.test(rstandard(Model21))
-
-##Durbin-Watson Test (Autocorrelation of residuals)
-dwtest(Model21) 
-
-##Goldfeld-Quandt Test (Homocedasticity)
-gqtest(Model21)
-
-## Cook's distance (detection of influential variables)
-cook<-cooks.distance(Model21)
-significants<-cook>1
-significants
 
 #Model22 (all variables Model1^2)
-a=(DataSet$bio10_23^2)
-b=(DataSet$bio11_23^2)
-c=(DataSet$bio16_23^2)
-d=(DataSet$bio17_23^2)
-e=(DataSet$EVI^2)
-Model22=lm(AGB~a+b+c+d+e, data=DataSet)
+a=(DataSetVic$bio10_23^2)
+b=(DataSetVic$bio11_23^2)
+c=(DataSetVic$bio16_23^2)
+d=(DataSetVic$bio17_23^2)
+e=(DataSetVic$EVI^2)
+Model22=lm(AGB~a+b+c+d+e, data=DataSetVic)
 Model22
 summary(Model22)
 summary.aov(Model22)
 
 #Model23 (lnModel1 and lnAGB)
-a=log(DataSet$AGB)
-b=log(DataSet$bio10_23)
-c=log(DataSet$bio11_23)
-d=log(DataSet$bio16_23)
-e=log(DataSet$bio17_23)
-f=log(DataSet$EVI)
-Model23=lm(a~b+c+d+e+f, data=DataSet)
+a=log(DataSetVic$AGB)
+b=log(DataSetVic$bio10_23)
+c=log(DataSetVic$bio11_23)
+d=log(DataSetVic$bio16_23)
+e=log(DataSetVic$bio17_23)
+f=log(DataSetVic$EVI)
+Model23=lm(a~b+c+d+e+f, data=DataSetVic)
 Model23
 summary(Model23)
 summary.aov(Model23)
@@ -723,53 +688,34 @@ plot(Model23)
 summary.aov(Model23)
 
 #Model24 (lnModel1)
-a=log(DataSet$bio10_23)
-b=log(DataSet$bio11_23)
-c=log(DataSet$bio16_23)
-d=log(DataSet$bio17_23)
-e=log(DataSet$EVI)
-Model24=lm(AGB~a+b+c+d+e, data=DataSet)
+a=log(DataSetVic$bio10_23)
+b=log(DataSetVic$bio11_23)
+c=log(DataSetVic$bio16_23)
+d=log(DataSetVic$bio17_23)
+e=log(DataSetVic$EVI)
+Model24=lm(AGB~a+b+c+d+e, data=DataSetVic)
 Model24
 summary(Model24)
 summary.aov(Model24)
 
 #Model25 (lnModel1 and lnAGB)
-a=log(DataSet$AGB)
-b=log(DataSet$bio9_23)
-c=log(DataSet$bio16_23)
-d=log(DataSet$EVI)
-Model25=lm(a~b+c+d, data=DataSet)
+a=log(DataSetVic$AGB)
+b=log(DataSetVic$bio9_23)
+c=log(DataSetVic$bio16_23)
+d=log(DataSetVic$EVI)
+Model25=lm(a~b+c+d, data=DataSetVic)
 Model25
 summary(Model25)
 summary.aov(Model25)
 par(mfrow = c(2,2))
-plot(Model25)
-
-##T test (Obs vs. Est.)
-exp(fitted(Model25))
-t.test(exp(fitted(Model25)), exp(a))
-
-##Shapiro-Wilk Test (Normality)
-shapiro.test(rstandard(Model25))
-
-##Durbin-Watson Test (Autocorrelation of residuals)
-dwtest(Model25) 
-
-##Goldfeld-Quandt Test (Homocedasticity)
-gqtest(Model25)
-
-## Cook's distance (detection of influential variables)
-cook<-cooks.distance(Model25)
-significants<-cook>1
-significants
 
 #Model26 (lnModel1+ abs(lat) and lnAGB)
-a=log(DataSet$AGB)
-b=log(DataSet$bio9_23)
-c=log(DataSet$bio16_23)
-d=log(DataSet$EVI)
-e=abs(DataSet$Y)
-Model26=lm(a~b+c+d+e, data=DataSet)
+a=log(DataSetVic$AGB)
+b=log(DataSetVic$bio9_23)
+c=log(DataSetVic$bio16_23)
+d=log(DataSetVic$EVI)
+e=abs(DataSetVic$Y)
+Model26=lm(a~b+c+d+e, data=DataSetVic)
 Model26
 summary(Model26)
 summary.aov(Model26)
@@ -795,13 +741,13 @@ significants<-cook>1
 significants
 
 #Model27 (lnModel1 and lnAGB and lnbio11_23)
-a=log(DataSet$AGB)
-b=log(DataSet$bio9_23)
-c=log(DataSet$bio16_23)
-d=log(DataSet$EVI)
-e=abs(DataSet$Y)
-f=log(DataSet$bio11_23)
-Model27=lm(a~b+c+d+e+f, data=DataSet)
+a=log(DataSetVic$AGB)
+b=log(DataSetVic$bio9_23)
+c=log(DataSetVic$bio16_23)
+d=log(DataSetVic$EVI)
+e=abs(DataSetVic$Y)
+f=log(DataSetVic$bio11_23)
+Model27=lm(a~b+c+d+e+f, data=DataSetVic)
 Model27
 summary(Model27)
 summary.aov(Model27)
@@ -827,41 +773,60 @@ significants<-cook>1
 significants
 
 #Model28 (Recip X)
-a=1/(DataSet$bio9_23)
-b=1/(DataSet$bio16_23)
-c=1/(DataSet$EVI)
-d=1/abs(DataSet$Y)
-Model28=lm(AGB~a+b+c+d, data=DataSet)
+a=1/(DataSetVic$bio9_23)
+b=1/(DataSetVic$bio16_23)
+c=1/(DataSetVic$EVI)
+d=1/abs(DataSetVic$Y)
+Model28=lm(AGB~a+b+c+d, data=DataSetVic)
 Model28
 summary(Model28)
 summary.aov(Model28)
 
 #Model29 (Recip Y)
-a=1/(DataSet$AGB)
-b=abs(DataSet$Y)
-Model29=lm(a~bio9_23+bio16_23+EVI+b, data=DataSet)
+a=1/(DataSetVic$AGB)
+b=abs(DataSetVic$Y)
+Model29=lm(a~bio9_23+bio16_23+EVI+b, data=DataSetVic)
 Model29
 summary(Model29)
 summary.aov(Model29)
 
 #Model30 (Recip doble)
-a=1/(DataSet$AGB)
-b=1/(DataSet$bio9_23)
-c=1/(DataSet$bio16_23)
-d=1/(DataSet$EVI)
-e=1/abs(DataSet$Y)
-Model30=lm(a~b+c+d+e, data=DataSet)
+a=1/(DataSetVic$AGB)
+b=1/(DataSetVic$bio9_23)
+c=1/(DataSetVic$bio16_23)
+d=1/(DataSetVic$EVI)
+e=1/abs(DataSetVic$Y)
+Model30=lm(a~b+c+d+e, data=DataSetVic)
 Model30
 summary(Model30)
 summary.aov(Model30)
+plot(Model30)
+
+##T test (Obs vs. Est.)
+exp(fitted(Model30))
+t.test(fitted(Model30), a)
+
+##Shapiro-Wilk Test (Normality)
+shapiro.test(rstandard(Model30))
+
+##Durbin-Watson Test (Autocorrelation of residuals)
+dwtest(Model30) 
+
+##Goldfeld-Quandt Test (Homocedasticity)
+gqtest(Model30)
+
+## Cook's distance (detection of influential variables)
+cook<-cooks.distance(Model30)
+significants<-cook>1
+significants
 
 #Model31 (Multip)
-a=log(DataSet$AGB)
-b=log(DataSet$bio9_23)
-c=log(DataSet$bio16_23)
-d=log(DataSet$EVI)
-e=log (abs(DataSet$Y))
-Model31=lm(a~b+c+d+e, data=DataSet)
+a=log(DataSetVic$AGB)
+b=log(DataSetVic$bio9_23)
+c=log(DataSetVic$bio16_23)
+d=log(DataSetVic$EVI)
+e=log (abs(DataSetVic$Y))
+Model31=lm(a~b+c+d+e, data=DataSetVic)
 Model31
 summary(Model31)
 summary.aov(Model31)
@@ -887,158 +852,98 @@ significants<-cook>1
 significants
 
 #Model32 (Exponential)
-a=log(DataSet$AGB)
-b=(DataSet$bio9_23)
-c=(DataSet$bio16_23)
-d=(DataSet$EVI)
-e=abs(DataSet$Y)
-Model32=lm(a~b+c+d+e, data=DataSet)
+a=log(DataSetVic$AGB)
+b=(DataSetVic$bio9_23)
+c=(DataSetVic$bio16_23)
+d=(DataSetVic$EVI)
+e=abs(DataSetVic$Y)
+Model32=lm(a~b+c+d+e, data=DataSetVic)
 Model32
 summary(Model32)
 summary.aov(Model32)
-plot(Model32)
-
-##T test (Obs vs. Est.) 
-exp(fitted(Model32))
-t.test(exp(fitted(Model32)), exp(a))
-
-##Shapiro-Wilk Test (Normality)
-shapiro.test(rstandard(Model32))
-
-##Durbin-Watson Test (Autocorrelation of residuals)
-dwtest(Model32) 
-
-##Goldfeld-Quandt Test (Homocedasticity)
-gqtest(Model32)
-
-## Cook's distance (detection of influential variables)
-cook<-cooks.distance(Model32)
-significants<-cook>1
-significants
 
 #Model33 (Logarithmic)
-a=(DataSet$AGB)
-b=log(DataSet$bio9_23)
-c=log(DataSet$bio16_23)
-d=log(DataSet$EVI)
-e=log (abs(DataSet$Y))
-Model33=lm(a~b+c+d+e, data=DataSet)
+a=(DataSetVic$AGB)
+b=log(DataSetVic$bio9_23)
+c=log(DataSetVic$bio16_23)
+d=log(DataSetVic$EVI)
+e=log (abs(DataSetVic$Y))
+Model33=lm(a~b+c+d+e, data=DataSetVic)
 Model33
 summary(Model33)
 summary.aov(Model33)
-plot(Model33)
-
-##T test (Obs vs. Est.) 
-exp(fitted(Model33))
-t.test(exp(fitted(Model33)), exp(a))
-
-##Shapiro-Wilk Test (Normality)
-shapiro.test(rstandard(Model33))
-
-##Durbin-Watson Test (Autocorrelation of residuals)
-dwtest(Model33) 
-
-##Goldfeld-Quandt Test (Homocedasticity)
-gqtest(Model33)
-
-## Cook's distance (detection of influential variables)
-cook<-cooks.distance(Model33)
-significants<-cook>1
-significants
 
 #Model34 (Square root X)
-a=(DataSet$AGB)
-b=sqrt(DataSet$bio9_23)
-c=sqrt(DataSet$bio16_23)
-d=sqrt(DataSet$EVI)
-e=sqrt (abs(DataSet$Y))
-Model34=lm(a~b+c+d+e, data=DataSet)
+a=(DataSetVic$AGB)
+b=sqrt(DataSetVic$bio9_23)
+c=sqrt(DataSetVic$bio16_23)
+d=sqrt(DataSetVic$EVI)
+e=sqrt (abs(DataSetVic$Y))
+Model34=lm(a~b+c+d+e, data=DataSetVic)
 Model34
 summary(Model34)
 summary.aov(Model34)
 
 #Model35 (Square root Y)
-a=sqrt(DataSet$AGB)
-b=(DataSet$bio9_23)
-c=(DataSet$bio16_23)
-d=(DataSet$EVI)
-e=(abs(DataSet$Y))
-Model35=lm(a~b+c+d+e, data=DataSet)
+a=sqrt(DataSetVic$AGB)
+b=(DataSetVic$bio9_23)
+c=(DataSetVic$bio16_23)
+d=(DataSetVic$EVI)
+e=(abs(DataSetVic$Y))
+Model35=lm(a~b+c+d+e, data=DataSetVic)
 Model35
 summary(Model35)
 summary.aov(Model35)
-plot(Model35)
-
-##T test (Obs vs. Est.) 
-exp(fitted(Model35))
-t.test(exp(fitted(Model35)), exp(a))
-
-##Shapiro-Wilk Test (Normality)
-shapiro.test(rstandard(Model35))
-
-##Durbin-Watson Test (Autocorrelation of residuals)
-dwtest(Model35) 
-
-##Goldfeld-Quandt Test (Homocedasticity)
-gqtest(Model35)
-
-## Cook's distance (detection of influential variables)
-cook<-cooks.distance(Model35)
-significants<-cook>1
-significants
 
 #Model36 (Curve S)
-a=log(DataSet$AGB)
-b=1/(DataSet$bio9_23)
-c=1/(DataSet$bio16_23)
-d=1/(DataSet$EVI)
-e=1/(abs(DataSet$Y))
-Model36=lm(a~b+c+d+e, data=DataSet)
+a=log(DataSetVic$AGB)
+b=1/(DataSetVic$bio9_23)
+c=1/(DataSetVic$bio16_23)
+d=1/(DataSetVic$EVI)
+e=1/(abs(DataSetVic$Y))
+Model36=lm(a~b+c+d+e, data=DataSetVic)
 Model36
 summary(Model36)
 summary.aov(Model36)
 par(mfrow = c(2,2))
 plot(Model36)
 
-#Model37 (Simple with BIO9,EVI,lat)
-a=abs(DataSet$Y)
-Model37=lm(AGB~bio9_23+EVI+a, data=DataSet)
-Model37
-summary(Model37)
-summary.aov(Model37)
-plot(Model37)
-confint(Model37, level = 0.95)
-
 ##T test (Obs vs. Est.) 
-exp(fitted(Model37))
-t.test(exp(fitted(Model37)), exp(a))
+exp(fitted(Model36))
+t.test(exp(fitted(Model36)), exp(a))
 
 ##Shapiro-Wilk Test (Normality)
-shapiro.test(rstandard(Model37))
+shapiro.test(rstandard(Model36))
 
 ##Durbin-Watson Test (Autocorrelation of residuals)
-dwtest(Model37) 
+dwtest(Model36) 
 
 ##Goldfeld-Quandt Test (Homocedasticity)
 gqtest(Model37)
 
 ## Cook's distance (detection of influential variables)
-cook<-cooks.distance(Model37)
+cook<-cooks.distance(Model36)
 significants<-cook>1
 significants
 
+#Model37 (Simple with BIO9,EVI,lat)
+a=abs(DataSetVic$Y)
+Model37=lm(AGB~bio9_23+EVI+a, data=DataSetVic)
+Model37
+summary(Model37)
+summary.aov(Model37)
+
 #Model38 (Mult with BIO9,EVI,lat)
-a=log(DataSet$AGB)
-b=log(DataSet$bio9_23)
-c=log(DataSet$EVI)
-d=log(abs(DataSet$Y))
-Model38=lm(a~b+c+d, data=DataSet)
+a=log(DataSetVic$AGB)
+b=log(DataSetVic$bio9_23)
+c=log(DataSetVic$EVI)
+d=log(abs(DataSetVic$Y))
+Model38=lm(a~b+c+d, data=DataSetVic)
 Model38
 summary(Model38)
 summary.aov(Model38)
 par(mfrow = c(2,2))
 plot(Model38)
-confint(Model38, level = 0.95)
 
 ##T test (Obs vs. Est.) 
 exp(fitted(Model38))
@@ -1059,90 +964,52 @@ significants<-cook>1
 significants
 
 #Model39 (Exp BIO9,EVI,lat)
-a=log(DataSet$AGB)
-b=(DataSet$bio9_23)
-c=(DataSet$EVI)
-d=abs(DataSet$Y)
-Model39=lm(a~b+c+d, data=DataSet)
+a=log(DataSetVic$AGB)
+b=(DataSetVic$bio9_23)
+c=(DataSetVic$EVI)
+d=abs(DataSetVic$Y)
+Model39=lm(a~b+c+d, data=DataSetVic)
 Model39
 summary(Model39)
 summary.aov(Model39)
 par(mfrow = c(2,2))
-plot(Model39)
-
-##T test (Obs vs. Est.) 
-exp(fitted(Model39))
-t.test(exp(fitted(Model39)), exp(a))
-
-##Shapiro-Wilk Test (Normality)
-shapiro.test(rstandard(Model39))
-
-##Durbin-Watson Test (Autocorrelation of residuals)
-dwtest(Model39) 
-
-##Goldfeld-Quandt Test (Homocedasticity)
-gqtest(Model39)
-
-## Cook's distance (detection of influential variables)
-cook<-cooks.distance(Model39)
-significants<-cook>1
-significants
 
 #Model40 (Log with BIO9,EVI,lat)
-a=(DataSet$AGB)
-b=log(DataSet$bio9_23)
-c=log(DataSet$EVI)
-d=log(abs(DataSet$Y))
-Model40=lm(a~b+c+d, data=DataSet)
+a=(DataSetVic$AGB)
+b=log(DataSetVic$bio9_23)
+c=log(DataSetVic$EVI)
+d=log(abs(DataSetVic$Y))
+Model40=lm(a~b+c+d, data=DataSetVic)
 Model40
 summary(Model40)
 summary.aov(Model40)
 
 #Model41 (Square root X with BIO9,EVI,lat)
-a=(DataSet$AGB)
-b=sqrt(DataSet$bio9_23)
-c=sqrt(DataSet$EVI)
-d=sqrt (abs(DataSet$Y))
-Model41=lm(a~b+c+d, data=DataSet)
+a=(DataSetVic$AGB)
+b=sqrt(DataSetVic$bio9_23)
+c=sqrt(DataSetVic$EVI)
+d=sqrt (abs(DataSetVic$Y))
+Model41=lm(a~b+c+d, data=DataSetVic)
 Model41
 summary(Model41)
 summary.aov(Model41)
 
 #Model42 (Square root y with BIO9,EVI,lat)
-a=sqrt(DataSet$AGB)
-b=(DataSet$bio9_23)
-c=(DataSet$EVI)
-d=(abs(DataSet$Y))
-Model42=lm(a~b+c+d, data=DataSet)
+a=sqrt(DataSetVic$AGB)
+b=(DataSetVic$bio9_23)
+c=(DataSetVic$EVI)
+d=(abs(DataSetVic$Y))
+Model42=lm(a~b+c+d, data=DataSetVic)
 Model42
 summary(Model42)
 summary.aov(Model42)
-plot(Model42)
-
-##T test (Obs vs. Est.) 
-exp(fitted(Model42))
-t.test(exp(fitted(Model42)), exp(a))
-
-##Shapiro-Wilk Test (Normality)
-shapiro.test(rstandard(Model42))
-
-##Durbin-Watson Test (Autocorrelation of residuals)
-dwtest(Model42) 
-
-##Goldfeld-Quandt Test (Homocedasticity)
-gqtest(Model42)
-
-## Cook's distance (detection of influential variables)
-cook<-cooks.distance(Model42)
-significants<-cook>1
-significants
 
 #Model43 (Curve S with BIO9,EVI,lat)
-a=log(DataSet$AGB)
-b=1/(DataSet$bio9_23)
-c=1/(DataSet$EVI)
-d=1/(abs(DataSet$Y))
-Model43=lm(a~b+c+d, data=DataSet)
+a=log(DataSetVic$AGB)
+b=1/(DataSetVic$bio9_23)
+c=1/(DataSetVic$EVI)
+d=1/(abs(DataSetVic$Y))
+Model43=lm(a~b+c+d, data=DataSetVic)
 Model43
 summary(Model43)
 summary.aov(Model43)
@@ -1168,136 +1035,56 @@ significants<-cook>1
 significants
 
 #Model44 (Curve S with BIO9,EVI)
-a=log(DataSet$AGB)
-b=1/(DataSet$bio9_23)
-c=1/(DataSet$EVI)
-Model44=lm(a~b+c, data=DataSet)
+a=log(DataSetVic$AGB)
+b=1/(DataSetVic$bio9_23)
+c=1/(DataSetVic$EVI)
+Model44=lm(a~b+c, data=DataSetVic)
 Model44
 summary(Model44)
 summary.aov(Model44)
 par(mfrow = c(2,2))
-plot(Model44)
-confint(Model44, level = 0.95)
-
-##T test (Obs vs. Est.) 
-exp(fitted(Model44))
-t.test(exp(fitted(Model44)), exp(a))
-
-##Shapiro-Wilk Test (Normality)
-shapiro.test(rstandard(Model44))
-
-##Durbin-Watson Test (Autocorrelation of residuals)
-dwtest(Model44) 
-
-##Goldfeld-Quandt Test (Homocedasticity)
-gqtest(Model44)
-
-## Cook's distance (detection of influential variables)
-cook<-cooks.distance(Model44)
-significants<-cook>1
-significants
 
 #Model45 (Mult with BIO9,EVI)
-a=log(DataSet$AGB)
-b=log(DataSet$bio9_23)
-c=log(DataSet$EVI)
-Model45=lm(a~b+c, data=DataSet)
+a=log(DataSetVic$AGB)
+b=log(DataSetVic$bio9_23)
+c=log(DataSetVic$EVI)
+Model45=lm(a~b+c, data=DataSetVic)
 Model45
 summary(Model45)
 summary.aov(Model45)
 par(mfrow = c(2,2))
 plot(Model45)
-confint(Model45, level = 0.95)
-
-##T test (Obs vs. Est.) 
-exp(fitted(Model45))
-t.test(exp(fitted(Model45)), exp(a))
-
-##Shapiro-Wilk Test (Normality)
-shapiro.test(rstandard(Model45))
-
-##Durbin-Watson Test (Autocorrelation of residuals)
-dwtest(Model45) 
-
-##Goldfeld-Quandt Test (Homocedasticity)
-gqtest(Model45)
-
-## Cook's distance (detection of influential variables)
-cook<-cooks.distance(Model45)
-significants<-cook>1
-significants
 
 #Model46 (Exp BIO9,EVI)
-a=log(DataSet$AGB)
-b=(DataSet$bio9_23)
-c=(DataSet$EVI)
-Model46=lm(a~b+c, data=DataSet)
+a=log(DataSetVic$AGB)
+b=(DataSetVic$bio9_23)
+c=(DataSetVic$EVI)
+Model46=lm(a~b+c, data=DataSetVic)
 Model46
 summary(Model46)
 summary.aov(Model46)
 par(mfrow = c(2,2))
-plot(Model46)
-confint(Model46, level = 0.95)
-
-##T test (Obs vs. Est.) 
-exp(fitted(Model46))
-t.test(exp(fitted(Model46)), exp(a))
-
-##Shapiro-Wilk Test (Normality)
-shapiro.test(rstandard(Model46))
-
-##Durbin-Watson Test (Autocorrelation of residuals)
-dwtest(Model46) 
-
-##Goldfeld-Quandt Test (Homocedasticity)
-gqtest(Model46)
-
-## Cook's distance (detection of influential variables)
-cook<-cooks.distance(Model46)
-significants<-cook>1
-significants
 
 #Model47 (Square root y with BIO9,EVI)
-a=sqrt(DataSet$AGB)
-b=(DataSet$bio9_23)
-c=(DataSet$EVI)
-Model47=lm(a~b+c, data=DataSet)
+a=sqrt(DataSetVic$AGB)
+b=(DataSetVic$bio9_23)
+c=(DataSetVic$EVI)
+Model47=lm(a~b+c, data=DataSetVic)
 Model47
 summary(Model47)
 summary.aov(Model47)
-confint(Model47, level = 0.95)
-
-##T test (Obs vs. Est.) 
-exp(fitted(Model46))
-t.test(exp(fitted(Model47)), exp(a))
-
-##Shapiro-Wilk Test (Normality)
-shapiro.test(rstandard(Model47))
-
-##Durbin-Watson Test (Autocorrelation of residuals)
-dwtest(Model47) 
-
-##Goldfeld-Quandt Test (Homocedasticity)
-gqtest(Model47)
-
-## Cook's distance (detection of influential variables)
-cook<-cooks.distance(Model47)
-significants<-cook>1
-significants
 
 #Model48 (Curve S with BIO9, BIO16, EVI)
-a=log(DataSet$AGB)
-b=1/(DataSet$bio9_23)
-c=1/(DataSet$EVI)
-e=1/(DataSet$bio16_23)
-Model48=lm(a~b+c+e, data=DataSet)
+a=log(DataSetVic$AGB)
+b=1/(DataSetVic$bio9_23)
+c=1/(DataSetVic$EVI)
+e=1/(DataSetVic$bio16_23)
+Model48=lm(a~b+c+e, data=DataSetVic)
 Model48
 summary(Model48)
 summary.aov(Model48)
 par(mfrow = c(2,2))
 plot(Model48)
-confint(Model48, level = 0.95)
-
 
 #Akaike's Criterion
 AIC(Model1,Model2,Model3,Model4,Model5,Model6,Model7,Model8,Model9,Model10,Model11,Model12,Model13,Model14,Model15,Model16,Model17,Model18,Model19,Model20,Model21,Model22,Model23,Model24,Model25,Model26,Model27,Model28,Model29,Model30,Model31,Model32,Model33,Model34,Model35,Model36,Model37,Model38,Model39,Model40,Model41,Model42,Model43,Model44,Model45,Model46,Model47,Model48)
@@ -1308,13 +1095,15 @@ install.packages("AICcmodavg")
 library(AICcmodavg)
 
 Cand.mod <- list()
-Cand.mod[[1]] <- Model25
-Cand.mod[[2]] <- Model44
-Cand.mod[[3]] <- Model45
-Cand.mod[[4]] <- Model46
+Cand.mod[[1]] <- Model26
+Cand.mod[[2]] <- Model27
+Cand.mod[[3]] <- Model31
+Cand.mod[[4]] <- Model36
+Cand.mod[[5]] <- Model38
+Cand.mod[[6]] <- Model43
 Cand.mod
 
-NamesModels <- c("Model25", "Model44", "Model45", "Model46")
+NamesModels <- c("Model26", "Model27", "Model31", "Model36" , "Model38" , "Model43")
 
 #Selection of models based in AICc ##Delta_AICc es el incremento desde el AICc mas bajo (modelos equivalentes en rango de D=2)
 aictab(cand.set = Cand.mod, modnames = NamesModels)
@@ -1339,171 +1128,314 @@ library(lme4)
 
 #SectorII corresponds to classification by mangrove type for Cispata and Malaga data
 
-#Model25
+#Model26
 
-##Fit the not multilevel Model25
-a=log(DataSet$AGB)
-b=log(DataSet$bio9_23)
-c=log(DataSet$bio16_23)
-d=log(DataSet$EVI)
-Model25=glm(a~b+c+d, data=DataSet)
-Model25
-summary(Model25)
+##Fit the not multilevel Model26
+a=log(DataSetVic$AGB)
+b=log(DataSetVic$bio9_23)
+c=log(DataSetVic$bio16_23)
+d=log(DataSetVic$EVI)
+e=abs(DataSetVic$Y)
+Model26=glm(a~b+c+d+e, data=DataSetVic)
+Model26
+summary(Model26)
+summary.aov(Model26)
 
-##Fit a varying intercept model with Sector Model25
-a=log(DataSet$AGB)
-b=log(DataSet$bio9_23)
-c=log(DataSet$bio16_23)
-d=log(DataSet$EVI)
-Model25Sector=glm(a~b+c+d+SectorII, data=DataSet)
-Model25Sector
-summary(Model25Sector)
+##Fit a varying intercept model with Sector Model26
+a=log(DataSetVic$AGB)
+b=log(DataSetVic$bio9_23)
+c=log(DataSetVic$bio16_23)
+d=log(DataSetVic$EVI)
+e=abs(DataSetVic$Y)
+Model26Sector=glm(a~b+c+d+e+SectorII, data=DataSetVic)
+Model26Sector
+summary(Model26Sector)
 
-anova(Model25, Model25Sector, test="F")
+anova(Model26, Model26Sector, test="F")
 
-##Fit a varying intercept model with UAC Model25
-a=log(DataSet$AGB)
-b=log(DataSet$bio9_23)
-c=log(DataSet$bio16_23)
-d=log(DataSet$EVI)
-Model25UAC=glm(a~b+c+d+UAC, data=DataSet)
-Model25UAC
-summary(Model25UAC)
+##Fit a varying intercept model with UAC Model26
+a=log(DataSetVic$AGB)
+b=log(DataSetVic$bio9_23)
+c=log(DataSetVic$bio16_23)
+d=log(DataSetVic$EVI)
+e=abs(DataSetVic$Y)
+Model26UAC=glm(a~b+c+d+e+UAC, data=DataSetVic)
+Model26UAC
+summary(Model26UAC)
 
-anova(Model25, Model25UAC, test="F")
+anova(Model26, Model26UAC, test="F")
 
-##Fit the interaction between UAC and Sector Model25
-a=log(DataSet$AGB)
-b=log(DataSet$bio9_23)
-c=log(DataSet$bio16_23)
-d=log(DataSet$EVI)
-Model25UAC_Sector=glm(a~b+c+d+UAC:SectorII, data=DataSet)
-Model25UAC_Sector
-summary(Model25UAC_Sector)
+##Fit the interaction between UAC and Sector Model26
+a=log(DataSetVic$AGB)
+b=log(DataSetVic$bio9_23)
+c=log(DataSetVic$bio16_23)
+d=log(DataSetVic$EVI)
+e=abs(DataSetVic$Y)
+Model26UAC_Sector=glm(a~b+c+d+e+UAC:SectorII, data=DataSetVic)
+Model26UAC_Sector
+summary(Model26UAC_Sector)
 
-anova(Model25, Model25UAC_Sector, test="F")
+anova(Model26, Model26UAC_Sector, test="F")
+
+#Model27
+
+##Fit the not multilevel Model27
+a=log(DataSetVic$AGB)
+b=log(DataSetVic$bio9_23)
+c=log(DataSetVic$bio16_23)
+d=log(DataSetVic$EVI)
+e=abs(DataSetVic$Y)
+f=log(DataSetVic$bio11_23)
+Model27=glm(a~b+c+d+e+f, data=DataSetVic)
+Model27
+summary(Model27)
+summary.aov(Model27)
+
+##Fit a varying intercept model with Sector Model26
+a=log(DataSetVic$AGB)
+b=log(DataSetVic$bio9_23)
+c=log(DataSetVic$bio16_23)
+d=log(DataSetVic$EVI)
+e=abs(DataSetVic$Y)
+f=log(DataSetVic$bio11_23)
+Model27Sector=glm(a~b+c+d+e+f+SectorII, data=DataSetVic)
+Model27Sector
+summary(Model27Sector)
+summary.aov(Model27Sector)
+
+anova(Model27, Model27Sector, test="F")
+
+##Fit a varying intercept model with UAC Model27
+a=log(DataSetVic$AGB)
+b=log(DataSetVic$bio9_23)
+c=log(DataSetVic$bio16_23)
+d=log(DataSetVic$EVI)
+e=abs(DataSetVic$Y)
+f=log(DataSetVic$bio11_23)
+Model27UAC=glm(a~b+c+d+e+f+UAC, data=DataSetVic)
+Model27UAC
+summary(Model27UAC)
+summary.aov(Model27UAC)
+
+anova(Model27, Model27UAC, test="F")
+
+##Fit the interaction between UAC and Sector Model26
+a=log(DataSetVic$AGB)
+b=log(DataSetVic$bio9_23)
+c=log(DataSetVic$bio16_23)
+d=log(DataSetVic$EVI)
+e=abs(DataSetVic$Y)
+f=log(DataSetVic$bio11_23)
+Model27UAC_Sector=glm(a~b+c+d+e+f+UAC:SectorII, data=DataSetVic)
+Model27UAC_Sector
+summary(Model27UAC_Sector)
+summary.aov(Model27UAC_Sector)
+
+anova(Model27, Model27UAC_Sector, test="F")
 
 
-#Model44
+#Model31 
 
-##Fit the not multilevel Model44
-a=log(DataSet$AGB)
-b=1/(DataSet$bio9_23)
-c=1/(DataSet$EVI)
-Model44=glm(a~b+c, data=DataSet)
-Model44
-summary(Model44)
+##Fit the not multilevel Mode31
+a=log(DataSetVic$AGB)
+b=log(DataSetVic$bio9_23)
+c=log(DataSetVic$bio16_23)
+d=log(DataSetVic$EVI)
+e=log (abs(DataSetVic$Y))
+Model31=lm(a~b+c+d+e, data=DataSetVic)
+Model31
+summary(Model31)
+summary.aov(Model31)
 
-##Fit a varying intercept model with Sector Model44
-a=log(DataSet$AGB)
-b=1/(DataSet$bio9_23)
-c=1/(DataSet$EVI)
-Model44Sector=glm(a~b+c+SectorII, data=DataSet)
-Model44Sector
-summary(Model44Sector)
+##Fit a varying intercept model with Sector Model31
+a=log(DataSetVic$AGB)
+b=log(DataSetVic$bio9_23)
+c=log(DataSetVic$bio16_23)
+d=log(DataSetVic$EVI)
+e=log (abs(DataSetVic$Y))
+Model31Sector=glm(a~b+c+d+e+SectorII, data=DataSetVic)
+Model31Sector
+summary(Model31Sector)
+summary.aov(Model31Sector)
 
-anova(Model44, Model44Sector, test="F")
+anova(Model31, Model31Sector, test="F")
 
-##Fit a varying intercept model with UAC Model44
-a=log(DataSet$AGB)
-b=1/(DataSet$bio9_23)
-c=1/(DataSet$EVI)
-Model44UAC=glm(a~b+c+UAC, data=DataSet)
-Model44UAC
-summary(Model44UAC)
+##Fit a varying intercept model with UAC Model31
+a=log(DataSetVic$AGB)
+b=log(DataSetVic$bio9_23)
+c=log(DataSetVic$bio16_23)
+d=log(DataSetVic$EVI)
+e=log (abs(DataSetVic$Y))
+Model31UAC=glm(a~b+c+d+e+UAC, data=DataSetVic)
+Model31UAC
+summary(Model31UAC)
+summary.aov(Model31UAC)
 
-anova(Model44, Model44UAC, test="F")
+anova(Model31, Model31UAC, test="F")
 
-##Fit the interaction between UAC and Sector Model44
-a=log(DataSet$AGB)
-b=1/(DataSet$bio9_23)
-c=1/(DataSet$EVI)
-Model44UAC_Sector=glm(a~b+c+UAC:SectorII, data=DataSet)
-Model44UAC_Sector
-summary(Model44UAC_Sector)
+##Fit the interaction between UAC and Sector Model31
+a=log(DataSetVic$AGB)
+b=log(DataSetVic$bio9_23)
+c=log(DataSetVic$bio16_23)
+d=log(DataSetVic$EVI)
+e=log (abs(DataSetVic$Y))
+Model31UAC_Sector=glm(a~b+c+d+e+UAC:SectorII, data=DataSetVic)
+Model31UAC_Sector
+summary(Model31UAC_Sector)
+summary.aov(Model31UAC_Sector)
 
-anova(Model44, Model44UAC_Sector, test="F")
+anova(Model31, Model31UAC_Sector, test="F")
 
-#Model45
 
-##Fit the not multilevel Model45
-a=log(DataSet$AGB)
-b=log(DataSet$bio9_23)
-c=log(DataSet$EVI)
-Model45=glm(a~b+c, data=DataSet)
-Model45
-summary(Model45)
+#Model36 
 
-##Fit a varying intercept model with Sector Model45
-a=log(DataSet$AGB)
-b=log(DataSet$bio9_23)
-c=log(DataSet$EVI)
-Model45Sector=glm(a~b+c+SectorII, data=DataSet)
-Model45Sector
-summary(Model45Sector)
+##Fit the not multilevel Model36
+a=log(DataSetVic$AGB)
+b=1/(DataSetVic$bio9_23)
+c=1/(DataSetVic$bio16_23)
+d=1/(DataSetVic$EVI)
+e=1/(abs(DataSetVic$Y))
+Model36=lm(a~b+c+d+e, data=DataSetVic)
+Model36
+summary(Model36)
+summary.aov(Model36)
 
-anova(Model45, Model45Sector, test="F")
+##Fit a varying intercept model with Sector Model36
+a=log(DataSetVic$AGB)
+b=1/(DataSetVic$bio9_23)
+c=1/(DataSetVic$bio16_23)
+d=1/(DataSetVic$EVI)
+e=1/(abs(DataSetVic$Y))
+Model36Sector=glm(a~b+c+d+e+SectorII, data=DataSetVic)
+Model36Sector
+summary(Model36Sector)
+summary.aov(Model36Sector)
 
-##Fit a varying intercept model with UAC Model45
-a=log(DataSet$AGB)
-b=log(DataSet$bio9_23)
-c=log(DataSet$EVI)
-Model45UAC=glm(a~b+c+UAC, data=DataSet)
-Model45UAC
-summary(Model45UAC)
+anova(Model36, Model36Sector, test="F")
 
-anova(Model45, Model45UAC, test="F")
+##Fit a varying intercept model with UAC Model36
+a=log(DataSetVic$AGB)
+b=1/(DataSetVic$bio9_23)
+c=1/(DataSetVic$bio16_23)
+d=1/(DataSetVic$EVI)
+e=1/(abs(DataSetVic$Y))
+Model36UAC=glm(a~b+c+d+e+UAC, data=DataSetVic)
+Model36UAC
+summary(Model36UAC)
+summary.aov(Model36UAC)
 
-##Fit the interaction between UAC and Sector Model45
-a=log(DataSet$AGB)
-b=log(DataSet$bio9_23)
-c=log(DataSet$EVI)
-Model45UAC_Sector=glm(a~b+c+UAC:SectorII, data=DataSet)
-Model45UAC_Sector
-summary(Model45UAC_Sector)
+anova(Model36, Model36UAC, test="F")
 
-anova(Model45, Model45UAC_Sector, test="F")
+##Fit the interaction between UAC and Sector Model36
+a=log(DataSetVic$AGB)
+b=1/(DataSetVic$bio9_23)
+c=1/(DataSetVic$bio16_23)
+d=1/(DataSetVic$EVI)
+e=1/(abs(DataSetVic$Y))
+Model36UAC_Sector=glm(a~b+c+d+e+UAC:SectorII, data=DataSetVic)
+Model36UAC_Sector
+summary(Model36UAC_Sector)
+summary.aov(Model36UAC_Sector)
 
-#Model46
+anova(Model36, Model36UAC_Sector, test="F")
 
-##Fit the not multilevel Model46
-a=log(DataSet$AGB)
-b=(DataSet$bio9_23)
-c=(DataSet$EVI)
-Model46=glm(a~b+c, data=DataSet)
-Model46
-summary(Model46)
 
-##Fit a varying intercept model with Sector Model46
-a=log(DataSet$AGB)
-b=(DataSet$bio9_23)
-c=(DataSet$EVI)
-Model46Sector=glm(a~b+c+SectorII, data=DataSet)
-Model46Sector
-summary(Model46Sector)
+#Model38 
 
-anova(Model46, Model46Sector, test="F")
+##Fit the not multilevel Model38
+a=log(DataSetVic$AGB)
+b=log(DataSetVic$bio9_23)
+c=log(DataSetVic$EVI)
+d=log(abs(DataSetVic$Y))
+Model38=lm(a~b+c+d, data=DataSetVic)
+Model38
+summary(Model38)
+summary.aov(Model38)
 
-##Fit a varying intercept model with UAC Model46
-a=log(DataSet$AGB)
-b=(DataSet$bio9_23)
-c=(DataSet$EVI)
-Model46UAC=glm(a~b+c+UAC, data=DataSet)
-Model46UAC
-summary(Model46UAC)
+##Fit a varying intercept model with Sector Model38
+a=log(DataSetVic$AGB)
+b=log(DataSetVic$bio9_23)
+c=log(DataSetVic$EVI)
+d=log(abs(DataSetVic$Y))
+Model38Sector=glm(a~b+c+d+SectorII, data=DataSetVic)
+Model38Sector
+summary(Model38Sector)
+summary.aov(Model38Sector)
 
-anova(Model46, Model46UAC, test="F")
+anova(Model38, Model38Sector, test="F")
 
-##Fit the interaction between UAC and Sector Model46
-a=log(DataSet$AGB)
-b=(DataSet$bio9_23)
-c=(DataSet$EVI)
-Model46UAC_Sector=glm(a~b+c+UAC:SectorII, data=DataSet)
-Model46UAC_Sector
-summary(Model46UAC_Sector)
+##Fit a varying intercept model with UAC Model38
+a=log(DataSetVic$AGB)
+b=log(DataSetVic$bio9_23)
+c=log(DataSetVic$EVI)
+d=log(abs(DataSetVic$Y))
+Model38UAC=glm(a~b+c+d+UAC, data=DataSetVic)
+Model38UAC
+summary(Model38UAC)
+summary.aov(Model38UAC)
 
-anova(Model46, Model46UAC_Sector, test="F")
+anova(Model38, Model38UAC, test="F")
 
+##Fit the interaction between UAC and Sector Model38
+a=log(DataSetVic$AGB)
+b=log(DataSetVic$bio9_23)
+c=log(DataSetVic$EVI)
+d=log(abs(DataSetVic$Y))
+Model38UAC_Sector=glm(a~b+c+d+UAC:SectorII, data=DataSetVic)
+Model38UAC_Sector
+summary(Model38UAC_Sector)
+summary.aov(Model38UAC_Sector)
+
+anova(Model38, Model38UAC_Sector, test="F")
+
+
+#Model43 
+
+##Fit the not multilevel Model38
+a=log(DataSetVic$AGB)
+b=1/(DataSetVic$bio9_23)
+c=1/(DataSetVic$EVI)
+d=1/(abs(DataSetVic$Y))
+Model43=lm(a~b+c+d, data=DataSetVic)
+Model43
+summary(Model43)
+summary.aov(Model43)
+
+##Fit a varying intercept model with Sector Model43
+a=log(DataSetVic$AGB)
+b=1/(DataSetVic$bio9_23)
+c=1/(DataSetVic$EVI)
+d=1/(abs(DataSetVic$Y))
+Model43Sector=glm(a~b+c+d+SectorII, data=DataSetVic)
+Model43Sector
+summary(Model43Sector)
+summary.aov(Model43Sector)
+
+anova(Model43, Model43Sector, test="F")
+
+##Fit a varying intercept model with UAC Model43
+a=log(DataSetVic$AGB)
+b=1/(DataSetVic$bio9_23)
+c=1/(DataSetVic$EVI)
+d=1/(abs(DataSetVic$Y))
+Model43UAC=glm(a~b+c+d+UAC, data=DataSetVic)
+Model43UAC
+summary(Model43UAC)
+summary.aov(Model43UAC)
+
+anova(Model43, Model43UAC, test="F")
+
+##Fit the interaction between UAC and Sector Model38
+a=log(DataSetVic$AGB)
+b=1/(DataSetVic$bio9_23)
+c=1/(DataSetVic$EVI)
+d=1/(abs(DataSetVic$Y))
+Model43UAC_Sector=glm(a~b+c+d+UAC:SectorII, data=DataSetVic)
+Model43UAC_Sector
+summary(Model43UAC_Sector)
+summary.aov(Model43UAC_Sector)
+
+anova(Model43, Model43UAC_Sector, test="F")
 
 #############################################################################################
 
