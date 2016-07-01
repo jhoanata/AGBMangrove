@@ -421,13 +421,13 @@ We tested 48 new model structures to predict AGB density with our data based on 
 \end{table}
 
 
-The selected models showed relatively similar values of R\textsubscript{a}\textsuperscript{2}. In all cases, the independent variables explained less than 47\% of total variability, but between the whole group of models,  they were between the best in terms of predictive power. Likewise, these four candidate models showed the lowest Mean Squared Error (MSE) values and higher values for the F-statistic. Additionally, independent variables were significant, Goldfeld-Quant test showed that candidate models do not present heterocedasticity problems, and according to the Durbin Watson test there was not autocorrelation in the residuals. Cooks distance test did not evidence remote observations for any candidate model. 
+The selected models showed relatively similar values of R\textsubscript{a}\textsuperscript{2}. In all cases, the independent variables explained less than 47\% of total variability, but between the whole group of models,  they were between the best in terms of predictive power. Likewise, these six candidate models showed the lowest Mean Squared Error (MSE) values and higher values for the F-statistic. Additionally, independent variables were significant, Goldfeld-Quant test showed that candidate models do not present heterocedasticity problems, and according to the Durbin Watson test there was not autocorrelation in the residuals. Cooks distance test did not evidence remote observations for any candidate model. 
 
 Model 6 showed the lower value of AIC, indicating that this is the model with the best goodness of fit and higher simplicity of all compared models. Nevertheless, when AIC differences are very small, as in our case, the acceptance of one single model may lead to a false sense of confidence. In these cases, Akaike weights provide a straightforward interpretation as the probabilities of each model's being the best in the AIC sense. Using the AICcmodavg R package \citep{Mazerolle:2015aa}, we identified three model groups according with their weight: models (3), (4) and (6) were classified as models with ``substantial weight"; model (5) was classified as model with ``some weight''; while models (1) and (2) were classified  as models with ``little weight". The cumulative AIC weight of models (3), (4) and (6) represents 97\% of total, the remaining 3\% belonging to models (1) and (5). 
 
-Even though the evidence ratio between models with ``substantial weight" indicates that model (6) is 1.23 times more likely than  the next-best model (4), we decided not to accept model (6) as the unique model recomended to predict carbon stocks in Colombian mangroves due to  the results from the AIC weights that indicate there is not enough evidence to chose only one model. Instead, we propose the biomass estimation through the use of weighted estimations of each of the three candidate models classified as models with ``substantial weight''.
+Even though the evidence ratio between models with ``substantial weight" indicates that model (6) is 1.23 times more likely than  the next-best model (4), we decided not to accept model (6) as the unique model recomended to predict carbon stocks in Colombian mangroves due to  the results from the AIC weights that indicate there is not enough evidence to chose only one model. Instead, we propose the biomass estimation through the use of weighted estimations of each of the three candidate models classified as models with ``substantial weight'' (models 6, 4 and 3).
 
-Our candidate models included as predictive variables bioclimatology and a satellite-derived vegetation index, information that is easily accessible for all mangrove areas in Colombia. Nevertheless, models built with these variables did not show a very high predictive power. On the contrary, when a location variable such as ``site" was included in the models, the predictive power of all of them improved significantly, showing D\textsuperscript{2}\% around 87\%-88\% for all candidate models. Location variable ``CEU" did not contribute to explain of the variability in our data, as neither did the interaction site:CEU (Table \ref{tab:multilevel}).
+Our candidate models included as predictive variables bioclimatology and a satellite-derived vegetation index, information that is easily accessible for all mangrove areas in Colombia. Nevertheless, models built with these variables did not show a very high predictive power. On the contrary, when a location variable such as ``site" or ``CEU'' was included in the models, the predictive power of all of them improved significantly, showing D\textsuperscript{2}\% around 86\%-87\% for all candidate models in the case of ``site'' and D\textsuperscript{2}\% around 46\%-65\%  in the case of ``CEU'' . The interaction site:CEU  did not contribute to explain of the variability in our data (Table \ref{tab:multilevel}).
 
 %Requires the booktabs if the memoir class is not being used
 \begin{table}[htbp]
@@ -437,23 +437,31 @@ Our candidate models included as predictive variables bioclimatology and a satel
       \toprule
        Model  & Model modifications & AIC & Null deviance &Residual deviance & D\textsuperscript{2}\%\\
       \midrule
-     (1) & Original model & 95.32& 29.86 & 19.32 & 35.60 \\
-     (1) & Site & 58.47 & 29.86 & 3.58 & 88.00 \\
-     (1) & CEU & 96.38 & 29.86 &16.24& 45.63 \\
-     (1) & Site:CEU & 58.43 & 29.86 & 3.58 & 88.00 \\     
-     (2) & Original model & 95.43 & 29.86 & 20.25 & 32.18 \\
-     (2) & Site & 61.05 & 29.86 & 4.01 & 86.57 \\
-     (2) & CEU & 99.70 & 29.86 & 18.47 & 38.15 \\
-     (2) & Site:CEU & 61.05& 29.86 & 4.01 & 86.57 \\          
-     (3) & Original model & 93.56 & 29.86 & 19.35 & 35.21 \\
-     (3) & Site & 61.04 & 29.86 & 4.01 & 86.57 \\     
-     (3) & CEU & 102.60& 29.86 & 18.89 & 36.53 \\     
-     (3) & Site:CEU & 61.04 & 29.86 & 4.01 & 86.57 \\          
-     (4) & Original model & 92.36 & 29.86 & 18.79 & 37.09 \\
-     (4) & Site & 	61.07 & 29.86 & 4.01 & 86.56 \\
-     (4) & CEU & 98.58 & 29.86 & 17.99 & 39.75 \\
-     (4) & Site:CEU & 61.07 & 29.86 & 4.01 & 86.56 \\
-      \bottomrule
+     (1) & Original model & 91.57& 29.75& 17.12 & 44.42\\
+     (1) & Site & 60.01 & 29.75 & 3.86 & 87.02 \\
+     (1) & CEU & 85.55 & 29.75 &12.06& 59.46 \\
+     (1) & Site:CEU & 60.01 & 29.75 & 3.86 & 87.02 \\     
+     (2) & Original model & 92.76 & 29.75 & 16.78 & 43.60 \\
+     (2) & Site & 61.85 & 29.75 & 3.847 & 87.07\\
+     (2) & CEU & 84.18 & 29.75 & 11.09 & 62.17 \\
+     (2) & Site:CEU & 61.85 & 29.75 & 3.847 & 87.07 \\          
+     (3) & Original model & 85.38 & 29.75 & 14.66 & 50.72 \\
+     (3) & Site & 61.16 & 29.75 & 3.97 & 86.64 \\     
+     (3) & CEU & 87.05& 29.75 & 12.52 & 57.92 \\     
+     (3) & Site:CEU &61.16 & 29.75 & 3.97 & 86.64 \\          
+     (4) & Original model & 84.13 & 29.75 & 14.21 & 52.24 \\
+     (4) & Site & 62.65& 29.75 & 4.13 & 86.13\\
+     (4) & CEU & 79.77 & 29.75 & 10.43 & 64.94 \\
+     (4) & Site:CEU & 62.65& 29.75 & 4.13 & 86.13 \\
+     (5) & Original model & 90.97 & 29.75 & 17.65 & 40.67 \\
+     (5) & Site & 65.15 & 29.75 & 4.62 & 84.48 \\
+     (5) & CEU & 94.85 & 29.75 & 15.99 & 46.25 \\
+     (5) & Site:CEU & 65.15 & 29.75 & 4.62 & 84.48 \\
+     (6) & Original model & 84.50 & 29.75 & 15.08 & 49.31 \\
+     (6) & Site & 64.56 & 29.75 & 4.55 & 84.71 \\
+     (6) & CEU & 88.05 & 29.75 & 13.49 & 54.66 \\
+     (6) & Site:CEU &  64.56 & 29.75 & 4.55 & 84.71 \\
+           \bottomrule
   \end{tabular}
    \label{tab:multilevel}
 \end{table}
@@ -524,11 +532,11 @@ We found that previously published pantropical models for predicting carbon in m
 
 %General world-wide models used do not explain the variability of our data. It could be due to the differences between scales. Despite climate variables and latitud used in those models are recognised for their high influence in AGB distribution in mangroves, the application of these global models along Colombian coast is not the best approach, because differences between the variables included could be not enough big and significant between locations to explain changes in the behaviour of AGB. In fact, \citet{CONL:CONL12060} highlighted like limitation, that fine-scale variation in forest structure is not captured in their model. 
 
-Despite these limitations, we found that it is possible to develop accurate models using remote sensing information. In our case, models including EVI (enhanced vegetation index) and BIO9 (mean temperature of driest quarter) provided the best statistics in all cases. Some of the models also included the bioclimatic variable BIO16 (precipitation in the wettest quarter), consistent with previous studies that found good predictive power for these variables \citep{CONL:CONL12060, Herz1999, Anaya2009}.
+Despite these limitations, we found that it is possible to develop accurate models using remote sensing information. In our case, models including EVI (enhanced vegetation index), Latitude and BIO9 (mean temperature of driest quarter) provided the best statistics in all cases. Some of the models also included the bioclimatic variable BIO16 (precipitation in the wettest quarter), consistent with previous studies that found good predictive power for these variables \citep{CONL:CONL12060, Herz1999, Anaya2009}.
 
 %Between the models developed with our own data (both reparameterized and new ones), models including EVI (enhanced vegetation index) and BIO9 (mean temperature of driest quarter) in all cases were the best. Some of them, also included the latitud and the bioclimatic variable BIO16 (precipitation in the wettest quarter). The relevance of extreme variables were also found by \citet{CONL:CONL12060} in their global climatic model. Distribution of temperature and precipitation are relevant in mangroves biogeography, density and forest height \citep{Herz1999}. On the other hand, EVI is a measure of greenness or cumulative greenness and has been used as a means to estimate biomass \citep{Anaya2009}.
 
-We identified model structure as an additional source of uncertainty in estimating C stocks \citep[cf][]{IPCC2006}, and for this reason we do  not recommend one particular model but a set of four models that should be used together. We recommend to weigh the predictions from each of these four models according to the AIC and calculate prediction uncertainty accordingly. If additional information is available in terms of stratified areas for different sites, we recommend the use of multilevel models that account for spatial heterogeneity. 
+We identified model structure as an additional source of uncertainty in estimating C stocks \citep[cf][]{IPCC2006}, and for this reason we do  not recommend one particular model but a set of three models that should be used together. We recommend to weigh the predictions from each of these three models according to the AIC and calculate prediction uncertainty accordingly. If additional information is available in terms of stratified areas for different sites, we recommend the use of multilevel models that account for spatial heterogeneity. 
 
 %\citet{IPCC2006} indicated the existence of uncertainties associated with the structure of the models and highlighted the importance of identifying if the models structure are suitable before to use them for predictions. Five candidate models were identified and each one have an related weight according with the AIC results. In this sense, when we use a specific weight for each model we are associating uncertainty to the estimations derived from the use of those models. 
 %
