@@ -1219,7 +1219,7 @@ summary.aov(Model27UAC)
 
 anova(Model27, Model27UAC, test="F")
 
-##Fit the interaction between UAC and Sector Model26
+##Fit the interaction between UAC and Sector Model27
 a=log(DataSetVic$AGB)
 b=log(DataSetVic$bio9_23)
 c=log(DataSetVic$bio16_23)
@@ -1242,7 +1242,7 @@ b=log(DataSetVic$bio9_23)
 c=log(DataSetVic$bio16_23)
 d=log(DataSetVic$EVI)
 e=log (abs(DataSetVic$Y))
-Model31=lm(a~b+c+d+e, data=DataSetVic)
+Model31=glm(a~b+c+d+e, data=DataSetVic)
 Model31
 summary(Model31)
 summary.aov(Model31)
@@ -1295,7 +1295,7 @@ b=1/(DataSetVic$bio9_23)
 c=1/(DataSetVic$bio16_23)
 d=1/(DataSetVic$EVI)
 e=1/(abs(DataSetVic$Y))
-Model36=lm(a~b+c+d+e, data=DataSetVic)
+Model36=glm(a~b+c+d+e, data=DataSetVic)
 Model36
 summary(Model36)
 summary.aov(Model36)
@@ -1347,7 +1347,7 @@ a=log(DataSetVic$AGB)
 b=log(DataSetVic$bio9_23)
 c=log(DataSetVic$EVI)
 d=log(abs(DataSetVic$Y))
-Model38=lm(a~b+c+d, data=DataSetVic)
+Model38=glm(a~b+c+d, data=DataSetVic)
 Model38
 summary(Model38)
 summary.aov(Model38)
@@ -1396,7 +1396,7 @@ a=log(DataSetVic$AGB)
 b=1/(DataSetVic$bio9_23)
 c=1/(DataSetVic$EVI)
 d=1/(abs(DataSetVic$Y))
-Model43=lm(a~b+c+d, data=DataSetVic)
+Model43=glm(a~b+c+d, data=DataSetVic)
 Model43
 summary(Model43)
 summary.aov(Model43)
@@ -1649,3 +1649,4 @@ toBibtex(x)
 
 y<-citation(package="lme4", lib.loc=NULL, auto=NULL)
 toBibtex(y)
+
