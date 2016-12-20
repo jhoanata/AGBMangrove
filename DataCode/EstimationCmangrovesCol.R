@@ -1503,7 +1503,7 @@ Colall=rbind(ColW80N10, ColW80N20)
 write.csv(Colall,"~/TEE/Manuscripts/Mangroves/Colall.csv",row.names=FALSE)
 
 #############################################################################################
-##Coordinates of mangrove area in Colombia and EVI data - Source: Mean EVI (CONSULTAR CON VICTOR FUENTE DE ESTE MAPA).Esta es una fuente alterna de información al mapa de Giri, una vez se compruebe su utilidad se puede proceder a eliminar el paso anterior realizado con Giri.
+##Coordinates of mangrove area in Colombia and EVI data - Source: Mean EVI (CONSULTAR CON VICTOR FUENTE DE ESTE MAPA).Esta es una fuente alterna de informaci?n al mapa de Giri, una vez se compruebe su utilidad se puede proceder a eliminar el paso anterior realizado con Giri.
 
 #Install and load required packages
 library(raster)
@@ -1527,6 +1527,7 @@ library(mapdata)
 
 #EVI
 EVI=read.table("C:/Users/PROJECT2/Documents/GitHub/ManVic/MeanEVIAll.txt",sep=" ",header=TRUE)
+EVI=read.csv("~/Repos/AGBMangrove/DataCode/meanEVI_Mangroove.csv", row.names = 1)
 head(EVI)
 
 #####################
