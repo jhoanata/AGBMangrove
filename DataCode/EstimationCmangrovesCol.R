@@ -1651,7 +1651,7 @@ Estimation2=exp(Prediction36(BIO9=EVI$Bio9,BIO16=EVI$Bio16,EVI=EVI$EVI,LAT=EVI$l
 
 #Create function to estimate AGB density using Model 31
 Prediction31=function(BIO9,BIO16,EVI,LAT){
-  -68.661+(21.023*log(BIO9))-(5.379*log(BIO16))+(1.8842*log(EVI))-(11.790*log(abs(LAT)))  
+  -68.661+(21.023*log(BIO9))-(5.397*log(BIO16))+(1.842*log(EVI))-(11.790*log(abs(LAT)))  
 } 
 
 #Predict AGB density for all sites with Model 31 
@@ -1660,8 +1660,19 @@ Estimation3=exp(Prediction31(BIO9=EVI$Bio9,BIO16=EVI$Bio16,EVI=EVI$EVI,LAT=EVI$l
 
 AGBaver=((Estimation1*0.43)+(Estimation2*0.35)+(Estimation3*0.19))/3
 
+plt=heat.colors(n=length(AGBaver))
+rel=length(AGBaver)*AGBaver/max(AGBaver,na.rm = TRUE)
+
+
 map('worldHires','Colombia')
-points(EVI[,1:2],pch=".", col=3)
+points(EVI[,1:2],pch=20, col=plt[rel])
+
+AGBxyz=data.frame(X=EVI$long,Y=EVI$lat, Z=AGBaver)
+
+rAGB=rasterFromXYZ(AGBxyz)
+
+map('worldHires','Colombia')
+plot(rAGB)
 
 ##########################################################################################################################
 #Area from Global Mangrove Forests Distribution, 2000 (Giri et al., 2013)
