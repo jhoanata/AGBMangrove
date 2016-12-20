@@ -1,4 +1,4 @@
-\begin{thebibliography}{54}
+\begin{thebibliography}{50}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname url\endcsname\relax
   \def\url#1{\texttt{#1}}\fi
@@ -84,11 +84,6 @@ Chave, J., Andalo, C., Brown, S., Cairns, M.~a., Chambers, J.~Q., Eamus, D.,
   forests.} Oecologia 145~(1), 87--99.
 \newline\urlprefix\url{http://www.ncbi.nlm.nih.gov/pubmed/15971085}
 
-\bibitem[{Chen and Twilley(1999)}]{Chen1999}
-Chen, R., Twilley, R.~R., December 1999. Patterns of mangrove forest structure
-  and soil nutrient dynamics along the shark river estuary, florida. Estuaries
-  22~(4), 955--970.
-
 \bibitem[{Clark et~al.(2001)Clark, Brown, Kicklighter, Chambers, Thomlinson,
   Ni, and Holland}]{Clark2001}
 Clark, D.~a., Brown, S., Kicklighter, D.~W., Chambers, J.~Q., Thomlinson,
@@ -102,11 +97,6 @@ Clark, D.~a., Brown, S., Kicklighter, D.~W., Chambers, J.~Q., Thomlinson,
   de Manejo Integrado de Zonas Costeras-PNMIZC. Comisi{\'o}n Colombiana del
   Oc{\'e}ano,
   http://www.cco.gov.co/documentos/pdf/Lineamientos%20para%20la%20Formulacion%20del%20Plan%20Nacional%20MIZC.pdf.
-
-\bibitem[{CODECHOCO and IIAP(2009)}]{IIAP2009}
-CODECHOCO, IIAP, 2009. Diagn{\'o}stico y zonificaci{\'o}n del ecosistema de
-  manglar del pac{\'\i}fico choano. Convenio de cooperaci{\'o}n
-  interadminsitrativo, Convenio CODECHOCO-IIAP.
 
 \bibitem[{Cohen et~al.(2013)Cohen, Kaino, Okello, Bosire, Kairo, Huxham, and
   Mencuccini}]{Cohen2013968}
@@ -230,14 +220,6 @@ Komiyama, A., Ong, J.~E., Poungparn, S., 2008. Allometry, biomass, and
   137, mangrove Ecology -- Applications in Forestry and Costal Zone Management.
 \newline\urlprefix\url{http://www.sciencedirect.com/science/article/pii/S0304377007001829}
 
-\bibitem[{Krauss et~al.(2008)Krauss, Lovelock, Mckee, L\'{o}pez-Hoffman, Ewe,
-  Sousa, Lopezhoffman, Ewe, and Sousa}]{Krauss2008}
-Krauss, K.~W., Lovelock, C.~E., Mckee, K.~L., L\'{o}pez-Hoffman, L., Ewe,
-  S.~M., Sousa, W.~P., Lopezhoffman, L., Ewe, S.~M., Sousa, W.~P., Aug. 2008.
-  {Environmental drivers in mangrove establishment and early development: A
-  review}. Aquatic Botany 89~(2), 105--127.
-\newline\urlprefix\url{http://linkinghub.elsevier.com/retrieve/pii/S0304377008000089}
-
 \bibitem[{Kristensen et~al.(2008)Kristensen, Bouillon, Dittmar, and
   Marchand}]{Kristensen2008}
 Kristensen, E., Bouillon, S., Dittmar, T., Marchand, C., 2008. Organic carbon
@@ -280,15 +262,6 @@ Nellemann, C., Corcoran, E., Duarte, C.~M., Vald{\'e}s, L., {De Young}, C.,
   Assessment.} United Nations Environment Programme, GRID-Arendal,
   www.grida.no.
 \newline\urlprefix\url{http://www.grida.no/files/publications/blue-carbon/BlueCarbon\_screen.pdf}
-
-\bibitem[{Phillips et~al.(2014)Phillips, Duque, Scott, Pe{\~n}a, Franco,
-  Galindo, Cabrera, {\'A}lvarez, and C{\'a}rdenas}]{Phillips2014}
-Phillips, J.~F., Duque, A., Scott, C., Pe{\~n}a, M.~A., Franco, C.~A., Galindo,
-  G., Cabrera, E., {\'A}lvarez, E., C{\'a}rdenas, D., 2014. Aportes
-  t{\'e}cnicos del sistema de monitoreo de bosques y carbono a la propuesta de
-  preparaci{\'o}n de colombia para redd+: datos de actividad y factores de
-  emisi{\'o}n. Tech. rep., Instituto de Hidrolog{\'\i}a, Meteorolog{\'\i}a, y
-  Estudios Ambientales (IDEAM).
 
 \bibitem[{Phillips et~al.(2011)Phillips, Duque, Yepes, Cabrera, Navarrete,
   Davila, and Cardenas}]{Phillips2011}

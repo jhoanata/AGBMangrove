@@ -1519,12 +1519,23 @@ library(mapdata)
 #Process tiff images and extract coordinates
 img= readGDAL("C:/Users/PROJECT2/Documents/GitHub/ManVic/meanEVI_Mangrove.tif")
 img2=raster(img)
+class(img2)
 xyEVImap=xyFromCell(img2,1:ncell(img2))
+class(xyEVImap)
+dim(xyEVImap)
 write.csv(xyEVImap,"C:/Users/PROJECT2/Documents/GitHub/ManVic/xyEVImap.csv",row.names =FALSE)
 
-#Extracting EVI values form meanEVI_Mangrove file NO ME EXTRAE LOS DATOS COMPLETOS
-extract(img2,xyEVImap)
+####################
+#Graphic the points the download points 
 
+map('worldHires','Colombia')
+points(xyEVImap,pch=".", col=3)
+
+#####################
+#Extracting EVI values form meanEVI_Mangrove file NO ME EXTRAE LOS DATOS COMPLETOS
+EVImap=extract(img2,1:ncell(img2))
+
+#####################
 ##Extract data from WorldClim for meanEVI_mangrove file
 
 # Load required packages
@@ -1532,29 +1543,15 @@ install.packages("raster")
 library(raster)
 
 #Extract data from Worldclim
-w = getData('worldclim', var='bio', res=0.5, lon=-75, lat=10) #extract data from bioclimatic variables, with a res=0.5 (minutes of a degree). For res=0.5 it is necessary to provide a lon and lat for the tile which include the study area.
-Tab=data.frame(X=-1*plots[,1], Y=plots[,2]) #Extract only the coordinates and transform relative to GMZ
+v = getData('worldclim', var='bio', res=0.5, lon=-75, lat=10) #extract data from bioclimatic variables, with a res=0.5 (minutes of a degree). For res=0.5 it is necessary to provide a lon and lat for the tile which include the study area.
+Tabv=data.frame(X=-1*xyEVImap[,1], Y=xyEVImap[,2]) #Extract only the coordinates and transform relative to GMZ
 
 # #Introduce coordinates and transform them to spatial object
-coordinates(Tab)<-~X+Y
+coordinates(Tabv)<-~X+Y
 
 # #Extract climate data for specific coordinates
-dat<-extract(w,Tab)
+dat<-extract(v,Tabv)
 #dat
-
-
-
-
-#Graphic the points the download points 
-W80N10xy=read.csv("NASA Mangrove TIF_Colombia/W80N10xy.csv")
-W80N20xy=read.csv("NASA Mangrove TIF_Colombia/W80N20xy.csv")
-
-xyall=rbind(W80N10xy, W80N20xy)
-
-map('worldHires','Colombia')
-points(xyall,pch=".", col=3)
-
-
 
 #############################################################################################
 

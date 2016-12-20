@@ -37,8 +37,6 @@
 
 %\date{}							% Activate to display a given date or no date
 
-\end{document}
-
 % Requires the booktabs if the memoir class is not being used
 \begin{table}[htbp]
    \centering \tiny
@@ -55,8 +53,8 @@ Magdalena&Caribbean&CGSM-Aguas Negras&-74.6075&10.8089&16.10&\citet{DelaPena2010
 Magdalena&Caribbean&CGSM-Ca\~{n}o Grande&-74.4814&10.8619&75.80&\citet{DelaPena2010}\\ 
 Magdalena&Caribbean&CGSM-Luna&-74.938&10.9071&13.80&\citet{DelaPena2010}\\ 
 Magdalena&Caribbean&Chengue bay- Tayrona NNP&-74.1284&11.3178&132.10&\citet{INVEMAR2007}\\ 
-C\'{o}rdoba&Caribbean&Cispat\'{a} bay-Ca\~{n}o Tij\'{io} 1&-75.8378&9.3566&147.50&\citet{Bolivar_inpreparation}\\ 
-C\'{o}rdoba&Caribbean&Cispat\'{a} bay-Ca\~{n}o Tij\'{io} 2&-75.8284&9.3606&186.60&\citet{Bolivar_inpreparation}\\ 
+C\'{o}rdoba&Caribbean&Cispat\'{a} bay-Ca\~{n}o Tij\'{o} 1&-75.8378&9.3566&147.50&\citet{Bolivar_inpreparation}\\ 
+C\'{o}rdoba&Caribbean&Cispat\'{a} bay-Ca\~{n}o Tij\'{o} 2&-75.8284&9.3606&186.60&\citet{Bolivar_inpreparation}\\ 
 C\'{o}rdoba&Caribbean&Cispat\'{a} bay-Ca\~{n}o Palermo&-75.8423&9.3525&129.70&\citet{Bolivar_inpreparation}\\ 
 C\'{o}rdoba&Caribbean&Cispat\'{a} bay-Ca\~{n}o Grande 1&-75.8505&9.3712&153.20&\citet{Bolivar_inpreparation}\\ 
 C\'{o}rdoba&Caribbean&Cispat\'{a} bay-El Claval&-75.7912&9.3874&80.20&\citet{Bolivar_inpreparation}\\ 
@@ -104,23 +102,23 @@ Valle del Cauca&Pacific&M\'{a}laga bay-Caracas&-77.268&3.9871&117.20&\citet{Mala
  %Requires the booktabs if the memoir class is not being used
 \begin{table}[htbp]
    \centering \tiny
-  \topcaption {Statistical regression models for AGB. When log is the natural logarithm; AGB is the above ground biomass (Mg/ha); BIO9 is the mean temperature of driest quarter (\textcelsius); BIO10 mean temperature of warmest quarter (\textcelsius); BIO11 mean temperature of coldest quarter (\textcelsius); BIO16 is the precipitation of the wettest quarter (mm); EVI is the enhanced vegetation index; Lat is the absolute value of latitude (decimal degrees);  n is the number of observations; R$_a^2$  is the adjusted coefficient of determination; MSE is the mean squared error; F is the F-statistic calculated; AIC is the akaike information criterion }  % requires the topcapt package
+  \topcaption {Statistical regression models for AGB. When log is the natural logarithm; AGB is the above ground biomass (Mg/ha); BIO9 is the mean temperature of driest quarter (\textcelsius); BIO10 mean temperature of warmest quarter (\textcelsius); BIO11 mean temperature of coldest quarter (\textcelsius); BIO16 is the precipitation of the wettest quarter (mm); EVI is the enhanced vegetation index; Lat is the absolute value of latitude (decimal degrees);  n is the number of observations; R\textsubscript{a}\textsuperscript{2} is the adjusted coefficient of determination; MSE is the mean squared error; F is the F-statistic calculated; AIC is the akaike information criterion }  % requires the topcapt package
    \begin{tabular}{p{8cm}p{0.5cm}p{1.0cm}p{1.0cm}p{1.0cm}p{1.0cm}}%Column formatting, @{} suppresses leading/trailing space
       \toprule
-       Model  & n & R$_{a}^{2}$ & MSE & F & AIC\\
+       Model  & n & R\textsubscript{a}\textsuperscript{2} & MSE & F & AIC\\
       \midrule
-    $(1)AGB=-2.210$^{e+03}$+2.946\$^{e+00}$BIO10+4.687$^{e+00}$BIO11+2.108${e-01}$BIO16-2.334$^{e-01}$BIO17+2.465$^{e+02}$EVI$&40&0.04163 &4157&1.34&\\
-    $(2)AGB=-1.876$^{e+03}$+7.766$^{e+00}$BIO1+7.64$^{e-02}$BIO4+5.413$^{e-03}$BIO12-2.908$^{e-00}$BIO15$&43&-0.0278&4338&0.72&\\
-    $(3)AGB=-3.260$^{e+03}$+1.233$^{e+01}$BIO1+1.61$^{e-01}$BIO4+1.934$^{e-02$}BIO12-3.805$^{e+00}$BIO15+2.835$^{e+02}$EVI$&40&0.07695&4003&1.65&\\    
-    $(4)AGB=-1.920$^{e+03}$-7.292$^{e+01}$Lat+7.878$^{e+00}$BIO10+1.846$^{e+00}$BIO11-1.115$^{e-01}$BIO16+2.404$^{e-02}$BIO17+1.561$^{e-02}$EVI$&40&0.1288&3779&1.961&\\   
-    $(5)AGB=-1.372$^{e+03}$+6.358$^{e+00}$BIO10+1.789$^{e+00}$BIO11-7.389$^{e-02}$BIO16-1.229$^{e-01}$BIO17-7.746$^${e+01}Lat$&43&0.154&3571&2.529&\\   
-    $(6)AGB=-1.286$^{e+03}$-9.594$^{e+01}$Lat+8.621$^{e+00}$BIO1+1.161$^{e-01}$BIO4-6.145$^{e-02}$BIO12-4.687$^{e-01}$BIO15$&43&0.1819&3453&2.868&\\    
-$(7)AGB=-2.219$^{e+03}$-7.703$^{e+01}$Lat+1.113$^{e+00}$BIO1+1.885$^{e-01}$BIO4-4.071$^{e-02}$BIO12-1.735$^{e-01}$BIO15+1.813$^{e+02}$EVI$&41&0.1762&3573&2.39&\\
+    $(1)AGB=-2.210\textsuperscript{e+03}+2.946\textsuperscript{e+00}BIO10+4.687\textsuperscript{e+00}BIO11+2.108\textsuperscript{e-01}BIO16-2.334\textsuperscript{e-01}BIO17+2.465\textsuperscript{e+02}EVI$&40&0.04163 &4157&1.34&\\
+    $(2)AGB=-1.876\textsuperscript{e+03}+7.766\textsuperscript{e+00}BIO1+7.64\textsuperscript{e-02}BIO4+5.413\textsuperscript{e-03}BIO12-2.908\textsuperscript{e-00}BIO15$&43&-0.0278&4338&0.72&\\
+    $(3)AGB=-3.260\textsuperscript{e+03}+1.233\textsuperscript{e+01}BIO1+1.61\textsuperscript{e-01}BIO4+1.934\textsuperscript{e-02}BIO12-3.805\textsuperscript{e+00}BIO15+2.835\textsuperscript{e+02}EVI$&40&0.07695&4003&1.65&\\    
+    $(4)AGB=-1.920\textsuperscript{e+03}-7.292\textsuperscript{e+01}Lat+7.878\textsuperscript{e+00}BIO10+1.846\textsuperscript{e+00}BIO11-1.115\textsuperscript{e-01}BIO16+2.404\textsuperscript{e-02}BIO17+1.561\textsuperscript{e-02}EVI$&40&0.1288&3779&1.961&\\   
+    $(5)AGB=-1.372\textsuperscript{e+03}+6.358\textsuperscript{e+00}BIO10+1.789\textsuperscript{e+00}BIO11-7.389\textsuperscript{e-02}BIO16-1.229\textsuperscript{e-01}BIO17-7.746\textsuperscript{e+01}Lat$&43&0.154&3571&2.529&\\   
+    $(6)AGB=-1.286\textsuperscript{e+03}-9.594\textsuperscript{e+01}Lat+8.621\textsuperscript{e+00}BIO1+1.161\textsuperscript{e-01}BIO4-6.145\textsuperscript{e-02}BIO12-4.687\textsuperscript{e-01}BIO15$&43&0.1819&3453&2.868&\\    
+$(7)AGB=-2.219\textsuperscript{e+03}-7.703\textsuperscript{e+01}Lat+1.113\textsuperscript{e+00}BIO1+1.885\textsuperscript{e-01}BIO4-4.071\textsuperscript{e-02}BIO12-1.735\textsuperscript{e-01}BIO15+1.813\textsuperscript{e+02}EVI$&41&0.1762&3573&2.39&\\
 $(8)AGB=35338.8860-155.9330|Lat|-2490.0405\frac{BIO1}{10}+49.1282(\frac{BIO1}{10})^2-85.6399\frac{BIO11}{10}-0.1171BIO12+0.4483BIO15$&43&0.1975&3387&2.72&479.88247\\
 $(9)AGB=60064.4482-127.7343|Lat|-4376.4264\frac{BIO1}{10}+81.8955(\frac{BIO1}{10})^2-17.3961\frac{BIO11}{10}-0.1014BIO12+1.9823BIO15+320.5646EVI$&41&0.2835&3046&3.26&454.33614\\
 $(10)AGB=-1916.5321+7.3424BIO9+0.1126BIO17$&43&0.1456&3607&4.58&479.11018\\
-$(11)AGB=-1.693$^{e+03}$-2.897$^{e+01}$Lat+7.567$^{e+00}$BIO9-4.108$^{e-02}$BIO17$&43&0.2072&3346&4.66&476.80085\\
-$(12)AGB=-1.485$^{e+03}$-1.662$^{e+00}$Lat+5.443$^{e+00}$BIO9+5.658$^{e-02}$BIO17+2.770$^{e+02}$EVI$&41&0.2755&3080&4.80&452.36112\\
+$(11)AGB=-1.693\textsuperscript{e+03}-2.897\textsuperscript{e+01}Lat+7.567\textsuperscript{e+00}BIO9-4.108\textsuperscript{e-02}BIO17$&43&0.2072&3346&4.66&476.80085\\
+$(12)AGB=-1.485\textsuperscript{e+03}-1.662\textsuperscript{e+00}Lat+5.443\textsuperscript{e+00}BIO9+5.658\textsuperscript{e-02}BIO17+2.770\textsuperscript{e+02}EVI$&41&0.2755&3080&4.80&452.36112\\
 $(13)AGB=-1368.411-11.799Lat+5.451BIO9+231.860EVI$&41&0.2889&3023&6.42&450.71764\\
 $(14)AGB=-716.047+2.522BIO9+335.402EVI$&41&0.2713&3098&8.44&450.81526\\
 $(15)AGB=-1860.211+7.958BIO9-22.944Lat$&43&0.2225&3282&7.01&475.05212\\
@@ -129,21 +127,21 @@ $(17)AGB=-856.79518-6.53917BIO11+0.01171BIO16+9.62033BIO9+200.26658EVI$&41&0.285
 $(18)AGB=-1364.4334+4.8624BIO11+0.0324BIO16+358.2106EVI$&46&0.2492&3192&5.42&452.94654\\
 $(19)AGB=-822.9927+3.0227BIO11+0.2433BIO16-0.4077BIO17$&43&0.04791&4019&1.70&484.67591\\
 $(20)AGB=-319.78271-13.78940BIO11-0.00399BIO16+9.78050BIO9+4.98395BIO1+231.90575EVI$&41&0.2792&3064&4.10&452.99699\\
-$(21)AGB=4.173$^{e+04}$-1.606$^{e+02}$\frac{BIO11}{10}-4.733$^{e-02}$BIO16+1.602$^{e+02}$\frac{BIO9}{10}-3.083$^{e+03}$\frac{BIO1}{10}+5.685$^{e+01}$(\frac{BIO1}{10})^2+2.826$^{e+02}$EVI$&41&0.3096&2935&3.99&452.03760\\
-$(22)AGB=-3.485$^{e+02}$+1.954$^{e-03}$BIO10^2+3.104$^{e-03}$BIO11^2-6.339$^{e-05}$BIO16^2+3.609$^{e-04}$BIO17^2+5.595$^{e+02}$EVI^2$&41&0.233&3261&3.43&455.54124\\
+$(21)AGB=4.173\textsuperscript{e+04}-1.606\textsuperscript{e+02}\frac{BIO11}{10}-4.733\textsuperscript{e-02}BIO16+1.602\textsuperscript{e+02}\frac{BIO9}{10}-3.083\textsuperscript{e+03}\frac{BIO1}{10}+5.685\textsuperscript{e+01}(\frac{BIO1}{10})^2+2.826\textsuperscript{e+02}EVI$&41&0.3096&2935&3.99&452.03760\\
+$(22)AGB=-3.485\textsuperscript{e+02}+1.954\textsuperscript{e-03}BIO10^2+3.104\textsuperscript{e-03}BIO11^2-6.339\textsuperscript{e-05}BIO16^2+3.609\textsuperscript{e-04}BIO17^2+5.595\textsuperscript{e+02}EVI^2$&41&0.233&3261&3.43&455.54124\\
 $(23)\log{AGB}=-54.802662+5.751671\log{BIO10}+5.097236\log{BIO11}-0.003928\log{BIO16}-0.004322\log{BIO17}+1.691458\log{EVI}$&41&0.2164&0.585&3.21&101.88486\\
 $(24)AGB=-3301.918+718.549\log{BIO10}-122.657\log{BIO11}+30.615\log{BIO16}-6.271\log {BIO17}+131.200\log{EVI}$&41&0.2008&3397&3.01&457.22750\\
 $(25)\log{AGB}=-100.7499+18.7172\log{BIO9}+0.2023\log{BIO16}+1.1821\log{EVI}$&41&0.3038&0.520&6.82&95.31651\\
 $(26)\log{AGB}=-25.6202+12.1786\log{BIO9}-4.1606\log{BIO16}+0.9976\log{EVI}-1.1664|Lat|$&41&0.3777&0.465&7.07&91.59005\\
 $(27)\log{AGB}=26.5733+29.8163\log{BIO9}-3.8958\log{BIO16}+0.7998\log{EVI}-0.9563|Lat|-27.7092\log{BIO11}$&41&0.3701&0.470&5.70&92.93683\\ 
 $(28)AGB=1098.74-284068.51\frac{1}{BIO9}+35004.17\frac{1}{BIO16}-36.37\frac{1}{EVI}+713.59\frac{1}{|Lat|}$&41&0.256&3163&4.44&453.44744\\
-$(29)\frac{1}{AGB}=1.763$^{e-01}$-6.966$^{e-04}$BIO9+3.451$^{e-05}$BIO16-1.008$^t{e-01}$EVI+5.315$^{e-03}$|Lat|$&41&0.1325&0.0014&2.53&-147.62232\\
+$(29)\frac{1}{AGB}=1.763\textsuperscript{e-01}-6.966\textsuperscript{e-04}BIO9+3.451\textsuperscript{e-05}BIO16-1.008\textsuperscript{e-01}EVI+5.315\textsuperscript{e-03}|Lat|$&41&0.1325&0.0014&2.53&-147.62232\\
 $(30)\frac{1}{AGB}=-0.12246+28.07379\frac{1}{BIO9}-10.38792\frac{1}{BIO16}+0.01322\frac{1}{EVI}+0.18235\frac{1}{|Lat|}$&41&0.0917&0.0014&2.01&-145.73673\\
 $(31)\log{AGB}=55.0753+0.3973\log{BIO9}-5.0320\log{BIO16}+2.0524\log{EVI}-8.5249\log{|Lat|}$&41&0.3756&0.466&7.01&91.73306\\
-$(32)\log{AGB}=-1.615$^{e+01}$+7.970$^{e-02}$\log{BIO9}-3.738$^{e-04}$\log{BIO16}+2.816$^{e+00}$\log{EVI}-2.259$^{e-01}$|Lat|$&41&0.3193&0.508&5.69&95.26750\\
+$(32)\log{AGB}=-1.615\textsuperscript{e+01}+7.970\textsuperscript{e-02}\log{BIO9}-3.738\textsuperscript{e-04}\log{BIO16}+2.816\textsuperscript{e+00}\log{EVI}-2.259\textsuperscript{e-01}|Lat|$&41&0.3193&0.508&5.69&95.26750\\
 $(33)AGB=2577.5+186.7\log{BIO9}-325.0\log{BIO16}+142.5\log{EVI}-593.8\log{|Lat|}$&41&0.3223&2881&5.76&449.62118\\
 $(34)AGB=-2541.15+178.36\sqrt{BIO9}-2.78\sqrt{BIO16}+259.48\sqrt{EVI}-130.84\sqrt{|Lat|}$&41&0.2699&3104&4.70&452.67672\\
-$(35)\sqrt{AGB}=-7.719$^{e+01}$+3.201$^{e-01}$BIO9-7.403$^{e-05}$BIO16+1.253$^{e+01}$EVI-5.965$^{e-01}$|Lat|$&41&0.3357&7.53&6.05&205.81366\\
+$(35)\sqrt{AGB}=-7.719\textsuperscript{e+01}+3.201\textsuperscript{e-01}BIO9-7.403\textsuperscript{e-05}BIO16+1.253\textsuperscript{e+01}EVI-5.965\textsuperscript{e-01}|Lat|$&41&0.3357&7.53&6.05&205.81366\\
 $(36)\log{AGB}=20.8619-4507.8468\frac{1}{BIO9}+324.2172\frac{1}{BIO16}-0.4312\frac{1}{EVI}+5.6351\frac{1}{|Lat|}$&41&0.2717&0.544&4.73&98.04207\\ 
 $(37)AGB=-1368.411+5.451BIO9+231.860EVI-11.799|Lat|$&41&0.2889&3023&6.42&450.71764\\
 $(38)\log{AGB}=-107.9639+20.4502\log{BIO9}+1.1227\log{EVI}-0.5814\log{|Lat|}$&41&0.313&0.513&7.07&94.76887\\
