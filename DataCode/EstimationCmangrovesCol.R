@@ -1501,33 +1501,65 @@ write.csv(ColW80N10,"~/TEE/Manuscripts/Mangroves/ColW80N10.csv",row.names=FALSE)
 #combinate both date base in one
 Colall=rbind(ColW80N10, ColW80N20)
 write.csv(Colall,"~/TEE/Manuscripts/Mangroves/Colall.csv",row.names=FALSE)
-#############################################################################################
 
-##Worldclim data for Colall coordinates
+#############################################################################################
+##Coordinates of mangrove area in Colombia and EVI data - Source: Mean EVI (CONSULTAR CON VICTOR FUENTE DE ESTE MAPA).Esta es una fuente alterna de información al mapa de Giri, una vez se compruebe su utilidad se puede proceder a eliminar el paso anterior realizado con Giri.
+
+#Install and load required packages
+library(raster)
+install.packages("rgdal")
+library(rgdal)
+install.packages("maps")
+library(maps)
+install.packages("sp")
+library(sp)
+install.packages("mapdata")
+library(mapdata) 
+
+#Process tiff images and extract coordinates
+img= readGDAL("C:/Users/PROJECT2/Documents/GitHub/ManVic/meanEVI_Mangrove.tif")
+img2=raster(img)
+xyEVImap=xyFromCell(img2,1:ncell(img2))
+write.csv(xyEVImap,"C:/Users/PROJECT2/Documents/GitHub/ManVic/xyEVImap.csv",row.names =FALSE)
+
+#Extracting EVI values form meanEVI_Mangrove file NO ME EXTRAE LOS DATOS COMPLETOS
+extract(img2,xyEVImap)
+
+##Extract data from WorldClim for meanEVI_mangrove file
+
+# Load required packages
+install.packages("raster")
+library(raster)
 
 #Extract data from Worldclim
-library(raster)
-c= getData('worldclim', var='bio', res=0.5, lon=-75, lat=10)
+w = getData('worldclim', var='bio', res=0.5, lon=-75, lat=10) #extract data from bioclimatic variables, with a res=0.5 (minutes of a degree). For res=0.5 it is necessary to provide a lon and lat for the tile which include the study area.
+Tab=data.frame(X=-1*plots[,1], Y=plots[,2]) #Extract only the coordinates and transform relative to GMZ
 
-#Import table with coordinates
-ColTab<-read.csv("~/TEE/Manuscripts/Mangroves/Colall.csv")
-ColTab
-dim(ColTab)
+# #Introduce coordinates and transform them to spatial object
+coordinates(Tab)<-~X+Y
 
-#To confirm data are numeric
-names(ColTab) 
-is.numeric(ColTab$long)
-is.numeric(ColTab$lat)
+# #Extract climate data for specific coordinates
+dat<-extract(w,Tab)
+#dat
 
-#Introduce coordinates
-coordinates(ColTab)<-~long+lat
 
-#Extract climate data for specific coordinates
-Coldat<-extract(w,ColTab)
-Coldat
-################################################################################################
 
-##Extract data from MODIS images for Colall coordinates ACA CAMBIAR TODO ESTO POR EL SCRIPT Mangrove_Grid_Colombia
+
+#Graphic the points the download points 
+W80N10xy=read.csv("NASA Mangrove TIF_Colombia/W80N10xy.csv")
+W80N20xy=read.csv("NASA Mangrove TIF_Colombia/W80N20xy.csv")
+
+xyall=rbind(W80N10xy, W80N20xy)
+
+map('worldHires','Colombia')
+points(xyall,pch=".", col=3)
+
+
+
+#############################################################################################
+
+
+##Extract data from MODIS images for Colall coordinates ACA CAMBIAR TODO ESTO POR EL SCRIPT de Victor
 
 #Install and load required package
 install.packages("MODISTools")
@@ -1597,12 +1629,49 @@ Mod1=read.csv("~/TEE/Manuscripts/Mangroves/MODIS_Data_MOD13Q1_2015-06-18_h10-m2-
 meanMod1=data.frame(Mod1[,1:2],meanEVI=apply(Mod1[,6:86],1,mean,na.rm=TRUE))
 meanMod1
 
+##############################################################################################################
+
+##Worldclim data for Col all coordinates NO ME ESTA FUNCIONANDO
+
+#Extract data from Worldclim
+library(raster)
+c= getData('worldclim', var='bio', res=0.5, lon=-75, lat=10)
+
+#Import table with coordinates
+ColMang<-read.table("C:/Users/PROJECT2/Documents/GitHub/ManVic/MeanEVIAll.txt",header=TRUE,dec=".")
+head(ColMang)
+dim(ColMang)
+
+#To confirm data are numeric
+names(ColMang) 
+is.numeric(ColMang$long)
+is.numeric(ColMang$lat)
+
+#Introduce coordinates
+coordinates(ColMang)<~-long+lat
+
+#Extract climate data for specific coordinates
+Coldat<-extract(w,ColMang)
+Coldat
+
 #Conforming an only data base with information of bioclimatic variables, EVI and NDVI and AGB data for Colombia
 AllColDataset=cbind(plots,EVI=meanMod1[,3],dat) #plots (data base with AGB data for Colombian mangroves), dat (data base with bioclimatic variables downloaded from WorldClim)
 plot(AllColDataset)
 write.csv(AllColDataset,"~/TEE/Manuscripts/Mangroves/AllColDataset.csv")
 
-##############################################################################################################
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #Weighted predictions (using Model44 and Model 45: best models) ACA CAMBIAR USANDO TODOS LOS MODELOS
 
@@ -1623,7 +1692,38 @@ modavgpred(cand.set = Cand.mod, modnames = NamesModels, newdata = AllColDataset)
 #modavgpred(cand.set = Chosen.mod, modnames = NamesChosenModels, newdata = AllColDataset) 
 
 #########################################################################################################################
+#Create function to estimate AGB density using Model 43
+Prediction43=function(BIO9,EVI,LAT){
+  36.25-(8845.59/BIO9)-(5303.93/EVI)+(15.3/abs(LAT))
+}
 
+#Predict AGB density for all sites with Model 43 
+##PARA HACER ESTO NECESITO LA BASE DE DATOS COMPLETA...NO SE SI ARRIBA EN LA FN ME VA A RECONOCER EL VALOR ABS
+Estimation1=Exp(Prediction43(BIO9=dat[,10],EVI=dat[,11],LAT=dat[,16]))
+
+
+#Create function to estimate AGB density using Model 36
+Prediction36=function(BIO9,BIO16,EVI,LAT){
+  32.57-(8256.48/BIO9)+(572.76/BIO16)-(6457.22/EVI)+(21.75/abs(LAT))
+}
+
+#Predict AGB density for all sites with Model 36 
+##PARA HACER ESTO NECESITO LA BASE DE DATOS COMPLETA...NO SE SI ARRIBA EN LA FN ME VA A RECONOCER EL VALOR ABS
+Estimation2=Exp(Prediction36(BIO9=dat[,10],BIO16=dat[,12],EVI=dat[,11],LAT=dat[,16]))
+
+
+#Create function to estimate AGB density using Model 31
+Prediction31=function(BIO9,BIO16,EVI,LAT){
+  -68.661+(21.023*log(BIO9))-(5.379*log(BIO16))+(1.8842*log(EVI))-(11.790*log(abs(LAT)))  
+} 
+
+
+#Predict AGB density for all sites with Model 31 
+##PARA HACER ESTO NECESITO LA BASE DE DATOS COMPLETA...NO SE SI ARRIBA EN LA FN ME VA A RECONOCER EL VALOR ABS
+Estimation3=Exp(Prediction31(BIO9=dat[,10],BIO16=dat[,12],EVI=dat[,11],LAT=dat[,16]))
+
+
+##########################################################################################################################
 #Area from Global Mangrove Forests Distribution, 2000 (Giri et al., 2013)
 #resolution: 30x30 m
 
