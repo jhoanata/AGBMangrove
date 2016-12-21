@@ -1693,6 +1693,8 @@ library(maptools)
 #Colmap<-readShapeSpatial("C:/Users/PROJECT2/Documents/COL_adm_shp/COL_adm0.shp")
 #plot (Colmap)
 
+#Figure 4
+pdf(file="C:/Users/PROJECT2/AGBMangrove/Figures/AGBdensity_map.pdf")
 plt=brewer.pal(n=5,"YlOrRd")
 map('worldHires','Colombia')
 points(EVI[AGBaver< 40,1:2],pch=20, col=plt[1])
@@ -1700,9 +1702,9 @@ points(EVI[AGBaver>40 & AGBaver<80 ,1:2],pch=20, col=plt[2])
 points(EVI[AGBaver>80 & AGBaver<120 ,1:2],pch=20, col=plt[3])
 points(EVI[AGBaver>120 & AGBaver<160 ,1:2],pch=20, col=plt[4])
 points(EVI[AGBaver>160 & AGBaver<200 ,1:2],pch=20, col=plt[5])
-# points(EVI[AGBaver>150 & AGBaver<180 ,1:2],pch=20, col=plt[6])
-# points(EVI[AGBaver>180 & AGBaver<210 ,1:2],pch=20, col=plt[7])
-# points(EVI[AGBaver>210,1:2],pch=20, col=plt[8])
+legend("topleft", c("<40", "40-80", "80-120", "120-160", "160-200"),
+       pch=20,col=plt,bty="n")
+dev.off()
 
 
 #AGBxyz=data.frame(X=EVI$long,Y=EVI$lat, Z=AGBaver)
