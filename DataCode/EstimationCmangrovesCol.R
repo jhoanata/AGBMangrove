@@ -293,17 +293,17 @@ min(AGBSamples[which(round(CV_AGB_Colombia,2)==0.1)])
 # Load required packages
 install.packages("raster")
 library(raster)
-
-#Extract data from Worldclim
-w = getData('worldclim', var='bio', res=0.5, lon=-75, lat=10) #extract data from bioclimatic variables, with a res=0.5 (minutes of a degree). For res=0.5 it is necessary to provide a lon and lat for the tile which include the study area.
-Tab=data.frame(X=-1*plots[,1], Y=plots[,2]) #Extract only the coordinates and transform relative to GMZ
-
-# #Introduce coordinates and transform them to spatial object
-coordinates(Tab)<-~X+Y
- 
-# #Extract climate data for specific coordinates
-dat<-extract(w,Tab)
-#dat
+# 
+# #Extract data from Worldclim
+# w = getData('worldclim', var='bio', res=0.5, lon=-75, lat=10) #extract data from bioclimatic variables, with a res=0.5 (minutes of a degree). For res=0.5 it is necessary to provide a lon and lat for the tile which include the study area.
+# Tab=data.frame(X=-1*plots[,1], Y=plots[,2]) #Extract only the coordinates and transform relative to GMZ
+# 
+# # #Introduce coordinates and transform them to spatial object
+# coordinates(Tab)<-~X+Y
+#  
+# # #Extract climate data for specific coordinates
+# dat<-extract(w,Tab)
+# #dat
 
 #####################################################################################
 #Create function to estimate AGB density using Twilley et al. (1992) Model
@@ -375,73 +375,73 @@ par(mfrow=c(1,1))
 ##Extract data from MODIS images
 
 #Install and load required package
-install.packages("MODISTools")
-library (MODISTools)
-
-AGBC[!is.na(AGBC)]
-
-#Format the data
-#modis.subset <- read.table("coordMODIS.txt",header=TRUE,dec=".")
-modis.subset=data.frame(long=-1*plots[!is.na(plots[,3]),1],lat=plots[!is.na(plots[,3]),2])
-
-names(modis.subset) 
-is.numeric(modis.subset$lat)
-is.numeric(modis.subset$long)
-
-#Time-series of MODIS data
-modis.subset$start.date <- rep(2011, nrow(modis.subset))
-modis.subset$end.date <- rep(2013, nrow(modis.subset))
-
-#Specifing a subset request
-GetProducts()
-
-#Listing available bands for MOD13Q1 product
-GetBands(Product = "MOD13Q1")
-
-#Checking the time-series of MODIS data we want is available for this data product
-GetDates(Product = "MOD13Q1", Lat = modis.subset$lat[1], Long = modis.subset$long[1])
-
-#Downloading information EVI
-#using sourrounding pixels
-MODISSubsets(LoadDat = modis.subset, Products = "MOD13Q1", Bands = c("250m_16_days_EVI", "250m_16_days_pixel_reliability"), Size = c(1,1))
-subset.string <- read.csv(list.files(pattern = ".asc")[1], header = FALSE, as.is = TRUE)
-subset.string[1, ]
-
-#only for the focal pixel
-#MODISSubsets(LoadDat = modis.subset, Products = "MOD13Q1", Bands = c("250m_16_days_EVI", "250m_16_days_pixel_reliability"), Size = c(0,0))
-#subset.string <- read.csv(list.files(pattern = ".asc")[1], header = FALSE, as.is = TRUE)
-#subset.string[1, ]
-
-#Downloading information NDVI
-##using sourrounding pixels
-#MODISSubsets(LoadDat = modis.subset, Products = "MOD13Q1", Bands = c("250m_16_days_NDVI", "250m_16_days_pixel_reliability"), Size = c(1,1))
-#subset.string <- read.csv(list.files(pattern = ".asc")[1], header = FALSE, as.is = TRUE)
-#subset.string[1, ]
-
-#only for the focal pixel
-#MODISSubsets(LoadDat = modis.subset, Products = "MOD13Q1", Bands = c("250m_16_days_NDVI", "250m_16_days_pixel_reliability"), Size = c(0,0))
-#subset.string <- read.csv(list.files(pattern = ".asc")[1], header = FALSE, as.is = TRUE)
-#subset.string[1, ]
-
-#Finding average each pixel over time, to produce one tile of mean EVI pixels at each subset location
-MODISSummaries(LoadDat = modis.subset, Product = "MOD13Q1", Bands = "250m_16_days_EVI", ValidRange = c(-2000,10000), NoDataFill = -3000, ScaleFactor = 0.0001, QualityScreen = TRUE, QualityBand = "250m_16_days_pixel_reliability", QualityThreshold = 0)
-
-#MODISSummaries(LoadDat = modis.subset, Product = "MOD13Q1", Bands = "250m_16_days_NDVI", ValidRange = c(-2000,10000), NoDataFill = -3000, ScaleFactor = 0.0001, QualityScreen = TRUE, QualityBand = "250m_16_days_pixel_reliability", QualityThreshold = 0)
-
-#Calculating EVI mean for each coordinate (mean of 81 pixels)
-#Mod1=read.csv("MODIS_Data_MOD13Q1_2016-02-09_h17-m3-s20.csv") 
-#head(Mod1)
-
-#meanMod1=data.frame(Mod1[,1:2],meanEVI=apply(Mod1[,6:86],1,mean,na.rm=TRUE))
-#meanMod1
-#boxplot(meanMod1[,3])
-#dim(meanMod1)
-
-#Calculating NDVI mean for each coordinate (mean of 81 pixels)
-#Mod2=read.csv("MODIS_Data_MOD13Q1_2015-06-23_h12-m0-s60.csv")
-
-#meanMod2=data.frame(Mod1[,1:2],meanNDVI=apply(Mod1[,6:86],1,mean,na.rm=TRUE))
-#meanMod2
+# install.packages("MODISTools")
+# library (MODISTools)
+# 
+# AGBC[!is.na(AGBC)]
+# 
+# #Format the data
+# #modis.subset <- read.table("coordMODIS.txt",header=TRUE,dec=".")
+# modis.subset=data.frame(long=-1*plots[!is.na(plots[,3]),1],lat=plots[!is.na(plots[,3]),2])
+# 
+# names(modis.subset) 
+# is.numeric(modis.subset$lat)
+# is.numeric(modis.subset$long)
+# 
+# #Time-series of MODIS data
+# modis.subset$start.date <- rep(2011, nrow(modis.subset))
+# modis.subset$end.date <- rep(2013, nrow(modis.subset))
+# 
+# #Specifing a subset request
+# GetProducts()
+# 
+# #Listing available bands for MOD13Q1 product
+# GetBands(Product = "MOD13Q1")
+# 
+# #Checking the time-series of MODIS data we want is available for this data product
+# GetDates(Product = "MOD13Q1", Lat = modis.subset$lat[1], Long = modis.subset$long[1])
+# 
+# #Downloading information EVI
+# #using sourrounding pixels
+# MODISSubsets(LoadDat = modis.subset, Products = "MOD13Q1", Bands = c("250m_16_days_EVI", "250m_16_days_pixel_reliability"), Size = c(1,1))
+# subset.string <- read.csv(list.files(pattern = ".asc")[1], header = FALSE, as.is = TRUE)
+# subset.string[1, ]
+# 
+# #only for the focal pixel
+# #MODISSubsets(LoadDat = modis.subset, Products = "MOD13Q1", Bands = c("250m_16_days_EVI", "250m_16_days_pixel_reliability"), Size = c(0,0))
+# #subset.string <- read.csv(list.files(pattern = ".asc")[1], header = FALSE, as.is = TRUE)
+# #subset.string[1, ]
+# 
+# #Downloading information NDVI
+# ##using sourrounding pixels
+# #MODISSubsets(LoadDat = modis.subset, Products = "MOD13Q1", Bands = c("250m_16_days_NDVI", "250m_16_days_pixel_reliability"), Size = c(1,1))
+# #subset.string <- read.csv(list.files(pattern = ".asc")[1], header = FALSE, as.is = TRUE)
+# #subset.string[1, ]
+# 
+# #only for the focal pixel
+# #MODISSubsets(LoadDat = modis.subset, Products = "MOD13Q1", Bands = c("250m_16_days_NDVI", "250m_16_days_pixel_reliability"), Size = c(0,0))
+# #subset.string <- read.csv(list.files(pattern = ".asc")[1], header = FALSE, as.is = TRUE)
+# #subset.string[1, ]
+# 
+# #Finding average each pixel over time, to produce one tile of mean EVI pixels at each subset location
+# MODISSummaries(LoadDat = modis.subset, Product = "MOD13Q1", Bands = "250m_16_days_EVI", ValidRange = c(-2000,10000), NoDataFill = -3000, ScaleFactor = 0.0001, QualityScreen = TRUE, QualityBand = "250m_16_days_pixel_reliability", QualityThreshold = 0)
+# 
+# #MODISSummaries(LoadDat = modis.subset, Product = "MOD13Q1", Bands = "250m_16_days_NDVI", ValidRange = c(-2000,10000), NoDataFill = -3000, ScaleFactor = 0.0001, QualityScreen = TRUE, QualityBand = "250m_16_days_pixel_reliability", QualityThreshold = 0)
+# 
+# #Calculating EVI mean for each coordinate (mean of 81 pixels)
+# #Mod1=read.csv("MODIS_Data_MOD13Q1_2016-02-09_h17-m3-s20.csv") 
+# #head(Mod1)
+# 
+# #meanMod1=data.frame(Mod1[,1:2],meanEVI=apply(Mod1[,6:86],1,mean,na.rm=TRUE))
+# #meanMod1
+# #boxplot(meanMod1[,3])
+# #dim(meanMod1)
+# 
+# #Calculating NDVI mean for each coordinate (mean of 81 pixels)
+# #Mod2=read.csv("MODIS_Data_MOD13Q1_2015-06-23_h12-m0-s60.csv")
+# 
+# #meanMod2=data.frame(Mod1[,1:2],meanNDVI=apply(Mod1[,6:86],1,mean,na.rm=TRUE))
+# #meanMod2
 
 # Import EVI data Victor OJO ACA ME TIENEN QUE QUEDAR 46 DATOS
 NewEVI<-read.table("C:/Users/PROJECT2/Documents/GitHub/ManVic/MeanEVIPlots.txt",header=TRUE,dec=".")
@@ -1441,66 +1441,66 @@ anova(Model43, Model43UAC_Sector, test="F")
 
 ##Coordinates of mangrove area in Colombia - Source: Global Mangrove Forest Distribution, 2000 (Giri et al. 2013)
 
-#Install and load required packages
-library(raster)
-library(rgdal)
-install.packages("maps")
-library(maps)
-install.packages("sp")
-library(sp)
-install.packages("mapdata")
-library(mapdata) 
-
-#Process tiff images and extract coordinates
-## Image W80N10
-img= readGDAL("~/TEE/Manuscripts/Mangroves/NASA Mangrove TIF_Colombia/W80N10.tif")
-img2=raster(img)
-cells=which(img2@data@values==1) #points with mangroves=1
-xy=xyFromCell(img2,cells)
-write.csv(xy,"~/TEE/Manuscripts/Mangroves/NASA Mangrove TIF_Colombia/W80N10xy.csv",row.names =FALSE)
-
-## Image W80N20
-img= readGDAL("~/TEE/Manuscripts/Mangroves/NASA Mangrove TIF_Colombia/W80N20.tif")
-img2=raster(img)
-cells=which(img2@data@values==1) #points with mangroves=1
-xy=xyFromCell(img2,cells)
-write.csv(xy,"~/TEE/Manuscripts/Mangroves/NASA Mangrove TIF_Colombia/W80N20xy.csv",row.names =FALSE)
-
-#Graphic the points the download points 
-W80N10xy=read.csv("NASA Mangrove TIF_Colombia/W80N10xy.csv")
-W80N20xy=read.csv("NASA Mangrove TIF_Colombia/W80N20xy.csv")
-
-xyall=rbind(W80N10xy, W80N20xy)
-
-map('worldHires','Colombia')
-points(xyall,pch=".", col=3)
-
-###As is possible to observe in the last graphic, there are some points which don't belong to Colombia. Usign ArcGis were identified the country asociated to each point. From this info were extracted only the points for Colombia
-#get points for Colombia W80N20
-W80N20=read.table("W80N20xy.csvcountry.txt",sep=",",header=TRUE)
-ColW80N20=W80N20[W80N20[,3]==197,1:2]
-write.csv(ColW80N20,"~/TEE/Manuscripts/Mangroves/ColW80N20.csv",row.names=FALSE)
-
-
-#get points for Colombia W80N10
-W80N10=read.table("W80N10xy.csvcountry.txt",sep=",",header=TRUE)
-ColW80N10=W80N10[W80N10[,3]==197,1:2]
-write.csv(ColW80N10,"~/TEE/Manuscripts/Mangroves/ColW80N10.csv",row.names=FALSE)
-
-# pdf(file="Manuscript/Figures/map.pdf")
-# map('worldHires','Colombia')
-# points(ColW80N20,pch=".", col=3)
-# points(ColW80N10,pch=".", col=3)
+# #Install and load required packages
+# library(raster)
+# library(rgdal)
+# install.packages("maps")
+# library(maps)
+# install.packages("sp")
+# library(sp)
+# install.packages("mapdata")
+# library(mapdata) 
 # 
-# sitesAGBd=plots[!is.na(plots[,3]),1:2]
-# sitesAGBd=data.frame(X=-1*sitesAGBd[,1],Y=sitesAGBd[,2])
-# coordinates(sitesAGBd)<-~X+Y
-# points(sitesAGBd,col=2,pch="*") #Coordinates of sites with AGB density data
-# dev.off()
-
-#combinate both date base in one
-Colall=rbind(ColW80N10, ColW80N20)
-write.csv(Colall,"~/TEE/Manuscripts/Mangroves/Colall.csv",row.names=FALSE)
+# #Process tiff images and extract coordinates
+# ## Image W80N10
+# img= readGDAL("~/TEE/Manuscripts/Mangroves/NASA Mangrove TIF_Colombia/W80N10.tif")
+# img2=raster(img)
+# cells=which(img2@data@values==1) #points with mangroves=1
+# xy=xyFromCell(img2,cells)
+# write.csv(xy,"~/TEE/Manuscripts/Mangroves/NASA Mangrove TIF_Colombia/W80N10xy.csv",row.names =FALSE)
+# 
+# ## Image W80N20
+# img= readGDAL("~/TEE/Manuscripts/Mangroves/NASA Mangrove TIF_Colombia/W80N20.tif")
+# img2=raster(img)
+# cells=which(img2@data@values==1) #points with mangroves=1
+# xy=xyFromCell(img2,cells)
+# write.csv(xy,"~/TEE/Manuscripts/Mangroves/NASA Mangrove TIF_Colombia/W80N20xy.csv",row.names =FALSE)
+# 
+# #Graphic the points the download points 
+# W80N10xy=read.csv("NASA Mangrove TIF_Colombia/W80N10xy.csv")
+# W80N20xy=read.csv("NASA Mangrove TIF_Colombia/W80N20xy.csv")
+# 
+# xyall=rbind(W80N10xy, W80N20xy)
+# 
+# map('worldHires','Colombia')
+# points(xyall,pch=".", col=3)
+# 
+# ###As is possible to observe in the last graphic, there are some points which don't belong to Colombia. Usign ArcGis were identified the country asociated to each point. From this info were extracted only the points for Colombia
+# #get points for Colombia W80N20
+# W80N20=read.table("W80N20xy.csvcountry.txt",sep=",",header=TRUE)
+# ColW80N20=W80N20[W80N20[,3]==197,1:2]
+# write.csv(ColW80N20,"~/TEE/Manuscripts/Mangroves/ColW80N20.csv",row.names=FALSE)
+# 
+# 
+# #get points for Colombia W80N10
+# W80N10=read.table("W80N10xy.csvcountry.txt",sep=",",header=TRUE)
+# ColW80N10=W80N10[W80N10[,3]==197,1:2]
+# write.csv(ColW80N10,"~/TEE/Manuscripts/Mangroves/ColW80N10.csv",row.names=FALSE)
+# 
+# # pdf(file="Manuscript/Figures/map.pdf")
+# # map('worldHires','Colombia')
+# # points(ColW80N20,pch=".", col=3)
+# # points(ColW80N10,pch=".", col=3)
+# # 
+# # sitesAGBd=plots[!is.na(plots[,3]),1:2]
+# # sitesAGBd=data.frame(X=-1*sitesAGBd[,1],Y=sitesAGBd[,2])
+# # coordinates(sitesAGBd)<-~X+Y
+# # points(sitesAGBd,col=2,pch="*") #Coordinates of sites with AGB density data
+# # dev.off()
+# 
+# #combinate both date base in one
+# Colall=rbind(ColW80N10, ColW80N20)
+# write.csv(Colall,"~/TEE/Manuscripts/Mangroves/Colall.csv",row.names=FALSE)
 
 #############################################################################################
 ##Coordinates of mangrove area in Colombia and EVI data - Source: Mean EVI (CONSULTAR CON VICTOR FUENTE DE ESTE MAPA).Esta es una fuente alterna de informaci?n al mapa de Giri, una vez se compruebe su utilidad se puede proceder a eliminar el paso anterior realizado con Giri.
@@ -1518,17 +1518,21 @@ library(mapdata)
 
 #Process tiff images and extract coordinates
 #img= readGDAL("C:/Users/PROJECT2/Documents/GitHub/ManVic/meanEVI_Mangrove.tif")
-#img2=raster(img)
+img= readGDAL("C:/Users/PROJECT2/AGBMangrove/DataCode/meanEVI_MangrooveCol.tif")
+img2=raster(img)
 # class(img2)
 # xyEVImap=xyFromCell(img2,1:ncell(img2))
 # class(xyEVImap)
 #dim(xyEVImap)
 #write.csv(xyEVImap,"C:/Users/PROJECT2/Documents/GitHub/ManVic/xyEVImap.csv",row.names =FALSE)
+img3=projectRaster(img2,v,method = "ngb")
 
 #EVI
-EVI=read.table("C:/Users/PROJECT2/Documents/GitHub/ManVic/MeanEVIAll.txt",sep=" ",header=TRUE)
-EVI=read.csv("~/Repos/AGBMangrove/DataCode/meanEVI_Mangroove.csv", row.names = 1)
-head(EVI)
+#EVI=read.table("C:/Users/PROJECT2/Documents/GitHub/ManVic/MeanEVIAll.txt",sep=" ",header=TRUE)
+#EVI=read.csv("~/Repos/AGBMangrove/DataCode/meanEVI_Mangroove.csv", row.names = 1)
+#EVI=read.csv("C:/Users/PROJECT2/AGBMangrove/DataCode/meanEVI_Mangroove.csv", row.names = 1)
+#EVIm=data.frame(long=EVI[,1]/100000, lat=EVI[,2]/100000, EVI=EVI[,3])
+EVIm=rasterToPoints(img3)
 
 #####################
 ##Extract data from WorldClim for meanEVI_mangrove file
@@ -1540,7 +1544,7 @@ library(raster)
 #Extract data from Worldclim
 v = getData('worldclim', var='bio', res=0.5, lon=-75, lat=10) #extract data from bioclimatic variables, with a res=0.5 (minutes of a degree). For res=0.5 it is necessary to provide a lon and lat for the tile which include the study area.
 #Tabv=data.frame(X=-1*xyEVImap[,1], Y=xyEVImap[,2]) #Extract only the coordinates and transform relative to GMZ
-Tabv=data.frame(X=EVI[,1],Y=EVI[,2])
+Tabv=data.frame(X=EVIm[,1],Y=EVIm[,2])
 
 # #Introduce coordinates and transform them to spatial object
 coordinates(Tabv)<-~X+Y
@@ -1551,83 +1555,97 @@ class(dat)
 dim(dat)
 #dat
 
-EVI=cbind(EVI,dat[,9],dat[,16])
-names(EVI)<-c("long","lat","EVI","Bio9","Bio16")
+EVIm=cbind(EVIm,dat[,9],dat[,16])
+colnames(EVIm)<-c("long","lat","EVI","Bio9","Bio16")
+EVI=as.data.frame(EVIm)
+
 
 #############################################################################################
 
 
-##Extract data from MODIS images for Colall coordinates ACA CAMBIAR TODO ESTO POR EL SCRIPT de Victor
+# ##Extract data from MODIS images for Colall coordinates ACA CAMBIAR TODO ESTO POR EL SCRIPT de Victor
+# 
+# #Install and load required package
+# install.packages("MODISTools")
+# library (MODISTools)
+# 
+# #Format the data
+# modis.subsetCol <- read.csv("~/TEE/Manuscripts/Mangroves/Colall.csv")
+# modis.subsetCol
+# 
+# names(modis.subsetCol) 
+# is.numeric(modis.subsetCol$lat)
+# is.numeric(modis.subsetCol$long)
+# 
+# #Time-series of MODIS data
+# modis.subsetCol$start.date <- rep(2011, nrow(modis.subsetCol))
+# modis.subsetCol$end.date <- rep(2013, nrow(modis.subsetCol))
+# 
+# #Specifing a subset request
+# GetProducts()
+# 
+# #Listing available bands for MOD13Q1 product
+# GetBands(Product = "MOD13Q1")
+# 
+# #Checking the time-series of MODIS data we want is available for this data product
+# GetDates(Product = "MOD13Q1", Lat = modis.subsetCol$lat[81], Long = modis.subsetCol$long[81])
+# 
+# #Downloading information EVI
+# modis.subsetCol <- read.csv("~/TEE/Manuscripts/Mangroves/Colall.csv")
+# print(tail(modis.subsetCol))
+# 
+# f=function(i){
+#   if(i==7|i==9){
+#     stop()	
+#   }else{
+#     i^2
+#   }
+# }
+# 
+# Dir="../EVI_ASC_Files"
+# B1="250m_16_days_EVI"
+# B2="250m_16_days_pixel_reliability"
+# Pr= "MOD13Q1"
+# qth=1 # was set to 0 before (check for a reasonable value) 
+# #nmax=20
+# nmax=nrow(modis.subsetCol)
+# #fs=function(i){try(f(i))}
+# fs=function(i){
+#   ss=modis.subsetCol[i:i,]
+#   try(
+#     #Downloading information EVI
+#     MODISSubsets(LoadDat = ss, Products = Pr, Bands = c(B1, B2), Size = c(1,1),SaveDir=Dir)
+#   )
+# } ##Function allows to download the information without stops when the server found some error in some data. Finally the function list the files with errors.
+# results=lapply(1:nmax,fs)
+# print(results)
+# cls=lapply(results,class)
+# errorIndices=c()
+# for (i in 1:length(cls)){if(cls[[i]]=="try-error"){errorIndices=c(errorIndices,i)}}
+# print(errorIndices)
+# 
+# #Finding average each pixel over time, to produce one tile of mean EVI, NDVI and FPAR pixels at each subset location
+# MODISSummaries(LoadDat = modis.subsetCol, Product = "MOD13Q1", Bands = "250m_16_days_EVI", ValidRange = c(-2000,10000), NoDataFill = -3000, ScaleFactor = 0.0001, QualityScreen = TRUE, QualityBand = "250m_16_days_pixel_reliability", QualityThreshold = 0)
+# 
+# #Calculating EVI mean for each coordinate (mean of 81 pixels)
+# Mod1=read.csv("~/TEE/Manuscripts/Mangroves/MODIS_Data_MOD13Q1_2015-06-18_h10-m2-s54.csv") ####CAMBIAR
+# 
+# meanMod1=data.frame(Mod1[,1:2],meanEVI=apply(Mod1[,6:86],1,mean,na.rm=TRUE))
+# meanMod1
 
-#Install and load required package
-install.packages("MODISTools")
-library (MODISTools)
+#Choosing only data from the range of every variable used for models development
 
-#Format the data
-modis.subsetCol <- read.csv("~/TEE/Manuscripts/Mangroves/Colall.csv")
-modis.subsetCol
+EVI[which(EVI$lat>=max(DataSetVic$Y)),]<-NA
+EVI[which(EVI$lat<=min(DataSetVic$Y)),]<-NA
 
-names(modis.subsetCol) 
-is.numeric(modis.subsetCol$lat)
-is.numeric(modis.subsetCol$long)
+EVI[which(EVI$EVI>=max(DataSetVic$EVI)),]<-NA
+EVI[which(EVI$EVI<=min(DataSetVic$EVI)),]<-NA
 
-#Time-series of MODIS data
-modis.subsetCol$start.date <- rep(2011, nrow(modis.subsetCol))
-modis.subsetCol$end.date <- rep(2013, nrow(modis.subsetCol))
+EVI[which(EVI$Bio9>=max(DataSetVic$bio9_23)),]<-NA
+EVI[which(EVI$Bio9<=min(DataSetVic$bio9_23)),]<-NA
 
-#Specifing a subset request
-GetProducts()
-
-#Listing available bands for MOD13Q1 product
-GetBands(Product = "MOD13Q1")
-
-#Checking the time-series of MODIS data we want is available for this data product
-GetDates(Product = "MOD13Q1", Lat = modis.subsetCol$lat[81], Long = modis.subsetCol$long[81])
-
-#Downloading information EVI
-modis.subsetCol <- read.csv("~/TEE/Manuscripts/Mangroves/Colall.csv")
-print(tail(modis.subsetCol))
-
-f=function(i){
-  if(i==7|i==9){
-    stop()	
-  }else{
-    i^2
-  }
-}
-
-Dir="../EVI_ASC_Files"
-B1="250m_16_days_EVI"
-B2="250m_16_days_pixel_reliability"
-Pr= "MOD13Q1"
-qth=1 # was set to 0 before (check for a reasonable value) 
-#nmax=20
-nmax=nrow(modis.subsetCol)
-#fs=function(i){try(f(i))}
-fs=function(i){
-  ss=modis.subsetCol[i:i,]
-  try(
-    #Downloading information EVI
-    MODISSubsets(LoadDat = ss, Products = Pr, Bands = c(B1, B2), Size = c(1,1),SaveDir=Dir)
-  )
-} ##Function allows to download the information without stops when the server found some error in some data. Finally the function list the files with errors.
-results=lapply(1:nmax,fs)
-print(results)
-cls=lapply(results,class)
-errorIndices=c()
-for (i in 1:length(cls)){if(cls[[i]]=="try-error"){errorIndices=c(errorIndices,i)}}
-print(errorIndices)
-
-#Finding average each pixel over time, to produce one tile of mean EVI, NDVI and FPAR pixels at each subset location
-MODISSummaries(LoadDat = modis.subsetCol, Product = "MOD13Q1", Bands = "250m_16_days_EVI", ValidRange = c(-2000,10000), NoDataFill = -3000, ScaleFactor = 0.0001, QualityScreen = TRUE, QualityBand = "250m_16_days_pixel_reliability", QualityThreshold = 0)
-
-#Calculating EVI mean for each coordinate (mean of 81 pixels)
-Mod1=read.csv("~/TEE/Manuscripts/Mangroves/MODIS_Data_MOD13Q1_2015-06-18_h10-m2-s54.csv") ####CAMBIAR
-
-meanMod1=data.frame(Mod1[,1:2],meanEVI=apply(Mod1[,6:86],1,mean,na.rm=TRUE))
-meanMod1
-
-
+EVI[which(EVI$Bio16>=max(DataSetVic$bio16_23)),]<-NA
+EVI[which(EVI$Bio16<=min(DataSetVic$bio16_23)),]<-NA
 
 #########################################################################################################################
 #Create function to estimate AGB density using Model 43
@@ -1638,6 +1656,7 @@ Prediction43=function(BIO9,EVI,LAT){
 #Predict AGB density for all sites with Model 43 
 
 Estimation1=exp(Prediction43(BIO9=EVI$Bio9,EVI=EVI$EVI,LAT=EVI$lat))
+#Estimation1=exp(Prediction43(BIO9=DataSetVic$bio9_23,EVI=DataSetVic$EVI,LAT=DataSetVic$Y))
 
 
 #Create function to estimate AGB density using Model 36
@@ -1648,7 +1667,7 @@ Prediction36=function(BIO9,BIO16,EVI,LAT){
 #Predict AGB density for all sites with Model 36 
 
 Estimation2=exp(Prediction36(BIO9=EVI$Bio9,BIO16=EVI$Bio16,EVI=EVI$EVI,LAT=EVI$lat))
-
+#Estimation2=exp(Prediction36(BIO9=DataSetVic$bio9_23,BIO16=DataSetVic$bio16_23,EVI=DataSetVic$EVI,LAT=DataSetVic$Y))
 
 #Create function to estimate AGB density using Model 31
 Prediction31=function(BIO9,BIO16,EVI,LAT){
@@ -1658,22 +1677,46 @@ Prediction31=function(BIO9,BIO16,EVI,LAT){
 #Predict AGB density for all sites with Model 31 
 
 Estimation3=exp(Prediction31(BIO9=EVI$Bio9,BIO16=EVI$Bio16,EVI=EVI$EVI,LAT=EVI$lat))
+#Estimation3=exp(Prediction31(BIO9=DataSetVic$bio9_23,BIO16=DataSetVic$bio16_23,EVI=DataSetVic$EVI,LAT=DataSetVic$Y))
 
-AGBaver=((Estimation1*0.43)+(Estimation2*0.35)+(Estimation3*0.19))/3
+#Weighted average AGB
+AGBaver=((Estimation1*0.43)+(Estimation2*0.35)+(Estimation3*0.19))/(0.43+0.35+0.19)
 
-plt=heat.colors(n=length(AGBaver))
-rel=length(AGBaver)*AGBaver/max(AGBaver,na.rm = TRUE)
+##############################################################################################################################
 
+#Map for AGBaver (limited to variable´s range used in the models development)
 
+library(RColorBrewer)
+
+library(maptools)
+
+#Colmap<-readShapeSpatial("C:/Users/PROJECT2/Documents/COL_adm_shp/COL_adm0.shp")
+#plot (Colmap)
+
+plt=brewer.pal(n=5,"YlOrRd")
 map('worldHires','Colombia')
-points(EVI[,1:2],pch=20, col=plt[rel])
+points(EVI[AGBaver< 40,1:2],pch=20, col=plt[1])
+points(EVI[AGBaver>40 & AGBaver<80 ,1:2],pch=20, col=plt[2])
+points(EVI[AGBaver>80 & AGBaver<120 ,1:2],pch=20, col=plt[3])
+points(EVI[AGBaver>120 & AGBaver<160 ,1:2],pch=20, col=plt[4])
+points(EVI[AGBaver>160 & AGBaver<200 ,1:2],pch=20, col=plt[5])
+# points(EVI[AGBaver>150 & AGBaver<180 ,1:2],pch=20, col=plt[6])
+# points(EVI[AGBaver>180 & AGBaver<210 ,1:2],pch=20, col=plt[7])
+# points(EVI[AGBaver>210,1:2],pch=20, col=plt[8])
 
-AGBxyz=data.frame(X=EVI$long,Y=EVI$lat, Z=AGBaver)
 
-rAGB=rasterFromXYZ(AGBxyz)
+#AGBxyz=data.frame(X=EVI$long,Y=EVI$lat, Z=AGBaver)
 
-map('worldHires','Colombia')
-plot(rAGB)
+#rAGB=rasterFromXYZ(AGBxyz)
+
+# map('worldHires','Colombia')
+# points(rAGB)
+# 
+# install.packages("rasterVis")
+# library(rasterVis)
+# 
+# levelplot(rAGB)
+
 
 ##########################################################################################################################
 #Area from Global Mangrove Forests Distribution, 2000 (Giri et al., 2013)
