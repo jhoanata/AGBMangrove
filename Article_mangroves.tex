@@ -165,15 +165,13 @@ Candidate models can be classified in four categories according to these weights
 
 To determine the influence of environmental local variability on AGB, we also fitted multilevel models through maximum likelihood estimation using the R package lme4 \citep{Bates:2015aa}. We assumed our data as classified into two subgroups, site and Coastal Environmental Units (CEU). The first subgroup refers to the specific location of the sites, while the CUE refers to an environmental classification of coastal zones in Colombia \citep{CCO_UAC}. We estimated the initial proposed models including separately each subgroup, but also the interaction of both. The predictive power of the model was analyzed using the Deviance statistic (D\textsuperscript{2}\%), which measures the percentage of the variability explained by the model. 
 
-\subsection {Carbon stock estimation using the predictive average model (SECCION PUEDE SER ELIMINADA SI NO SE PUEDE OBTENER EL MODISSummaries PARA LOS 2 MILLONES DE PUNTOS)}
-We used the modavgPred function from AICcmodavg R Package to compute model-average predictions of biomass based on the entire candidate models set. Data base used for model-average predictions was built with coordinates of mangrove cover in Colombia related in Global Mangrove Forests Distribution, 2000 \citep{Giri2013, Giri2010}. Bioclimatic variables used in each chosen model as well as EVI data were obtained from WorldClim and LP DAAC data bases as was made for the data used for fitting models.  The uncertainty associated with the estimation was calculated. ESTO LO PODEMOS HACER SI TENEMOS EL MODISSummary PARA LOS 2 MILLONES DE PUNTOS.
+\subsection {AGB estimation using the predictive models}
+We estimated model-average predictions of AGB based on the candidate models classified as ``substantial weight models'' category according to the results of the ``model selection table'' describe in the above section. Model-average predictions were carried out weighting each model by its AIC weight. 
 
-Finally, we associated the estimated biomass with the mangrove area for Colombia calculated from \citet{Giri2013, Giri2010} data. We considered a conversion factor from biomass to carbon of 0.50, as is proposed by several authors \citep{MacDicken1997, Clark2001, Fearnside2004, Chave2005, Aragao2009}.
+ EVI data base used for the estimation was got from ACA ES NECESARIO TENER CLARA LA FUENTE DE INFORMACIÓN DE VICTOR. For the same points associated with EVI data, we obtained the WorldClim bioclimatic variables BIO9 and BI016.
 
-\subsection{Mapping ESTA SECCION SE DESARROLLA SI SE PUEDE OBTENER EL MODISSummaries}
+COMO ESTIMO LA INCERTIDUMBRE ASOCIADA A ESA ESTIMACIÓN?
 
-The data with a spatial resolution of 30 m was used to build a national map of potential AGB. 
-The data are available at 30-m spatial resolution
 
 
 \section{Results}

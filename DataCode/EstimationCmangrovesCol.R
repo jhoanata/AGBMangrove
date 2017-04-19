@@ -1687,8 +1687,8 @@ AGBaver=((Estimation1*0.43)+(Estimation2*0.35)+(Estimation3*0.19))/(0.43+0.35+0.
 #Map for AGBaver (limited to variable´s range used in the models development)
 
 library(RColorBrewer)
-
 library(maptools)
+library(mapdata)
 
 #Colmap<-readShapeSpatial("C:/Users/PROJECT2/Documents/COL_adm_shp/COL_adm0.shp")
 #plot (Colmap)
