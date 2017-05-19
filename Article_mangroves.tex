@@ -166,11 +166,11 @@ Candidate models can be classified in four categories according to these weights
 To determine the influence of environmental local variability on AGB, we also fitted multilevel models through maximum likelihood estimation using the R package lme4 \citep{Bates:2015aa}. We assumed our data as classified into two subgroups, site and Coastal Environmental Units (CEU). The first subgroup refers to the specific location of the sites, while the CUE refers to an environmental classification of coastal zones in Colombia \citep{CCO_UAC}. We estimated the initial proposed models including separately each subgroup, but also the interaction of both. The predictive power of the model was analyzed using the Deviance statistic (D\textsuperscript{2}\%), which measures the percentage of the variability explained by the model. 
 
 \subsection {AGB estimation using the predictive models}
-We estimated model-average predictions of AGB based on the candidate models classified as ``substantial weight models'' category according to the results of the ``model selection table'' describe in the above section. Model-average predictions were carried out weighting each model by its AIC weight. 
+We estimated model-average predictions of AGB based on the candidate models classified as ``substantial weight models'' category, according to the results of the ``model selection table'' describe in the above section. Model-average predictions were carried out weighting each model by its AIC weight. 
 
- EVI data base used for the estimation was got from ACA ES NECESARIO TENER CLARA LA FUENTE DE INFORMACIÓN DE VICTOR. For the same points associated with EVI data, we obtained the WorldClim bioclimatic variables BIO9 and BI016.
+EVI data base used for the estimation was got from \Jhoa {ACA ES NECESARIO TENER CLARA LA FUENTE DE INFORMACIÓN DE VICTOR}. For the same points associated with EVI data, we obtained the WorldClim bioclimatic variables BIO9 and BI016.
 
-COMO ESTIMO LA INCERTIDUMBRE ASOCIADA A ESA ESTIMACIÓN?
+
 
 
 
@@ -465,6 +465,21 @@ Our candidate models included as predictive variables bioclimatology and a satel
 \end{table}
 
 
+\subsection {AGB estimation using the predictive models}
+
+Estimation of AGB using predicting models showed a limitation in terms of the range of the values for the variables considere in each one. Estimation for places located out of the range of distribution of the data used for the models development, showed erratic values \Jhoa{tengo que ser mas explícita cuando digo valores erraticos?, lo dejo genérico porque no recuerdo bien si el resultado fueron solo valores extremadamente altos o si también incluyó valores en extremo bajos}, that led to made the decission to do the estimations only for places located in the range of distribution of the source data used for the developing of the models. 
+
+Applying this restriction, range of distribution of AGB density estimated from the selected predictive models, comprises values between XXX and 200 Mg ha$^{-1}$. Map distribution of AGB density (Figure 4), shows the highest AGB density values for mangroves located in Cispatá Bay and Ciénaga Grande de Santa Marta (Caribbean coast), as well as San Juan river delta (Pacific coast). Average value of AGB density using predecting models is 75.62 $\pm$ 35.75 Mg ha$^{-1}$.
+
+\begin{figure} 
+\includegraphics[%scale=0.4
+width=\textwidth
+]{Figures/AGBdensity_map.pdf} 
+\caption{
+Map of predicted AGB density (Mg ha$^{-1}$) based on the candidate models classified as ``substantial weight models''} \label{fig:Predicted AGB density map}
+\end{figure}
+
+
 \section{Discussion}
 Using error propagation techniques, we were able to calculate the level of uncertainty that can be achieved with existing information for estimating aboveground C stocks for Colombian mangroves. This analysis showed that if Colombia wants to decrease the level of uncertainty in these estimations and include mangroves in its national GHG mitigation strategy, additional efforts are necessary to reduce uncertainty in both AGB density and mangrove area. We discuss here potential strategies to reduce these uncertainties and increase the quality of the estimates  to the Tier 3 level  as proposed by the IPCC \citep{IPCC2003, IPCC2006}. 
 
@@ -545,7 +560,13 @@ We identified model structure as an additional source of uncertainty in estimati
 %To improve the predictive power of our candidate models and improve their capacity of explanation of the variability of our data, classification of mangroves under some category grouping different environmental and physiographic conditions that determine the differences in carbon stocks is necessary.  Under the perspective of this requirement, the identification of potential classification categories, likewise the identification of current information available as well as further studies is necessary.
 
  %Results of the mixed effect models demonstrated that the use of CEU like category to classify mangroves in the country is not useful. Despite this classification identify coastal units along the country with similar characteristics in terms of environmental variables and management, this division does not cover the high mangrove variability at local level, in this sense, it is possible to have different types of mangroves inside the same CEU category.
+ 
+ \subsection {AGB estimation using the predictive models}
+ 
+The restriction on the use of data from the same range of distribution of places used forthe model's development is evidence of the importance of the local variability in terms of AGB allocation in mangroves ecosystems. Results obtained showed an important restriction for the use
+of the proposed models, and at the same time show, the necessity to increase the number of AGB data from mangroves covered a wider environmental spectrum to make more applicable and useful the models. Nevertheless, this first approach shows the importance of the availability of a tool of this kind, due to the use of variables of easy access, allows an integral territorial view, facilitating the planning and management of mangrove areas in terms of AGB potential.
 
+Given the results, we recommend fitting the models using more AGB data. Limitation of data for this study settled in the difficulty accessing data. For knowing cases, AGB data exists but bureaucracy and/or the inexistent rugosity in the data treatment and custody makes impossible its access. A coordinate job between institutions working on this topic could help to reduce this kind of difficulties. Centralization of data in one institution could help not only to get together all data but also to standardize the methods for field and desk job and reduce uncertainties.
 
 \section{Conclusions}
 Two main sources of uncertainty contribute to the overall uncertainty in total carbon stocks in aboveground biomass for Colombian mangroves: uncertainty in mangrove area and uncertainty in AGB density. 
@@ -563,7 +584,9 @@ To reduce the current levels of uncertainty in carbon stocks for Colombian mangr
 %
 %Despite soil carbon is the main carbon compartment in mangrove ecosystems (in terms of carbon stocks), there is not enough data in Colombia to do an analysis as we presented with carbon associated with AGB. This situation demonstrate the necessity to increase the sampling in this compartment and in this way contribute with the improvement of the inventory of carbon stocks in this ecosystem in the country.
 
-Models based on remote sensing information such as EVI and bioclimatic variables from WorldClim offer good opportunities to increase the level of detail and accuracy in predictions of mangrove carbon stocks, but these predictions need to account for model-structure uncertainty as well as local scale variability. We propose here a set of models that account for these sources of uncertainty, which could help in future assessments of aboveground C stocks in Colombian mangroves.
+Models based on remote sensing information such as EVI and bioclimatic variables from WorldClim offer good opportunities to increase the level of detail and accuracy in predictions of mangrove carbon stocks, but these predictions need to account for model-structure uncertainty as well as local scale variability. Likewise, the model development needs to include data that allows covering a wide range of environmental conditions, making it more applicable. We propose here a set of models that account for these sources of uncertainty, which could help in future assessments of aboveground C stocks in Colombian mangroves.
+
+
 
 \section*{Acknowledgements}
 This study was conducted within the framework of the International Climate Protection Fellowships Programme of the Alexander von Humboldt Foundation funded by the German Federal Ministry for the Environment, Nature Conservation, Building and Nuclear Safety.

@@ -1681,6 +1681,9 @@ Estimation3=exp(Prediction31(BIO9=EVI$Bio9,BIO16=EVI$Bio16,EVI=EVI$EVI,LAT=EVI$l
 
 #Weighted average AGB
 AGBaver=((Estimation1*0.43)+(Estimation2*0.35)+(Estimation3*0.19))/(0.43+0.35+0.19)
+mean(AGBaver, na.rm=TRUE)
+sd(AGBaver, na.rm=TRUE)
+
 
 ##############################################################################################################################
 
