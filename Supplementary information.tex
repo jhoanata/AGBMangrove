@@ -1,4 +1,4 @@
-\documentclass[review, authoryear]{elsarticle}   	% use "amsart" instead of "article" for AMSLaTeX format
+\documentclass[authoryear]{elsarticle}   	% use "amsart" instead of "article" for AMSLaTeX format
 \usepackage{geometry}                		% See geometry.pdf to learn the layout options. There are lots.
 \usepackage{pdflscape}
 \usepackage{graphicx}				% Use pdf, png, jpg, or eps§ with pdflatex; use eps in DVI mode
@@ -26,21 +26,25 @@
 
 \begin{frontmatter}
 
-\title{Supplementary information}
+\title{Supplementary information for: Carbon stocks in aboveground biomass for Colombian mangroves with associated uncertainties}
 \author[MPI,CYB]{Jhoanata M. Bolivar}
+\author[TU,CYB]{Victor H. Gutierrez-Velez}
 \author[MPI,CYB]{Carlos A. Sierra}
 \address[MPI]{Max Planck Institute for Biogeochemistry, Hans-Kn\"oll-Str. 10, 07745 Jena, Germany}
 \address[CYB]{Research Center on Ecosystems and Global Change Carbono \& Bosques, Medell\'in, Colombia}
+\address[TU]{Department of Geography and Urban Studies, Temple University, Philadelphia, PA 19122, USA}
 
 
 \end{frontmatter}
 
 %\date{}							% Activate to display a given date or no date
 
+This supplementary material contains two tables. The first table presents all sources of information on AGB density used for estimation of national C stocks and model development. The second table presents all the statistical models tested in our analysis with corresponding results from statistical tests. 
+
 % Requires the booktabs if the memoir class is not being used
 \begin{table}[htbp]
    \centering \tiny
-   \topcaption{Above ground biomass (AGB) data sources used to estimation of total AGB carbon stock in Colombian mangroves and development of predictive models.} % requires the topcapt package
+   \topcaption{Data sources of Aboveground biomass (AGB) used to estimation of total AGB carbon stock in Colombian mangroves and development of predictive models.} % requires the topcapt package
    \begin{tabular}{p{2.0cm}p{2.0cm}p{4.0cm}p{1.0cm}p{1.0cm}p{2.0cm}p{2.5cm}} % Column formatting, @{} suppresses leading/trailing space
       \toprule 
         &&&\multicolumn{2}{c}{Coordinates}&\multicolumn{1}{c}{AGB}&\\      
@@ -102,7 +106,7 @@ Valle del Cauca&Pacific&M\'{a}laga bay-Caracas&-77.268&3.9871&117.20&\citet{Mala
  %Requires the booktabs if the memoir class is not being used
 \begin{table}[htbp]
    \centering \tiny
-  \topcaption {Statistical regression models for AGB. When log is the natural logarithm; AGB is the above ground biomass (Mg/ha); BIO9 is the mean temperature of driest quarter (\textcelsius); BIO10 mean temperature of warmest quarter (\textcelsius); BIO11 mean temperature of coldest quarter (\textcelsius); BIO16 is the precipitation of the wettest quarter (mm); EVI is the enhanced vegetation index; Lat is the absolute value of latitude (decimal degrees);  n is the number of observations; R\textsubscript{a}\textsuperscript{2} is the adjusted coefficient of determination; MSE is the mean squared error; F is the F-statistic calculated; AIC is the akaike information criterion }  % requires the topcapt package
+  \topcaption {Statistical regression models tested in our analysis. AGB represents aboveground biomass (Mg/ha); BIO9 is the mean temperature of driest quarter (\textcelsius); BIO10 mean temperature of warmest quarter (\textcelsius); BIO11 mean temperature of coldest quarter (\textcelsius); BIO16 is the precipitation of the wettest quarter (mm); EVI is the enhanced vegetation index; Lat is the absolute value of latitude (decimal degrees);  n is the number of observations; R\textsubscript{a}\textsuperscript{2} is the adjusted coefficient of determination; MSE is the mean squared error; F is the F-statistic calculated; AIC is Akaike's information criterion }  % requires the topcapt package
    \begin{tabular}{p{8cm}p{0.5cm}p{1.0cm}p{1.0cm}p{1.0cm}p{1.0cm}}%Column formatting, @{} suppresses leading/trailing space
       \toprule
        Model  & n & R\textsubscript{a}\textsuperscript{2} & MSE & F & AIC\\
@@ -142,7 +146,7 @@ $(32)\log{AGB}=-2.889\textsuperscript{e+01}+1.217\textsuperscript{e-01}\log{BIO9
 $(33)AGB=-6880.48+1646.40\log{BIO9}-262.05\log{BIO16}+98.26\log{EVI}-639.37\log{|Lat|}$&40&0.2671&3179&4.55&442.745\\
 $(34)AGB=-3707.820+256.857\sqrt{BIO9}-1.560\sqrt{BIO16}+1.600\sqrt{EVI}-166.952\sqrt{|Lat|}$&40&0.1981&3478&3.41&446.345\\
 $(35)\sqrt{AGB}=-1.202\textsuperscript{e+02}+4.813\textsuperscript{e-01}BIO9-1.923\textsuperscript{e-03}BIO16+8.131\textsuperscript{e-04}EVI-7.431\textsuperscript{e-01}|Lat|$&40&0.2531&8.62&4.30&206.338\\
-$(36)\log{AGB}=32.568-8256.480\frac{1}{BIO9}+572.760\frac{1}{BIO16}-6457.220\frac{1}{EVI}+21.747\frac{1}{|Lat|}$&40&0.4675&0.406&9.56&\84.130\\ 
+$(36)\log{AGB}=32.568-8256.480\frac{1}{BIO9}+572.760\frac{1}{BIO16}-6457.220\frac{1}{EVI}+21.747\frac{1}{|Lat|}$&40&0.4675&0.406&9.56& 84.130\\ 
 $(37)AGB=-1.855\textsuperscript{e+03}+7.809\textsuperscript{e+00}BIO9+9.615\textsuperscript{e-03}EVI-2.390\textsuperscript{e+01}|Lat|$&40&0.2001&3469&4.25&445.371\\
 $(38)\log{AGB}=-183.9219+32.6554\log{BIO9}+1.2009\log{EVI}-2.2817\log{|Lat|}$&40&0.3572&0.490&8.22&90.790\\
 $(39)\log{AGB}=-2.532\textsuperscript{e+01}+1.156\textsuperscript{e-01}BIO9+1.906\textsuperscript{e-04}EVI-3.007\textsuperscript{e-01}|Lat|$&40&0.2807&0.549&6.07&95.288\\
@@ -160,6 +164,7 @@ $(48)\log{AGB}=27.758--5876.246\frac{1}{BIO9}-3042.594\frac{1}{BIO16}-610.758\fr
    \label{tab:models}
 \end{table}
 
+\clearpage
 
 \section*{References}
 
