@@ -1,4 +1,4 @@
-\begin{thebibliography}{52}
+\begin{thebibliography}{50}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname url\endcsname\relax
   \def\url#1{\texttt{#1}}\fi
@@ -154,12 +154,6 @@ Giri, C., Ochieng, E., Tieszen, L.~L., Zhu, Z., Singh, A., Loveland, T., Masek,
   154--159.
 \newline\urlprefix\url{http://doi.wiley.com/10.1111/j.1466-8238.2010.00584.x}
 
-\bibitem[{Guti{\'e}rrez-V{\'e}lez and DeFries(2013)}]{Gutierrez2013}
-Guti{\'e}rrez-V{\'e}lez, V.~H., DeFries, R., 2013. Annual multi-resolution
-  detection of land cover conversion to oil palm in the {Peruvian Amazon}.
-  Remote Sensing of Environment 129, 154 -- 167.
-\newline\urlprefix\url{http://www.sciencedirect.com/science/article/pii/S003442571200421X}
-
 \bibitem[{Herr et~al.(2012)Herr, Pidgeon, and Laffoley}]{Herr2012}
 Herr, D., Pidgeon, E., Laffoley, D., 2012. {Blue Carbon Policy Framework 2.0:
   Based on the discussion of the International Blue Carbon Policy Working
@@ -176,13 +170,6 @@ Herz, R., 1999. {Procesamiento digital de im{\'a}genes de sat{\'e}lite para el
 Hijmans, R.~J., Cameron, S.~E., Parra, J.~L., Jones, P.~G., Jarvis, A., 2005.
   {Very high resolution interpolated climate surfaces for global land areas}.
   International Journal of Climatology 25~(15), 1965--1978.
-
-\bibitem[{Huete et~al.(2002)Huete, Didan, Miura, Rodriguez, Gao, and
-  Ferreira}]{Huete2002}
-Huete, A., Didan, K., Miura, T., Rodriguez, E., Gao, X., Ferreira, L., 2002.
-  Overview of the radiometric and biophysical performance of the modis
-  vegetation indices. Remote Sensing of Environment 83~(1), 195 -- 213.
-\newline\urlprefix\url{http://www.sciencedirect.com/science/article/pii/S0034425702000962}
 
 \bibitem[{Hutchison et~al.(2014)Hutchison, Manica, Swetnam, Balmford, and
   Spalding}]{CONL:CONL12060}
