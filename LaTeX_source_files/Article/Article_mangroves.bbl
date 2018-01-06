@@ -1,4 +1,4 @@
-\begin{thebibliography}{50}
+\begin{thebibliography}{51}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname url\endcsname\relax
   \def\url#1{\texttt{#1}}\fi
@@ -53,26 +53,12 @@ Blanco, J.~F., Estrada, E.~a., Ortiz, L.~F., Urrego, L.~E., 2012.
   {Ecosystem-Wide Impacts of Deforestation in Mangroves: The Urab\'{a} Gulf
   (Colombian Caribbean) Case Study}. ISRN Ecology 2012, 1--14.
 
-\bibitem[{Bolivar et~al.(In preparation)Bolivar, Yepes, Sierra, Urrego, Moreno,
-  Monsalve, Espinosa, Agudelo, Betancur, Posada, Herrera, Mira, and
-  Sierra-Correa}]{Bolivar_inpreparation}
-Bolivar, J., Yepes, A., Sierra, C.~A., Urrego, L., Moreno, F., Monsalve, A.,
-  Espinosa, S., Agudelo, C., Betancur, S., Posada, J., Herrera, D., Mira, J.,
-  Sierra-Correa, P., In preparation. Carbon stock in mangroves of cispat{\'a}
-  delta estuarine system., in preparation.
-
 \bibitem[{Boucher et~al.(2014)Boucher, Garcia-Huidobro, Herr, Laffoley, and
   Podvin}]{Boucher2014}
 Boucher, J., Garcia-Huidobro, T., Herr, D., Laffoley, D., Podvin, K., 2014.
   {Panama and Colombia Blue Carbon Preparedness Report of the Panama City
   workshop , March 2014 Advanced draft Panama and Colombia Blue Carbon
   Preparedness - the Action Plan}. Tech. rep., IUCN.
-
-\bibitem[{{Carbono \& Bosques}(2015)}]{Malaga2015}
-{Carbono \& Bosques}, 2015. Caracterizaci{\'o}n de la estructura y contenido de
-  carbono de diez parcelas permanentes establecidas en el {\'a}rea de
-  jurisdicci{\'o}n del consejo comunitario la plata, bah{\'\i}a m{\'a}laga,
-  valle del cauca. Tech. rep., INVEMAR-Fundaci{\'o}n Natura.
 
 \bibitem[{Chave et~al.(2005)Chave, Andalo, Brown, Cairns, Chambers, Eamus,
   F\"{o}lster, Fromard, Higuchi, Kira, Lescure, Nelson, Ogawa, Puig, Ri\'{e}ra,
@@ -91,12 +77,6 @@ Clark, D.~a., Brown, S., Kicklighter, D.~W., Chambers, J.~Q., Thomlinson,
   forests: An evaluation and synthesis of existing field data}. Ecological
   Applications 11~(2), 371--384.
 \newline\urlprefix\url{http://www.esajournals.org/doi/abs/10.1890/1051-0761(2001)011\%5B0371:NPPITF\%5D2.0.CO\%3B2}
-
-\bibitem[{{CNT MIZC} and CCO(2010)}]{CCO_UAC}
-{CNT MIZC}, CCO, 2010. Lineamientos para la Formulaci{\'o}n del Plan Nacional
-  de Manejo Integrado de Zonas Costeras-PNMIZC. Comisi{\'o}n Colombiana del
-  Oc{\'e}ano,
-  http://www.cco.gov.co/documentos/pdf/Lineamientos%20para%20la%20Formulacion%20del%20Plan%20Nacional%20MIZC.pdf.
 
 \bibitem[{Cohen et~al.(2013)Cohen, Kaino, Okello, Bosire, Kairo, Huxham, and
   Mencuccini}]{Cohen2013968}
@@ -140,19 +120,25 @@ Ewel, K., Twilley, R., Ong, J., 1998. Different kinds of mangrove forests
 Fearnside, P.~M., Laurance, W.~F., 2004. {Tropical deforestation and
   greenhouse-gas emissions}. Ecological Applications 14~(4), 982--986.
 
-\bibitem[{Giri et~al.(2013)Giri, Ochieng, Tieszen, Zhu, Singh, Loveland, Masek,
-  and Duke}]{Giri2013}
+\bibitem[{Giri et~al.(2011{\natexlab{a}})Giri, Ochieng, Tieszen, Zhu, Singh,
+  Loveland, Masek, and Duke}]{Giri2011dataset}
 Giri, C., Ochieng, E., Tieszen, L., Zhu, Z., Singh, A., Loveland, T., Masek,
-  J., Duke, N., 2013. Global mangrove forests distribution, 2000.
+  J., Duke, N., 2011{\natexlab{a}}. Global mangrove forests distribution, 2000.
 \newline\urlprefix\url{http://dx.doi.org/10.7927/H4J67DW8}
 
-\bibitem[{Giri et~al.(2010)Giri, Ochieng, Tieszen, Zhu, Singh, Loveland, Masek,
-  and Duke}]{Giri2010}
+\bibitem[{Giri et~al.(2011{\natexlab{b}})Giri, Ochieng, Tieszen, Zhu, Singh,
+  Loveland, Masek, and Duke}]{Giri2011}
 Giri, C., Ochieng, E., Tieszen, L.~L., Zhu, Z., Singh, A., Loveland, T., Masek,
-  J., Duke, N., 2010. {Status and distribution of mangrove forests of the world
-  using earth observation satellite data}. Global Ecology and Biogeography 20,
-  154--159.
+  J., Duke, N., 2011{\natexlab{b}}. {Status and distribution of mangrove
+  forests of the world using earth observation satellite data}. Global Ecology
+  and Biogeography 20, 154--159.
 \newline\urlprefix\url{http://doi.wiley.com/10.1111/j.1466-8238.2010.00584.x}
+
+\bibitem[{Guti{\'e}rrez-V{\'e}lez and DeFries(2013)}]{Gutierrez2013}
+Guti{\'e}rrez-V{\'e}lez, V.~H., DeFries, R., 2013. Annual multi-resolution
+  detection of land cover conversion to oil palm in the {Peruvian Amazon}.
+  Remote Sensing of Environment 129, 154 -- 167.
+\newline\urlprefix\url{http://www.sciencedirect.com/science/article/pii/S003442571200421X}
 
 \bibitem[{Herr et~al.(2012)Herr, Pidgeon, and Laffoley}]{Herr2012}
 Herr, D., Pidgeon, E., Laffoley, D., 2012. {Blue Carbon Policy Framework 2.0:
@@ -170,6 +156,13 @@ Herz, R., 1999. {Procesamiento digital de im{\'a}genes de sat{\'e}lite para el
 Hijmans, R.~J., Cameron, S.~E., Parra, J.~L., Jones, P.~G., Jarvis, A., 2005.
   {Very high resolution interpolated climate surfaces for global land areas}.
   International Journal of Climatology 25~(15), 1965--1978.
+
+\bibitem[{Huete et~al.(2002)Huete, Didan, Miura, Rodriguez, Gao, and
+  Ferreira}]{Huete2002}
+Huete, A., Didan, K., Miura, T., Rodriguez, E., Gao, X., Ferreira, L., 2002.
+  Overview of the radiometric and biophysical performance of the modis
+  vegetation indices. Remote Sensing of Environment 83~(1), 195 -- 213.
+\newline\urlprefix\url{http://www.sciencedirect.com/science/article/pii/S0034425702000962}
 
 \bibitem[{Hutchison et~al.(2014)Hutchison, Manica, Swetnam, Balmford, and
   Spalding}]{CONL:CONL12060}
@@ -232,6 +225,16 @@ Lema, L.~F., Polan\'{\i}a, J., 2007. {Estructura y din\'{a}mica del manglar del
   delta del r\'{\i}o Rancher\'{\i}a , Caribe colombiano}. Revista de
   Biolog\'{\i}a Tropical 55~(1), 11--21.
 
+\bibitem[{{L{\'{o}}pez Rodr{\'{i}}guez} et~al.(2013){L{\'{o}}pez
+  Rodr{\'{i}}guez}, Sierra-Correa, and Lozano-Rivera}]{LopezRodriguez2013}
+{L{\'{o}}pez Rodr{\'{i}}guez}, {\'{A}}., Sierra-Correa, P.~C., Lozano-Rivera,
+  P., 2013. {Criteria for Incorporating the Guidelines of the Integrated
+  Coastal Zone Management (ICZM) in Territorial Land Use Planning: Study Case
+  for the Colombian Pacific Coastal Area}. International Journal of Marine
+  Science International Journal of Marine Science International Journal of
+  Marine Science 33303~(292929), 225--237.
+\newline\urlprefix\url{http://ijms.sophiapublisher.com}
+
 \bibitem[{MacDicken(1997)}]{MacDicken1997}
 MacDicken, K.~G., 1997. {A guide to monitoring carbon storage in forestry and
   agroforestry projects}. Winrock International Institute for Agricultural
@@ -247,6 +250,12 @@ Maniatis, D., Mollicone, D., 2010. {Options for sampling and stratification for
 Mazerolle, M.~J., 2015. AICcmodavg: Model selection and multimodel inference
   based on (Q)AIC(c). R package version 2.0-3.
 \newline\urlprefix\url{http://CRAN.R-project.org/package=AICcmodavg}
+
+\bibitem[{{Monsalve, A., Ram\'irez, G.}(2015)}]{Malaga2015}
+{Monsalve, A., Ram\'irez, G.}, 2015. Caracterizaci{\'o}n de la estructura y
+  contenido de carbono de diez parcelas permanentes establecidas en el {\'a}rea
+  de jurisdicci{\'o}n del consejo comunitario la plata, bah{\'\i}a m{\'a}laga,
+  valle del cauca. Tech. rep., INVEMAR-Carbono\&Bosques.
 
 \bibitem[{Murray et~al.(2012)Murray, Watt, Cooley, and Pendleton}]{Murray2012}
 Murray, B.~C., Watt, C.~E., Cooley, D.~M., Pendleton, L.~H., 2012. {Coastal
@@ -307,11 +316,11 @@ Wang, G., Guan, D., Peart, M., Chen, Y., Peng, Y., 2013. Ecosystem carbon
 {World Bank}, 2010. {Capturing and conserving natural coastal carbon : building
   mitigation, advancing adaptation}. Tech. rep., World Bank; IUCN; ESA PWA.
 
-\bibitem[{Yee(2010)}]{Yee2010}
-Yee, S.~M., 2010. {Capstone Advisory Committee Final Capstone Project Signature
-  Form REDD and BLUE Carbon : Carbon Payments for Mangrove Conservation Shannon
-  M . Yee Spring 2010 MAS Marine Biodiversity and Conservation Capstone
-  Project}. Tech. rep., MAS Marine Biodiversity and Conservation - Capstone
-  project.
+\bibitem[{Yepes et~al.(2016)Yepes, Zapata, Bolivar, Monsalve, Milena,
+  Sierra-correa, and Sierra}]{Yepes2016}
+Yepes, A., Zapata, M., Bolivar, J., Monsalve, A., Milena, S., Sierra-correa,
+  P.~C., Sierra, A., 2016. {Ecuaciones alom{\'{e}}tricas de biomasa a{\'{e}}rea
+  para la estimaci{\'{o}}n de los contenidos de carbono en manglares del Caribe
+  Colombiano} 64~(June), 913--926.
 
 \end{thebibliography}
