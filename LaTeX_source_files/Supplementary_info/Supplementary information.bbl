@@ -1,0 +1,42 @@
+\begin{thebibliography}{6}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+
+\bibitem[{Blanco et~al.(2012)Blanco, Estrada, Ortiz, and Urrego}]{Blanco2012}
+Blanco, J.~F., Estrada, E.~a., Ortiz, L.~F., Urrego, L.~E., 2012.
+  {Ecosystem-Wide Impacts of Deforestation in Mangroves: The Urab\'{a} Gulf
+  (Colombian Caribbean) Case Study}. ISRN Ecology 2012, 1--14.
+
+\bibitem[{Bolivar et~al.(In preparation)Bolivar, Yepes, Sierra, Urrego, Moreno,
+  Monsalve, Espinosa, Agudelo, Betancur, Posada, Herrera, Mira, and
+  Sierra-Correa}]{Bolivar_inpreparation}
+Bolivar, J., Yepes, A., Sierra, C.~A., Urrego, L., Moreno, F., Monsalve, A.,
+  Espinosa, S., Agudelo, C., Betancur, S., Posada, J., Herrera, D., Mira, J.,
+  Sierra-Correa, P., In preparation. Carbon stock in mangroves of cispat{\'a}
+  delta estuarine system., in preparation.
+
+\bibitem[{{Carbono \& Bosques}(2015)}]{Malaga2015}
+{Carbono \& Bosques}, 2015. Caracterizaci{\'o}n de la estructura y contenido de
+  carbono de diez parcelas permanentes establecidas en el {\'a}rea de
+  jurisdicci{\'o}n del consejo comunitario la plata, bah{\'\i}a m{\'a}laga,
+  valle del cauca. Tech. rep., INVEMAR-Fundaci{\'o}n Natura.
+
+\bibitem[{{De la Pe\~{n}a} et~al.(2010){De la Pe\~{n}a}, Rojas, and {De la
+  Pe\~{n}a}}]{DelaPena2010}
+{De la Pe\~{n}a}, A., Rojas, C.~A., {De la Pe\~{n}a}, M., 2010. {Valoraci\'{o}n
+  econ\'{o}mica del manglar por el almacenamiento de carbono ,}. Cl\'{\i}o
+  America 4~(7), 133--150.
+
+\bibitem[{INVEMAR(2007)}]{INVEMAR2007}
+INVEMAR, 2007. {Informe del Estado de los Recursos Marinos y Costeros en
+  Colombia: A\~{n}o 2006}. Tech. rep., Instituto de investigaciones Marinas y
+  Costeras "Jos\'{e} Benito Vives de Andr\'{e}is".
+
+\bibitem[{Lema and Polan\'{\i}a(2007)}]{Lema2007}
+Lema, L.~F., Polan\'{\i}a, J., 2007. {Estructura y din\'{a}mica del manglar del
+  delta del r\'{\i}o Rancher\'{\i}a , Caribe colombiano}. Revista de
+  Biolog\'{\i}a Tropical 55~(1), 11--21.
+
+\end{thebibliography}

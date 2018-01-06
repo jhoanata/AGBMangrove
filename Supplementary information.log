@@ -1,18 +1,15 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.2.26)  22 MAY 2017 15:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.20)  6 JAN 2018 08:54
 entering extended mode
- \write18 enabled.
- file:line:error style messages enabled.
- %&-line parsing enabled.
-**"Supplementary information.tex"
-(./Supplementary information.tex
-LaTeX2e <2017/01/01> patch level 3
-Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
-(/usr/local/texlive/2016/texmf-dist/tex/latex/elsarticle/elsarticle.cls
+**"./Supplementary information.tex"
+("Supplementary information.tex"
+LaTeX2e <2016/03/31> patch level 3
+Babel <3.9r> and hyphenation patterns for 75 language(s) loaded.
+("C:\Program Files\MiKTeX 2.9\tex\latex\elsarticle\elsarticle.cls"
 Document Class: elsarticle 2009/09/17, 1.2.0: Elsevier Ltd
 \@bls=\dimen102
-(/usr/local/texlive/2016/texmf-dist/tex/latex/base/article.cls
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls"
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-(/usr/local/texlive/2016/texmf-dist/tex/latex/base/size10.clo
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\size10.clo"
 File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -27,31 +24,31 @@ File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen103
 )
-(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/graphicx.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/keyval.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks14
 )
-(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2016/10/09 v1.0u Standard LaTeX Graphics (DPC,SPQR)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2016/07/10 v1.0t Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/trig.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\graphics.cfg"
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 99.
 
-(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics-def/pdftex.def
-File: pdftex.def 2017/01/12 v0.06k Graphics/color for pdfTeX
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def"
+File: pdftex.def 2016/07/10 v0.06j Graphics/color for pdfTeX
 
-(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
 Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
 )
-(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
 Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count87
@@ -59,16 +56,16 @@ Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen104
 \Gin@req@width=\dimen105
 )
-(/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/pifont.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\pifont.sty"
 Package: pifont 2005/04/12 PSNFSS-v9.2a Pi font support (SPQR) 
 LaTeX Font Info:    Try loading font information for U+pzd on input line 63.
 
-(/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/upzd.fd
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\upzd.fd"
 File: upzd.fd 2001/06/04 font definitions for U/pzd.
 )
 LaTeX Font Info:    Try loading font information for U+psy on input line 64.
 
-(/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/upsy.fd
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\upsy.fd"
 File: upsy.fd 2001/06/04 font definitions for U/psy.
 ))
 \c@tnote=\count88
@@ -89,8 +86,8 @@ File: upsy.fd 2001/06/04 font definitions for U/psy.
 \@sep=\skip43
 \@@sep=\skip44
 
-(./Supplementary information.spl)
-(/usr/local/texlive/2016/texmf-dist/tex/latex/natbib/natbib.sty
+("Supplementary information.spl")
+("C:\Program Files\MiKTeX 2.9\tex\latex\natbib\natbib.sty"
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip45
 \bibsep=\skip46
@@ -101,17 +98,17 @@ LaTeX Info: Redefining \cite on input line 694.
 \openout3 = `"Supplementary information.spl"'.
 
 )
-(/usr/local/texlive/2016/texmf-dist/tex/latex/geometry/geometry.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
-(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
 Package: ifpdf 2016/05/14 v3.1 Provides the ifpdf switch
 )
-(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifvtex.sty"
 Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 )
-(/usr/local/texlive/2016/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+("C:\Program Files\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
 \Gm@cnth=\count95
@@ -126,19 +123,20 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layouthoffset=\dimen115
 \Gm@layoutvoffset=\dimen116
 \Gm@dimlist=\toks17
-)
-(/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/pdflscape.sty
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\pdflscape.sty"
 Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
 
-(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/lscape.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\lscape.sty"
 Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
-(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/amssymb.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \@emptytoks=\toks18
 \symAMSa=\mathgroup4
@@ -146,41 +144,41 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-(/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2016/11/05 v2.16a AMS math features
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
+Package: amsmath 2016/06/28 v2.15d AMS math features
 \@mathmargin=\skip47
 
 For additional information on amsmath, use the `?' option.
-(/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amstext.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
 Package: amstext 2000/06/29 v2.01 AMS text
 
-(/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsgen.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks19
 \ex@=\dimen117
 ))
-(/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsbsy.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen118
 )
-(/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsopn.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
 Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count98
-LaTeX Info: Redefining \frac on input line 213.
+LaTeX Info: Redefining \frac on input line 199.
 \uproot@=\count99
 \leftroot@=\count100
-LaTeX Info: Redefining \overline on input line 375.
+LaTeX Info: Redefining \overline on input line 297.
 \classnum@=\count101
 \DOTSCASE@=\count102
-LaTeX Info: Redefining \ldots on input line 472.
-LaTeX Info: Redefining \dots on input line 475.
-LaTeX Info: Redefining \cdots on input line 596.
+LaTeX Info: Redefining \ldots on input line 394.
+LaTeX Info: Redefining \dots on input line 397.
+LaTeX Info: Redefining \cdots on input line 518.
 \Mathstrutbox@=\box30
 \strutbox@=\box31
 \big@size=\dimen119
-LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
+LaTeX Font Info:    Redeclaring font encoding OML on input line 634.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 635.
 \macc@depth=\count103
 \c@MaxMatrixCols=\count104
 \dotsspace@=\muskip10
@@ -201,14 +199,14 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
 \multlinegap=\skip48
 \multlinetaggap=\skip49
 \mathdisplay@stack=\toks23
-LaTeX Info: Redefining \[ on input line 2817.
-LaTeX Info: Redefining \] on input line 2818.
+LaTeX Info: Redefining \[ on input line 2739.
+LaTeX Info: Redefining \] on input line 2740.
 )
-(/usr/local/texlive/2016/texmf-dist/tex/latex/ltxmisc/topcapt.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\ltxmisc\topcapt.sty"
 Package: topcapt 2004/12/11 v1.2 Caption at top of float
 )
-(/usr/local/texlive/2016/texmf-dist/tex/latex/booktabs/booktabs.sty
-Package: booktabs 2016/04/27 v1.618033 publication quality tables
+("C:\Program Files\MiKTeX 2.9\tex\latex\booktabs\booktabs.sty"
+Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \heavyrulewidth=\dimen126
 \lightrulewidth=\dimen127
 \cmidrulewidth=\dimen128
@@ -226,12 +224,10 @@ Package: booktabs 2016/04/27 v1.618033 publication quality tables
 \@thisruleclass=\count112
 \@lastruleclass=\count113
 \@thisrulewidth=\dimen138
-)
-(./subscript.sty
+) (subscript.sty
 LaTeX Info: Redefining \textsubscript on input line 15.
-)
-(/usr/local/texlive/2016/texmf-dist/tex/latex/base/textcomp.sty
-Package: textcomp 2017/02/22 v2.0g Standard LaTeX package
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\base\textcomp.sty"
+Package: textcomp 2016/06/19 v1.99m Standard LaTeX package
 Package textcomp Info: Sub-encoding information:
 (textcomp)               5 = only ISO-Adobe without \textcurrency
 (textcomp)               4 = 5 + \texteuro
@@ -245,7 +241,7 @@ Package textcomp Info: Sub-encoding information:
 (textcomp)             See the documentation for details.
 Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 79.
 
-(/usr/local/texlive/2016/texmf-dist/tex/latex/base/ts1enc.def
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1enc.def"
 File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
 )
 LaTeX Info: Redefining \oldstylenums on input line 334.
@@ -312,28 +308,28 @@ Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
 Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
 Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
 )
-(/usr/local/texlive/2016/texmf-dist/tex/latex/todonotes/todonotes.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\todonotes\todonotes.sty"
 Package: todonotes 2015/07/09 .dtx Todonotes source and documentation.
 Package: todonotes 2012/07/25
 
-(/usr/local/texlive/2016/texmf-dist/tex/latex/base/ifthen.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\ifthen.sty"
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-(/usr/local/texlive/2016/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\xkeyval\xkeyval.sty"
 Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 
-(/usr/local/texlive/2016/texmf-dist/tex/generic/xkeyval/xkeyval.tex
-(/usr/local/texlive/2016/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+("C:\Program Files\MiKTeX 2.9\tex\generic\xkeyval\xkeyval.tex"
+("C:\Program Files\MiKTeX 2.9\tex\generic\xkeyval\xkvutils.tex"
 \XKV@toks=\toks24
 \XKV@tempa@toks=\toks25
 )
 \XKV@depth=\count114
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
-(/usr/local/texlive/2016/texmf-dist/tex/latex/xcolor/xcolor.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty"
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 
-(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics-cfg/color.cfg
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\color.cfg"
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
@@ -347,36 +343,36 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
-(/usr/local/texlive/2016/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
-(/usr/local/texlive/2016/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
-(/usr/local/texlive/2016/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
-(/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.te
-x
+("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\frontendlayer\tikz.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\basiclayer\pgf.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\utilities\pgfrcs.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfutil-common.tex"
 \pgfutil@everybye=\toks26
 \pgfutil@tempdima=\dimen139
 \pgfutil@tempdimb=\dimen140
 
-(/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-li
-sts.tex))
-(/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfutil-common-lists.te
+x")) ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfutil-latex.def"
 \pgfutil@abb=\box32
-(/usr/local/texlive/2016/texmf-dist/tex/latex/ms/everyshi.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\ms\everyshi.sty"
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
 ))
-(/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfrcs.code.tex"
 Package: pgfrcs 2015/08/07 v3.0.1a (rcs-revision 1.31)
 ))
 Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
-(/usr/local/texlive/2016/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
-(/usr/local/texlive/2016/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
-(/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\basiclayer\pgfcore.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\systemlayer\pgfsys.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsys.code.tex"
 Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
-(/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfkeys.code.tex"
 \pgfkeys@pathtoks=\toks27
 \pgfkeys@temptoks=\toks28
 
-(/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.c
-ode.tex
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfkeysfiltered.code.te
+x"
 \pgfkeys@tmptoks=\toks29
 ))
 \pgf@x=\dimen141
@@ -396,36 +392,33 @@ ode.tex
 \t@pgf@toka=\toks30
 \t@pgf@tokb=\toks31
 \t@pgf@tokc=\toks32
-
-(/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+ ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgf.cfg"
 File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
 )
 Driver file for pgf: pgfsys-pdftex.def
 
-(/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.d
-ef
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsys-pdftex.def"
 File: pgfsys-pdftex.def 2014/10/11  (rcs-revision 1.35)
 
-(/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-p
-df.def
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsys-common-pdf.def
+"
 File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
 )))
-(/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.
-code.tex
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsyssoftpath.code.t
+ex"
 File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
 \pgfsyssoftpath@smallbuffer@items=\count119
 \pgfsyssoftpath@bigbuffer@items=\count120
 )
-(/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.
-code.tex
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsysprotocol.code.t
+ex"
 File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
-))
-(/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+)) ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcore.code.tex"
 Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
-(/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
-(/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
-(/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
-(/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+ ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmath.code.tex"
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathcalc.code.tex"
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathutil.code.tex")
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathparser.code.tex"
 \pgfmath@dimen=\dimen149
 \pgfmath@count=\count121
 \pgfmath@box=\box33
@@ -433,29 +426,28 @@ Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
 \pgfmath@stack@operand=\toks34
 \pgfmath@stack@operation=\toks35
 )
-(/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.
-tex
-(/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic
-.code.tex)
-(/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigo
-nometric.code.tex)
-(/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.rando
-m.code.tex)
-(/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.compa
-rison.code.tex)
-(/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.
-code.tex)
-(/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round
-.code.tex)
-(/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.
-code.tex)
-(/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integ
-erarithmetics.code.tex)))
-(/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.code.tex"
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.basic.code.
+tex")
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.trigonometr
+ic.code.tex")
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.random.code
+.tex")
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.comparison.
+code.tex")
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.base.code.t
+ex")
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.round.code.
+tex")
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.misc.code.t
+ex")
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.integerarit
+hmetics.code.tex")))
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfloat.code.tex"
 \c@pgfmathroundto@lastzeros=\count122
 ))
-(/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.co
-de.tex
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepoints.code.tex
+"
 File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
 \pgf@picminx=\dimen150
 \pgf@picmaxx=\dimen151
@@ -472,121 +464,113 @@ File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
 \pgf@zx=\dimen162
 \pgf@zy=\dimen163
 )
-(/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconst
-ruct.code.tex
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepathconstruct.c
+ode.tex"
 File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
 \pgf@path@lastx=\dimen164
 \pgf@path@lasty=\dimen165
 )
-(/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage
-.code.tex
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepathusage.code.
+tex"
 File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
 \pgf@shorten@end@additional=\dimen166
 \pgf@shorten@start@additional=\dimen167
 )
-(/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.co
-de.tex
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorescopes.code.tex
+"
 File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
 \pgfpic=\box34
 \pgf@hbox=\box35
 \pgf@layerbox@main=\box36
 \pgf@picture@serial@count=\count123
 )
-(/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicst
-ate.code.tex
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoregraphicstate.co
+de.tex"
 File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
 \pgflinewidth=\dimen168
 )
-(/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransform
-ations.code.tex
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoretransformations
+.code.tex"
 File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
 \pgf@pt@x=\dimen169
 \pgf@pt@y=\dimen170
 \pgf@pt@temp=\dimen171
 )
-(/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.cod
-e.tex
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorequick.code.tex"
 File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
 )
-(/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.c
-ode.tex
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreobjects.code.te
+x"
 File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
 )
-(/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathproce
-ssing.code.tex
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepathprocessing.
+code.tex"
 File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
 )
-(/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.co
-de.tex
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorearrows.code.tex
+"
 File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
 \pgfarrowsep=\dimen172
 )
-(/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.cod
-e.tex
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreshade.code.tex"
 File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
 \pgf@max=\dimen173
 \pgf@sys@shading@range@num=\count124
-)
-(/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.cod
-e.tex
+) ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreimage.code.te
+x"
 File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
 
-(/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.
-code.tex
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreexternal.code.t
+ex"
 File: pgfcoreexternal.code.tex 2014/07/09  (rcs-revision 1.21)
 \pgfexternal@startupbox=\box37
 ))
-(/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.co
-de.tex
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorelayers.code.tex
+"
 File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
 )
-(/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretranspare
-ncy.code.tex
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoretransparency.co
+de.tex"
 File: pgfcoretransparency.code.tex 2013/09/30  (rcs-revision 1.5)
 )
-(/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.
-code.tex
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepatterns.code.t
+ex"
 File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
 )))
-(/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.cod
-e.tex
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\modules\pgfmoduleshapes.code.tex"
 File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
 \pgfnodeparttextbox=\box38
-)
-(/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.
-tex
+) ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\modules\pgfmoduleplot.code.tex"
 File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
 )
-(/usr/local/texlive/2016/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
--0-65.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\compatibility\pgfcomp-version-0-65.
+sty"
 Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
 \pgf@nodesepstart=\dimen174
 \pgf@nodesepend=\dimen175
 )
-(/usr/local/texlive/2016/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
--1-18.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\compatibility\pgfcomp-version-1-18.
+sty"
 Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
-))
-(/usr/local/texlive/2016/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
-(/usr/local/texlive/2016/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
-(/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)
-) (/usr/local/texlive/2016/texmf-dist/tex/latex/pgf/math/pgfmath.sty
-(/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
-(/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+)) ("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\utilities\pgffor.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\utilities\pgfkeys.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfkeys.code.tex"))
+("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\math\pgfmath.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmath.code.tex"))
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgffor.code.tex"
 Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
 
-(/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmath.code.tex")
 \pgffor@iter=\dimen176
 \pgffor@skip=\dimen177
 \pgffor@stack=\toks36
 \pgffor@toks=\toks37
 ))
-(/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.cod
-e.tex
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\tikz.code.tex"
 Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
 
-(/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothan
-dlers.code.tex
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\libraries\pgflibraryplothandlers.
+code.tex"
 File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
 \pgf@plot@mark@count=\count125
 \pgfplotmarksize=\dimen178
@@ -606,8 +590,7 @@ File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
 \tikznumberofcurrentchild=\count128
 \tikz@fig@count=\count129
 
-(/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.cod
-e.tex
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\modules\pgfmodulematrix.code.tex"
 File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
 \pgfmatrixcurrentrow=\count130
 \pgfmatrixcurrentcolumn=\count131
@@ -615,15 +598,15 @@ File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
 )
 \tikz@expandcount=\count133
 
-(/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
-s/tikzlibrarytopaths.code.tex
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikz
+librarytopaths.code.tex"
 File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
 )))
-(/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
-s/tikzlibrarypositioning.code.tex
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikz
+librarypositioning.code.tex"
 File: tikzlibrarypositioning.code.tex 2008/10/06 v3.0.1a (rcs-revision 1.7)
 )
-(/usr/local/texlive/2016/texmf-dist/tex/latex/tools/calc.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\calc.sty"
 Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count134
 \calc@Bcount=\count135
@@ -638,18 +621,18 @@ LaTeX Info: Redefining \addtolength on input line 81.
 )
 \c@@todonotes@numberoftodonotes=\count137
 
-(/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
-s/tikzlibraryshadows.code.tex
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikz
+libraryshadows.code.tex"
 File: tikzlibraryshadows.code.tex 2008/01/13 v3.0.1a (rcs-revision 1.3)
 
-(/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
-s/tikzlibraryfadings.code.tex
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikz
+libraryfadings.code.tex"
 File: tikzlibraryfadings.code.tex 2009/11/15 v3.0.1a (rcs-revision 1.2)
 
-(/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/libraries/pgflibraryfadings
-.code.tex
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\libraries\pgflibraryfadings.code.
+tex"
 File: pgflibraryfadings.code.tex 2008/02/07 v3.0.1a (rcs-revision 1.3)
-)))) (/usr/local/texlive/2016/texmf-dist/tex/latex/lineno/lineno.sty
+)))) ("C:\Program Files\MiKTeX 2.9\tex\latex\lineno\lineno.sty"
 Package: lineno 2005/11/02 line numbers on paragraphs v4.41
 \linenopenalty=\count138
 \output=\toks38
@@ -667,14 +650,14 @@ Package: lineno 2005/11/02 line numbers on paragraphs v4.41
 \bframebox=\box43
 LaTeX Info: Redefining \\ on input line 3056.
 )
-(/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/hyperref.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
 Package: hyperref 2016/06/24 v6.83q Hypertext links for LaTeX
 
-(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\hobsub-hyperref.sty"
 Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
 
 
-(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\hobsub-generic.sty"
 Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
 Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
 Package hobsub Info: Skipping package `infwarerr' (already loaded).
@@ -713,22 +696,22 @@ Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
 Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
 Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
 )
-(/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/auxhook.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\auxhook.sty"
 Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 )
-(/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 )
 \@linkdim=\dimen192
 \Hy@linkcounter=\count145
 \Hy@pagecounter=\count146
 
-(/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/pd1enc.def
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def"
 File: pd1enc.def 2016/06/24 v6.83q Hyperref: PDFDocEncoding definition (HO)
 )
 \Hy@SavedSpaceFactor=\count147
 
-(/usr/local/texlive/2016/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg"
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
 Package hyperref Info: Hyper figures OFF on input line 4486.
@@ -740,7 +723,7 @@ Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4735.
 \c@Hy@tempcnt=\count148
 
-(/usr/local/texlive/2016/texmf-dist/tex/latex/url/url.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\url\url.sty"
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
@@ -765,19 +748,19 @@ LaTeX Info: Redefining \pageref on input line 6416.
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
-(/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/hpdftex.def
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def"
 File: hpdftex.def 2016/06/24 v6.83q Hyperref driver for pdfTeX
 \Fld@listcount=\count153
 \c@bookmark@seq@number=\count154
 
-(/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty"
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
 \Hy@SectionHShift=\skip53
 )
-(./Supplementary information.aux)
+No file "Supplementary information".aux.
 \openout1 = `"Supplementary information.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
@@ -794,15 +777,14 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
 LaTeX Font Info:    ... okay on input line 25.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 25.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 25.
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/base/ts1cmr.fd
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 25.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 25.
 LaTeX Font Info:    ... okay on input line 25.
 
-(/usr/local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count155
 \scratchdimen=\dimen196
@@ -815,10 +797,10 @@ LaTeX Font Info:    ... okay on input line 25.
 \MPnumerator=\count159
 \makeMPintoPDFobject=\count160
 \everyMPtoPDFconversion=\toks40
-) (/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
-(/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/grfext.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty"
 Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
 )
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -827,11 +809,7 @@ Package grfext Info: Graphics extension search list:
 (grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
-e
-))
+)
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -870,10 +848,10 @@ ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box45
 Package hyperref Info: Link coloring OFF on input line 25.
 
-(/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
-(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count161
@@ -882,88 +860,213 @@ LaTeX Info: Redefining \ref on input line 25.
 LaTeX Info: Redefining \pageref on input line 25.
 LaTeX Info: Redefining \nameref on input line 25.
 
-(./Supplementary information.out) (./Supplementary information.out)
+("Supplementary information.out") ("Supplementary information.out")
 \@outlinefile=\write5
 \openout5 = `"Supplementary information.out"'.
 
 LaTeX Font Info:    Try loading font information for U+msa on input line 38.
 
-(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 38.
 
-(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 10000) in paragraph at lines 53--54
-[][]\OT1/cmr/m/n/5 Lema and Polan^^S^^Pa[]
- []
+
+Package natbib Warning: Citation `Lema2007' on page 1 undefined on input line 5
+3.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 54--55
-[][]\OT1/cmr/m/n/5 Lema and Polan^^S^^Pa[]
- []
+Package natbib Warning: Citation `Lema2007' on page 1 undefined on input line 5
+4.
+
+
+Package natbib Warning: Citation `DelaPena2010' on page 1 undefined on input li
+ne 55.
+
+
+Package natbib Warning: Citation `DelaPena2010' on page 1 undefined on input li
+ne 56.
+
+
+Package natbib Warning: Citation `DelaPena2010' on page 1 undefined on input li
+ne 57.
+
+
+Package natbib Warning: Citation `DelaPena2010' on page 1 undefined on input li
+ne 58.
+
+
+Package natbib Warning: Citation `INVEMAR2007' on page 1 undefined on input lin
+e 59.
+
+
+Package natbib Warning: Citation `Bolivar_inpreparation' on page 1 undefined on
+ input line 60.
+
+
+Package natbib Warning: Citation `Bolivar_inpreparation' on page 1 undefined on
+ input line 61.
+
+
+Package natbib Warning: Citation `Bolivar_inpreparation' on page 1 undefined on
+ input line 62.
+
+
+Package natbib Warning: Citation `Bolivar_inpreparation' on page 1 undefined on
+ input line 63.
+
+
+Package natbib Warning: Citation `Bolivar_inpreparation' on page 1 undefined on
+ input line 64.
+
+
+Package natbib Warning: Citation `Bolivar_inpreparation' on page 1 undefined on
+ input line 65.
+
+
+Package natbib Warning: Citation `Bolivar_inpreparation' on page 1 undefined on
+ input line 66.
 
 
 Underfull \hbox (badness 2020) in paragraph at lines 67--67
-[]\OT1/cmr/m/n/5 Cispat^^Sa bay-La Flotante-Ca~no Nis-
+[]\OT1/cmr/m/n/5 Cispata bay-La Flotante-Ca~no Nis-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 89--90
-[][]\OT1/cmr/m/n/5 Carbono & Bosques[]
- []
+Package natbib Warning: Citation `Bolivar_inpreparation' on page 1 undefined on
+ input line 67.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 90--91
-[][]\OT1/cmr/m/n/5 Carbono & Bosques[]
- []
+Package natbib Warning: Citation `Bolivar_inpreparation' on page 1 undefined on
+ input line 68.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 91--92
-[][]\OT1/cmr/m/n/5 Carbono & Bosques[]
- []
+Package natbib Warning: Citation `Bolivar_inpreparation' on page 1 undefined on
+ input line 69.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 92--93
-[][]\OT1/cmr/m/n/5 Carbono & Bosques[]
- []
+Package natbib Warning: Citation `Bolivar_inpreparation' on page 1 undefined on
+ input line 70.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 93--94
-[][]\OT1/cmr/m/n/5 Carbono & Bosques[]
- []
+Package natbib Warning: Citation `Bolivar_inpreparation' on page 1 undefined on
+ input line 71.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 94--95
-[][]\OT1/cmr/m/n/5 Carbono & Bosques[]
- []
+Package natbib Warning: Citation `Bolivar_inpreparation' on page 1 undefined on
+ input line 72.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 95--96
-[][]\OT1/cmr/m/n/5 Carbono & Bosques[]
- []
+Package natbib Warning: Citation `Bolivar_inpreparation' on page 1 undefined on
+ input line 73.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 96--97
-[][]\OT1/cmr/m/n/5 Carbono & Bosques[]
- []
+Package natbib Warning: Citation `Bolivar_inpreparation' on page 1 undefined on
+ input line 74.
+
+
+Package natbib Warning: Citation `Bolivar_inpreparation' on page 1 undefined on
+ input line 75.
+
+
+Package natbib Warning: Citation `Bolivar_inpreparation' on page 1 undefined on
+ input line 76.
+
+
+Package natbib Warning: Citation `Bolivar_inpreparation' on page 1 undefined on
+ input line 77.
+
+
+Package natbib Warning: Citation `Bolivar_inpreparation' on page 1 undefined on
+ input line 78.
+
+
+Package natbib Warning: Citation `Bolivar_inpreparation' on page 1 undefined on
+ input line 79.
+
+
+Package natbib Warning: Citation `Bolivar_inpreparation' on page 1 undefined on
+ input line 80.
+
+
+Package natbib Warning: Citation `Bolivar_inpreparation' on page 1 undefined on
+ input line 81.
+
+
+Package natbib Warning: Citation `Blanco2012' on page 1 undefined on input line
+ 82.
+
+
+Package natbib Warning: Citation `Blanco2012' on page 1 undefined on input line
+ 83.
+
+
+Package natbib Warning: Citation `Blanco2012' on page 1 undefined on input line
+ 84.
+
+
+Package natbib Warning: Citation `Blanco2012' on page 1 undefined on input line
+ 85.
+
+
+Package natbib Warning: Citation `Blanco2012' on page 1 undefined on input line
+ 86.
+
+
+Package natbib Warning: Citation `Blanco2012' on page 1 undefined on input line
+ 87.
+
+
+Package natbib Warning: Citation `Blanco2012' on page 1 undefined on input line
+ 88.
+
+
+Package natbib Warning: Citation `Malaga2015' on page 1 undefined on input line
+ 89.
+
+
+Package natbib Warning: Citation `Malaga2015' on page 1 undefined on input line
+ 90.
+
+
+Package natbib Warning: Citation `Malaga2015' on page 1 undefined on input line
+ 91.
+
+
+Package natbib Warning: Citation `Malaga2015' on page 1 undefined on input line
+ 92.
+
+
+Package natbib Warning: Citation `Malaga2015' on page 1 undefined on input line
+ 93.
+
+
+Package natbib Warning: Citation `Malaga2015' on page 1 undefined on input line
+ 94.
+
+
+Package natbib Warning: Citation `Malaga2015' on page 1 undefined on input line
+ 95.
+
+
+Package natbib Warning: Citation `Malaga2015' on page 1 undefined on input line
+ 96.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 97--97
-[]\OT1/cmr/m/n/5 M^^Salaga bay-Mayordomo-Manglar
+[]\OT1/cmr/m/n/5 Malaga bay-Mayordomo-Manglar
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 97--98
-[][]\OT1/cmr/m/n/5 Carbono & Bosques[]
- []
+Package natbib Warning: Citation `Malaga2015' on page 1 undefined on input line
+ 97.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 98--99
-[][]\OT1/cmr/m/n/5 Carbono & Bosques[]
- []
+Package natbib Warning: Citation `Malaga2015' on page 1 undefined on input line
+ 98.
 
 
 Overfull \hbox (66.56027pt too wide) in paragraph at lines 48--103
@@ -972,252 +1075,247 @@ Overfull \hbox (66.56027pt too wide) in paragraph at lines 48--103
 
 
 Underfull \hbox (badness 4060) in paragraph at lines 114--114
-[]$\OT1/cmr/m/n/5 (1)\OML/cmm/m/it/5 AGB \OT1/cmr/m/n/5 = \OMS/cmsy/m/n/5 ^^@\O
-T1/cmr/m/n/5 2\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 210[] + 2\OML/cmm/m/it/5 :\OT1/cm
-r/m/n/5 946[]\OML/cmm/m/it/5 BIO\OT1/cmr/m/n/5 10 + 4\OML/cmm/m/it/5 :\OT1/cmr/
-m/n/5 687[]\OML/cmm/m/it/5 BIO\OT1/cmr/m/n/5 11 +
+[]$\OT1/cmr/m/n/5 (1)\OML/cmm/m/it/5 AGB \OT1/cmr/m/n/5 = \OMS/cmsy/m/n/5  \OT1
+/cmr/m/n/5 2\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 210[] + 2\OML/cmm/m/it/5 :\OT1/cmr/
+m/n/5 946[]\OML/cmm/m/it/5 BIO\OT1/cmr/m/n/5 10 + 4\OML/cmm/m/it/5 :\OT1/cmr/m/
+n/5 687[]\OML/cmm/m/it/5 BIO\OT1/cmr/m/n/5 11 +
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 115--115
-[]$\OT1/cmr/m/n/5 (2)\OML/cmm/m/it/5 AGB \OT1/cmr/m/n/5 = \OMS/cmsy/m/n/5 ^^@\O
-T1/cmr/m/n/5 1\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 876[] + 7\OML/cmm/m/it/5 :\OT1/cm
-r/m/n/5 766[]\OML/cmm/m/it/5 BIO\OT1/cmr/m/n/5 1 + 7\OML/cmm/m/it/5 :\OT1/cmr/m
-/n/5 64[]\OML/cmm/m/it/5 BIO\OT1/cmr/m/n/5 4 +
+[]$\OT1/cmr/m/n/5 (2)\OML/cmm/m/it/5 AGB \OT1/cmr/m/n/5 = \OMS/cmsy/m/n/5  \OT1
+/cmr/m/n/5 1\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 876[] + 7\OML/cmm/m/it/5 :\OT1/cmr/
+m/n/5 766[]\OML/cmm/m/it/5 BIO\OT1/cmr/m/n/5 1 + 7\OML/cmm/m/it/5 :\OT1/cmr/m/n
+/5 64[]\OML/cmm/m/it/5 BIO\OT1/cmr/m/n/5 4 +
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 116--116
-[]$\OT1/cmr/m/n/5 (3)\OML/cmm/m/it/5 AGB \OT1/cmr/m/n/5 = \OMS/cmsy/m/n/5 ^^@\O
-T1/cmr/m/n/5 3\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 260[] + 1\OML/cmm/m/it/5 :\OT1/cm
-r/m/n/5 233[]\OML/cmm/m/it/5 BIO\OT1/cmr/m/n/5 1 + 1\OML/cmm/m/it/5 :\OT1/cmr/m
-/n/5 61[]\OML/cmm/m/it/5 BIO\OT1/cmr/m/n/5 4 +
+[]$\OT1/cmr/m/n/5 (3)\OML/cmm/m/it/5 AGB \OT1/cmr/m/n/5 = \OMS/cmsy/m/n/5  \OT1
+/cmr/m/n/5 3\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 260[] + 1\OML/cmm/m/it/5 :\OT1/cmr/
+m/n/5 233[]\OML/cmm/m/it/5 BIO\OT1/cmr/m/n/5 1 + 1\OML/cmm/m/it/5 :\OT1/cmr/m/n
+/5 61[]\OML/cmm/m/it/5 BIO\OT1/cmr/m/n/5 4 +
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 117--117
-[]$\OT1/cmr/m/n/5 (4)\OML/cmm/m/it/5 AGB \OT1/cmr/m/n/5 = \OMS/cmsy/m/n/5 ^^@\O
-T1/cmr/m/n/5 1\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 920[] \OMS/cmsy/m/n/5 ^^@ \OT1/cm
-r/m/n/5 7\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 292[]\OML/cmm/m/it/5 Lat \OT1/cmr/m/n/
-5 + 7\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 878[]\OML/cmm/m/it/5 BIO\OT1/cmr/m/n/5 10 
-+
+[]$\OT1/cmr/m/n/5 (4)\OML/cmm/m/it/5 AGB \OT1/cmr/m/n/5 = \OMS/cmsy/m/n/5  \OT1
+/cmr/m/n/5 1\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 920[] \OMS/cmsy/m/n/5   \OT1/cmr/m/
+n/5 7\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 292[]\OML/cmm/m/it/5 Lat \OT1/cmr/m/n/5 + 
+7\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 878[]\OML/cmm/m/it/5 BIO\OT1/cmr/m/n/5 10 +
  []
 
 
 Underfull \hbox (badness 3942) in paragraph at lines 118--118
-[]$\OT1/cmr/m/n/5 (5)\OML/cmm/m/it/5 AGB \OT1/cmr/m/n/5 = \OMS/cmsy/m/n/5 ^^@\O
-T1/cmr/m/n/5 1\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 372[] + 6\OML/cmm/m/it/5 :\OT1/cm
-r/m/n/5 358[]\OML/cmm/m/it/5 BIO\OT1/cmr/m/n/5 10 + 1\OML/cmm/m/it/5 :\OT1/cmr/
-m/n/5 789[]\OML/cmm/m/it/5 BIO\OT1/cmr/m/n/5 11 \OMS/cmsy/m/n/5 ^^@
+[]$\OT1/cmr/m/n/5 (5)\OML/cmm/m/it/5 AGB \OT1/cmr/m/n/5 = \OMS/cmsy/m/n/5  \OT1
+/cmr/m/n/5 1\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 372[] + 6\OML/cmm/m/it/5 :\OT1/cmr/
+m/n/5 358[]\OML/cmm/m/it/5 BIO\OT1/cmr/m/n/5 10 + 1\OML/cmm/m/it/5 :\OT1/cmr/m/
+n/5 789[]\OML/cmm/m/it/5 BIO\OT1/cmr/m/n/5 11 \OMS/cmsy/m/n/5  
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 119--119
-[]$\OT1/cmr/m/n/5 (6)\OML/cmm/m/it/5 AGB \OT1/cmr/m/n/5 = \OMS/cmsy/m/n/5 ^^@\O
-T1/cmr/m/n/5 1\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 286[] \OMS/cmsy/m/n/5 ^^@ \OT1/cm
-r/m/n/5 9\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 594[]\OML/cmm/m/it/5 Lat \OT1/cmr/m/n/
-5 + 8\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 621[]\OML/cmm/m/it/5 BIO\OT1/cmr/m/n/5 1 +
-
+[]$\OT1/cmr/m/n/5 (6)\OML/cmm/m/it/5 AGB \OT1/cmr/m/n/5 = \OMS/cmsy/m/n/5  \OT1
+/cmr/m/n/5 1\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 286[] \OMS/cmsy/m/n/5   \OT1/cmr/m/
+n/5 9\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 594[]\OML/cmm/m/it/5 Lat \OT1/cmr/m/n/5 + 
+8\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 621[]\OML/cmm/m/it/5 BIO\OT1/cmr/m/n/5 1 +
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 120--120
-[]$\OT1/cmr/m/n/5 (7)\OML/cmm/m/it/5 AGB \OT1/cmr/m/n/5 = \OMS/cmsy/m/n/5 ^^@\O
-T1/cmr/m/n/5 2\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 219[] \OMS/cmsy/m/n/5 ^^@ \OT1/cm
-r/m/n/5 7\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 703[]\OML/cmm/m/it/5 Lat \OT1/cmr/m/n/
-5 + 1\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 113[]\OML/cmm/m/it/5 BIO\OT1/cmr/m/n/5 1 +
-
+[]$\OT1/cmr/m/n/5 (7)\OML/cmm/m/it/5 AGB \OT1/cmr/m/n/5 = \OMS/cmsy/m/n/5  \OT1
+/cmr/m/n/5 2\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 219[] \OMS/cmsy/m/n/5   \OT1/cmr/m/
+n/5 7\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 703[]\OML/cmm/m/it/5 Lat \OT1/cmr/m/n/5 + 
+1\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 113[]\OML/cmm/m/it/5 BIO\OT1/cmr/m/n/5 1 +
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 121--121
 []$\OT1/cmr/m/n/5 (8)\OML/cmm/m/it/5 AGB \OT1/cmr/m/n/5 = 35338\OML/cmm/m/it/5 
-:\OT1/cmr/m/n/5 8860 \OMS/cmsy/m/n/5 ^^@ \OT1/cmr/m/n/5 155\OML/cmm/m/it/5 :\OT
-1/cmr/m/n/5 9330\OMS/cmsy/m/n/5 j\OML/cmm/m/it/5 Lat\OMS/cmsy/m/n/5 j ^^@ \OT1/
-cmr/m/n/5 2490\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 0405[] +
+:\OT1/cmr/m/n/5 8860 \OMS/cmsy/m/n/5   \OT1/cmr/m/n/5 155\OML/cmm/m/it/5 :\OT1/
+cmr/m/n/5 9330\OMS/cmsy/m/n/5 j\OML/cmm/m/it/5 Lat\OMS/cmsy/m/n/5 j   \OT1/cmr/
+m/n/5 2490\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 0405[] +
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 122--122
 []$\OT1/cmr/m/n/5 (9)\OML/cmm/m/it/5 AGB \OT1/cmr/m/n/5 = 2\OML/cmm/m/it/5 :\OT
-1/cmr/m/n/5 546[] \OMS/cmsy/m/n/5 ^^@ \OT1/cmr/m/n/5 1\OML/cmm/m/it/5 :\OT1/cmr
-/m/n/5 337[]\OMS/cmsy/m/n/5 j\OML/cmm/m/it/5 Lat\OMS/cmsy/m/n/5 j ^^@ \OT1/cmr/
-m/n/5 1\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 653[][] +
+1/cmr/m/n/5 546[] \OMS/cmsy/m/n/5   \OT1/cmr/m/n/5 1\OML/cmm/m/it/5 :\OT1/cmr/m
+/n/5 337[]\OMS/cmsy/m/n/5 j\OML/cmm/m/it/5 Lat\OMS/cmsy/m/n/5 j   \OT1/cmr/m/n/
+5 1\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 653[][] +
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 122--122
-\OT1/cmr/m/n/5 3\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 743[]([])[] \OMS/cmsy/m/n/5 ^^@
- \OT1/cmr/m/n/5 2\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 499[][] \OMS/cmsy/m/n/5 ^^@ \O
-T1/cmr/m/n/5 9\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 722[]\OML/cmm/m/it/5 BIO\OT1/cmr/
-m/n/5 12 \OMS/cmsy/m/n/5 ^^@
+\OT1/cmr/m/n/5 3\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 743[]([])[] \OMS/cmsy/m/n/5   \
+OT1/cmr/m/n/5 2\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 499[][] \OMS/cmsy/m/n/5   \OT1/c
+mr/m/n/5 9\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 722[]\OML/cmm/m/it/5 BIO\OT1/cmr/m/n/
+5 12 \OMS/cmsy/m/n/5  
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 124--124
-[]$\OT1/cmr/m/n/5 (11)\OML/cmm/m/it/5 AGB \OT1/cmr/m/n/5 = \OMS/cmsy/m/n/5 ^^@\
-OT1/cmr/m/n/5 1\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 693[] \OMS/cmsy/m/n/5 ^^@ \OT1/c
-mr/m/n/5 2\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 897[]\OML/cmm/m/it/5 Lat \OT1/cmr/m/n
-/5 + 7\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 567[]\OML/cmm/m/it/5 BIO\OT1/cmr/m/n/5 9 
-\OMS/cmsy/m/n/5 ^^@
+[]$\OT1/cmr/m/n/5 (11)\OML/cmm/m/it/5 AGB \OT1/cmr/m/n/5 = \OMS/cmsy/m/n/5  \OT
+1/cmr/m/n/5 1\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 693[] \OMS/cmsy/m/n/5   \OT1/cmr/m
+/n/5 2\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 897[]\OML/cmm/m/it/5 Lat \OT1/cmr/m/n/5 +
+ 7\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 567[]\OML/cmm/m/it/5 BIO\OT1/cmr/m/n/5 9 \OMS
+/cmsy/m/n/5  
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 125--125
-[]$\OT1/cmr/m/n/5 (12)\OML/cmm/m/it/5 AGB \OT1/cmr/m/n/5 = \OMS/cmsy/m/n/5 ^^@\
-OT1/cmr/m/n/5 2\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 391[] \OMS/cmsy/m/n/5 ^^@ \OT1/c
-mr/m/n/5 9\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 020[]\OML/cmm/m/it/5 Lat \OT1/cmr/m/n
-/5 + 9\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 087[]\OML/cmm/m/it/5 BIO\OT1/cmr/m/n/5 9 
-+
+[]$\OT1/cmr/m/n/5 (12)\OML/cmm/m/it/5 AGB \OT1/cmr/m/n/5 = \OMS/cmsy/m/n/5  \OT
+1/cmr/m/n/5 2\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 391[] \OMS/cmsy/m/n/5   \OT1/cmr/m
+/n/5 9\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 020[]\OML/cmm/m/it/5 Lat \OT1/cmr/m/n/5 +
+ 9\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 087[]\OML/cmm/m/it/5 BIO\OT1/cmr/m/n/5 9 +
  []
 
 
 Underfull \hbox (badness 7256) in paragraph at lines 126--126
-[]$\OT1/cmr/m/n/5 (13)\OML/cmm/m/it/5 AGB \OT1/cmr/m/n/5 = \OMS/cmsy/m/n/5 ^^@\
-OT1/cmr/m/n/5 1\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 855[] \OMS/cmsy/m/n/5 ^^@ \OT1/c
-mr/m/n/5 2\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 390[]\OML/cmm/m/it/5 Lat \OT1/cmr/m/n
-/5 + 7\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 809[]1\OML/cmm/m/it/5 BIO\OT1/cmr/m/n/5 9
- +
+[]$\OT1/cmr/m/n/5 (13)\OML/cmm/m/it/5 AGB \OT1/cmr/m/n/5 = \OMS/cmsy/m/n/5  \OT
+1/cmr/m/n/5 1\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 855[] \OMS/cmsy/m/n/5   \OT1/cmr/m
+/n/5 2\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 390[]\OML/cmm/m/it/5 Lat \OT1/cmr/m/n/5 +
+ 7\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 809[]1\OML/cmm/m/it/5 BIO\OT1/cmr/m/n/5 9 +
  []
 
 
 Underfull \hbox (badness 2469) in paragraph at lines 130--130
-[]$\OT1/cmr/m/n/5 (17)\OML/cmm/m/it/5 AGB \OT1/cmr/m/n/5 = \OMS/cmsy/m/n/5 ^^@\
-OT1/cmr/m/n/5 1\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 1408[] \OMS/cmsy/m/n/5 ^^@ \OT1/
-cmr/m/n/5 9\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 370[]\OML/cmm/m/it/5 BIO\OT1/cmr/m/n
-/5 11 + 3\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 327[]\OML/cmm/m/it/5 BIO\OT1/cmr/m/n/5
- 16 +
+[]$\OT1/cmr/m/n/5 (17)\OML/cmm/m/it/5 AGB \OT1/cmr/m/n/5 = \OMS/cmsy/m/n/5  \OT
+1/cmr/m/n/5 1\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 1408[] \OMS/cmsy/m/n/5   \OT1/cmr/
+m/n/5 9\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 370[]\OML/cmm/m/it/5 BIO\OT1/cmr/m/n/5 1
+1 + 3\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 327[]\OML/cmm/m/it/5 BIO\OT1/cmr/m/n/5 16 
++
  []
 
 
 Underfull \hbox (badness 3792) in paragraph at lines 131--131
-[]$\OT1/cmr/m/n/5 (18)\OML/cmm/m/it/5 AGB \OT1/cmr/m/n/5 = \OMS/cmsy/m/n/5 ^^@\
-OT1/cmr/m/n/5 2\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 670[] + 9\OML/cmm/m/it/5 :\OT1/c
-mr/m/n/5 671[]\OML/cmm/m/it/5 BIO\OT1/cmr/m/n/5 11 + 1\OML/cmm/m/it/5 :\OT1/cmr
-/m/n/5 008[]\OML/cmm/m/it/5 BIO\OT1/cmr/m/n/5 16 +
+[]$\OT1/cmr/m/n/5 (18)\OML/cmm/m/it/5 AGB \OT1/cmr/m/n/5 = \OMS/cmsy/m/n/5  \OT
+1/cmr/m/n/5 2\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 670[] + 9\OML/cmm/m/it/5 :\OT1/cmr
+/m/n/5 671[]\OML/cmm/m/it/5 BIO\OT1/cmr/m/n/5 11 + 1\OML/cmm/m/it/5 :\OT1/cmr/m
+/n/5 008[]\OML/cmm/m/it/5 BIO\OT1/cmr/m/n/5 16 +
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 133--133
-[]$\OT1/cmr/m/n/5 (20)\OML/cmm/m/it/5 AGB \OT1/cmr/m/n/5 = \OMS/cmsy/m/n/5 ^^@\
-OT1/cmr/m/n/5 835\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 18954 \OMS/cmsy/m/n/5 ^^@ \OT1
-/cmr/m/n/5 20\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 28373\OML/cmm/m/it/5 BIO\OT1/cmr/m
-/n/5 11 + 0\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 02986\OML/cmm/m/it/5 BIO\OT1/cmr/m/n
-/5 16 +
+[]$\OT1/cmr/m/n/5 (20)\OML/cmm/m/it/5 AGB \OT1/cmr/m/n/5 = \OMS/cmsy/m/n/5  \OT
+1/cmr/m/n/5 835\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 18954 \OMS/cmsy/m/n/5   \OT1/cmr
+/m/n/5 20\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 28373\OML/cmm/m/it/5 BIO\OT1/cmr/m/n/5
+ 11 + 0\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 02986\OML/cmm/m/it/5 BIO\OT1/cmr/m/n/5 1
+6 +
  []
 
 
 Underfull \hbox (badness 4913) in paragraph at lines 134--134
 []$\OT1/cmr/m/n/5 (21)\OML/cmm/m/it/5 AGB \OT1/cmr/m/n/5 = 3\OML/cmm/m/it/5 :\O
-T1/cmr/m/n/5 451[] \OMS/cmsy/m/n/5 ^^@ \OT1/cmr/m/n/5 2\OML/cmm/m/it/5 :\OT1/cm
-r/m/n/5 302[][] \OMS/cmsy/m/n/5 ^^@ \OT1/cmr/m/n/5 8\OML/cmm/m/it/5 :\OT1/cmr/m
-/n/5 086[]\OML/cmm/m/it/5 BIO\OT1/cmr/m/n/5 16 +
+T1/cmr/m/n/5 451[] \OMS/cmsy/m/n/5   \OT1/cmr/m/n/5 2\OML/cmm/m/it/5 :\OT1/cmr/
+m/n/5 302[][] \OMS/cmsy/m/n/5   \OT1/cmr/m/n/5 8\OML/cmm/m/it/5 :\OT1/cmr/m/n/5
+ 086[]\OML/cmm/m/it/5 BIO\OT1/cmr/m/n/5 16 +
  []
 
 
 Underfull \hbox (badness 2073) in paragraph at lines 135--135
-[]$\OT1/cmr/m/n/5 (22)\OML/cmm/m/it/5 AGB \OT1/cmr/m/n/5 = \OMS/cmsy/m/n/5 ^^@\
-OT1/cmr/m/n/5 9\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 327[] + 1\OML/cmm/m/it/5 :\OT1/c
-mr/m/n/5 846[]\OML/cmm/m/it/5 BIO\OT1/cmr/m/n/5 10[] + 1\OML/cmm/m/it/5 :\OT1/c
-mr/m/n/5 132[]\OML/cmm/m/it/5 BIO\OT1/cmr/m/n/5 11[] +
+[]$\OT1/cmr/m/n/5 (22)\OML/cmm/m/it/5 AGB \OT1/cmr/m/n/5 = \OMS/cmsy/m/n/5  \OT
+1/cmr/m/n/5 9\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 327[] + 1\OML/cmm/m/it/5 :\OT1/cmr
+/m/n/5 846[]\OML/cmm/m/it/5 BIO\OT1/cmr/m/n/5 10[] + 1\OML/cmm/m/it/5 :\OT1/cmr
+/m/n/5 132[]\OML/cmm/m/it/5 BIO\OT1/cmr/m/n/5 11[] +
  []
 
 
 Underfull \hbox (badness 2744) in paragraph at lines 137--137
-[]$\OT1/cmr/m/n/5 (24)\OML/cmm/m/it/5 AGB \OT1/cmr/m/n/5 = \OMS/cmsy/m/n/5 ^^@\
-OT1/cmr/m/n/5 17786\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 59 + 1487\OML/cmm/m/it/5 :\O
-T1/cmr/m/n/5 86 [] [] + 1428\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 78 [] [] +
+[]$\OT1/cmr/m/n/5 (24)\OML/cmm/m/it/5 AGB \OT1/cmr/m/n/5 = \OMS/cmsy/m/n/5  \OT
+1/cmr/m/n/5 17786\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 59 + 1487\OML/cmm/m/it/5 :\OT1
+/cmr/m/n/5 86 [] [] + 1428\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 78 [] [] +
  []
 
 
 Underfull \hbox (badness 1484) in paragraph at lines 138--138
-[]$\OT1/cmr/m/n/5 (25) [] [] = \OMS/cmsy/m/n/5 ^^@\OT1/cmr/m/n/5 191\OML/cmm/m/
-it/5 :\OT1/cmr/m/n/5 3654 + 32\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 0857 [] [] + 1\OM
-L/cmm/m/it/5 :\OT1/cmr/m/n/5 1316 [] [] +
+[]$\OT1/cmr/m/n/5 (25) [] [] = \OMS/cmsy/m/n/5  \OT1/cmr/m/n/5 191\OML/cmm/m/it
+/5 :\OT1/cmr/m/n/5 3654 + 32\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 0857 [] [] + 1\OML/
+cmm/m/it/5 :\OT1/cmr/m/n/5 1316 [] [] +
  []
 
 
 Underfull \hbox (badness 2293) in paragraph at lines 139--139
-[]$\OT1/cmr/m/n/5 (26) [] [] = \OMS/cmsy/m/n/5 ^^@\OT1/cmr/m/n/5 94\OML/cmm/m/i
-t/5 :\OT1/cmr/m/n/5 7756 + 21\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 9228 [] [] \OMS/cm
-sy/m/n/5 ^^@ \OT1/cmr/m/n/5 3\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 2190 [] [] +
+[]$\OT1/cmr/m/n/5 (26) [] [] = \OMS/cmsy/m/n/5  \OT1/cmr/m/n/5 94\OML/cmm/m/it/
+5 :\OT1/cmr/m/n/5 7756 + 21\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 9228 [] [] \OMS/cmsy
+/m/n/5   \OT1/cmr/m/n/5 3\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 2190 [] [] +
  []
 
 
 Underfull \hbox (badness 2293) in paragraph at lines 140--140
-[]$\OT1/cmr/m/n/5 (27) [] [] = \OMS/cmsy/m/n/5 ^^@\OT1/cmr/m/n/5 18\OML/cmm/m/i
-t/5 :\OT1/cmr/m/n/5 7623 + 39\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 9688 [] [] \OMS/cm
-sy/m/n/5 ^^@ \OT1/cmr/m/n/5 3\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 0771 [] [] +
+[]$\OT1/cmr/m/n/5 (27) [] [] = \OMS/cmsy/m/n/5  \OT1/cmr/m/n/5 18\OML/cmm/m/it/
+5 :\OT1/cmr/m/n/5 7623 + 39\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 9688 [] [] \OMS/cmsy
+/m/n/5   \OT1/cmr/m/n/5 3\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 0771 [] [] +
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 142--142
 []$\OT1/cmr/m/n/5 (29)[] = 9\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 895[] \OMS/cmsy/m/n
-/5 ^^@ \OT1/cmr/m/n/5 2\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 836[]\OML/cmm/m/it/5 BIO
-\OT1/cmr/m/n/5 9 \OMS/cmsy/m/n/5 ^^@ \OT1/cmr/m/n/5 4\OML/cmm/m/it/5 :\OT1/cmr/
-m/n/5 386[]\OML/cmm/m/it/5 BIO\OT1/cmr/m/n/5 16 \OMS/cmsy/m/n/5 ^^@
+/5   \OT1/cmr/m/n/5 2\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 836[]\OML/cmm/m/it/5 BIO\O
+T1/cmr/m/n/5 9 \OMS/cmsy/m/n/5   \OT1/cmr/m/n/5 4\OML/cmm/m/it/5 :\OT1/cmr/m/n/
+5 386[]\OML/cmm/m/it/5 BIO\OT1/cmr/m/n/5 16 \OMS/cmsy/m/n/5  
  []
 
 
 Underfull \hbox (badness 6842) in paragraph at lines 144--144
-[]$\OT1/cmr/m/n/5 (31) [] [] = \OMS/cmsy/m/n/5 ^^@\OT1/cmr/m/n/5 68\OML/cmm/m/i
-t/5 :\OT1/cmr/m/n/5 661 + 21\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 023 [] [] \OMS/cmsy
-/m/n/5 ^^@ \OT1/cmr/m/n/5 5\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 397 [] [] +
+[]$\OT1/cmr/m/n/5 (31) [] [] = \OMS/cmsy/m/n/5  \OT1/cmr/m/n/5 68\OML/cmm/m/it/
+5 :\OT1/cmr/m/n/5 661 + 21\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 023 [] [] \OMS/cmsy/m
+/n/5   \OT1/cmr/m/n/5 5\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 397 [] [] +
  []
 
 
 Underfull \hbox (badness 7558) in paragraph at lines 146--146
-[]$\OT1/cmr/m/n/5 (33)\OML/cmm/m/it/5 AGB \OT1/cmr/m/n/5 = \OMS/cmsy/m/n/5 ^^@\
-OT1/cmr/m/n/5 6880\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 48 + 1646\OML/cmm/m/it/5 :\OT
-1/cmr/m/n/5 40 [] [] \OMS/cmsy/m/n/5 ^^@ \OT1/cmr/m/n/5 262\OML/cmm/m/it/5 :\OT
-1/cmr/m/n/5 05 [] [] +
+[]$\OT1/cmr/m/n/5 (33)\OML/cmm/m/it/5 AGB \OT1/cmr/m/n/5 = \OMS/cmsy/m/n/5  \OT
+1/cmr/m/n/5 6880\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 48 + 1646\OML/cmm/m/it/5 :\OT1/
+cmr/m/n/5 40 [] [] \OMS/cmsy/m/n/5   \OT1/cmr/m/n/5 262\OML/cmm/m/it/5 :\OT1/cm
+r/m/n/5 05 [] [] +
  []
 
 
 Underfull \hbox (badness 3965) in paragraph at lines 148--148
-[]$\OT1/cmr/m/n/5 (35)[] = \OMS/cmsy/m/n/5 ^^@\OT1/cmr/m/n/5 1\OML/cmm/m/it/5 :
-\OT1/cmr/m/n/5 202[] + 4\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 813[]\OML/cmm/m/it/5 BI
-O\OT1/cmr/m/n/5 9 \OMS/cmsy/m/n/5 ^^@ \OT1/cmr/m/n/5 1\OML/cmm/m/it/5 :\OT1/cmr
-/m/n/5 923[]\OML/cmm/m/it/5 BIO\OT1/cmr/m/n/5 16 +
+[]$\OT1/cmr/m/n/5 (35)[] = \OMS/cmsy/m/n/5  \OT1/cmr/m/n/5 1\OML/cmm/m/it/5 :\O
+T1/cmr/m/n/5 202[] + 4\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 813[]\OML/cmm/m/it/5 BIO\
+OT1/cmr/m/n/5 9 \OMS/cmsy/m/n/5   \OT1/cmr/m/n/5 1\OML/cmm/m/it/5 :\OT1/cmr/m/n
+/5 923[]\OML/cmm/m/it/5 BIO\OT1/cmr/m/n/5 16 +
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 150--150
-[]$\OT1/cmr/m/n/5 (37)\OML/cmm/m/it/5 AGB \OT1/cmr/m/n/5 = \OMS/cmsy/m/n/5 ^^@\
-OT1/cmr/m/n/5 1\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 855[] + 7\OML/cmm/m/it/5 :\OT1/c
-mr/m/n/5 809[]\OML/cmm/m/it/5 BIO\OT1/cmr/m/n/5 9 + 9\OML/cmm/m/it/5 :\OT1/cmr/
-m/n/5 615[]\OML/cmm/m/it/5 EVI \OMS/cmsy/m/n/5 ^^@
+[]$\OT1/cmr/m/n/5 (37)\OML/cmm/m/it/5 AGB \OT1/cmr/m/n/5 = \OMS/cmsy/m/n/5  \OT
+1/cmr/m/n/5 1\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 855[] + 7\OML/cmm/m/it/5 :\OT1/cmr
+/m/n/5 809[]\OML/cmm/m/it/5 BIO\OT1/cmr/m/n/5 9 + 9\OML/cmm/m/it/5 :\OT1/cmr/m/
+n/5 615[]\OML/cmm/m/it/5 EVI \OMS/cmsy/m/n/5  
  []
 
 
 Underfull \hbox (badness 3460) in paragraph at lines 151--151
-[]$\OT1/cmr/m/n/5 (38) [] [] = \OMS/cmsy/m/n/5 ^^@\OT1/cmr/m/n/5 183\OML/cmm/m/
-it/5 :\OT1/cmr/m/n/5 9219 + 32\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 6554 [] [] + 1\OM
-L/cmm/m/it/5 :\OT1/cmr/m/n/5 2009 [] [] \OMS/cmsy/m/n/5 ^^@
+[]$\OT1/cmr/m/n/5 (38) [] [] = \OMS/cmsy/m/n/5  \OT1/cmr/m/n/5 183\OML/cmm/m/it
+/5 :\OT1/cmr/m/n/5 9219 + 32\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 6554 [] [] + 1\OML/
+cmm/m/it/5 :\OT1/cmr/m/n/5 2009 [] [] \OMS/cmsy/m/n/5  
  []
 
 
 Underfull \hbox (badness 4378) in paragraph at lines 152--152
-[]$\OT1/cmr/m/n/5 (39) [] [] = \OMS/cmsy/m/n/5 ^^@\OT1/cmr/m/n/5 2\OML/cmm/m/it
-/5 :\OT1/cmr/m/n/5 532[] + 1\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 156[]\OML/cmm/m/it/
-5 BIO\OT1/cmr/m/n/5 9 + 1\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 906[]\OML/cmm/m/it/5 E
-VI \OMS/cmsy/m/n/5 ^^@
+[]$\OT1/cmr/m/n/5 (39) [] [] = \OMS/cmsy/m/n/5  \OT1/cmr/m/n/5 2\OML/cmm/m/it/5
+ :\OT1/cmr/m/n/5 532[] + 1\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 156[]\OML/cmm/m/it/5 
+BIO\OT1/cmr/m/n/5 9 + 1\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 906[]\OML/cmm/m/it/5 EVI
+ \OMS/cmsy/m/n/5  
  []
 
 
 Underfull \hbox (badness 6559) in paragraph at lines 154--154
-[]$\OT1/cmr/m/n/5 (41)\OML/cmm/m/it/5 AGB \OT1/cmr/m/n/5 = \OMS/cmsy/m/n/5 ^^@\
-OT1/cmr/m/n/5 3980\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 6149 + 264\OML/cmm/m/it/5 :\O
-T1/cmr/m/n/5 1664[] + 1\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 7156\OMS/cmsy/m/n/5 j\OM
-L/cmm/m/it/5 sqrt[] \OMS/cmsy/m/n/5 ^^@
+[]$\OT1/cmr/m/n/5 (41)\OML/cmm/m/it/5 AGB \OT1/cmr/m/n/5 = \OMS/cmsy/m/n/5  \OT
+1/cmr/m/n/5 3980\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 6149 + 264\OML/cmm/m/it/5 :\OT1
+/cmr/m/n/5 1664[] + 1\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 7156\OMS/cmsy/m/n/5 j\OML/
+cmm/m/it/5 sqrt[] \OMS/cmsy/m/n/5  
  []
 
 
 Underfull \hbox (badness 7649) in paragraph at lines 155--155
-[]$\OT1/cmr/m/n/5 (42)[] = \OMS/cmsy/m/n/5 ^^@\OT1/cmr/m/n/5 1\OML/cmm/m/it/5 :
-\OT1/cmr/m/n/5 061[] + 4\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 570[]\OML/cmm/m/it/5 BI
-O\OT1/cmr/m/n/5 9 + 5\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 950[]\OML/cmm/m/it/5 EVI \
-OMS/cmsy/m/n/5 ^^@
+[]$\OT1/cmr/m/n/5 (42)[] = \OMS/cmsy/m/n/5  \OT1/cmr/m/n/5 1\OML/cmm/m/it/5 :\O
+T1/cmr/m/n/5 061[] + 4\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 570[]\OML/cmm/m/it/5 BIO\
+OT1/cmr/m/n/5 9 + 5\OML/cmm/m/it/5 :\OT1/cmr/m/n/5 950[]\OML/cmm/m/it/5 EVI \OM
+S/cmsy/m/n/5  
  []
 
 
@@ -1226,46 +1324,57 @@ LaTeX Warning: Float too large for page by 136.49113pt on input line 165.
 [1
 
 
-{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-[2] [3] (./Supplementary information.bbl) [4
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] [2] [3]
+("Supplementary information.bbl")
+
+Package natbib Warning: There were undefined citations.
+
+[4
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 177.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 177.
- (./Supplementary information.aux)
+ ("Supplementary information.aux"
+
+Package natbib Warning: Citation(s) may have changed.
+(natbib)                Rerun to get citations correct.
+
+)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 177.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 177.
 Package rerunfilecheck Info: File `"Supplementary information".out' has not cha
 nged.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 177.
  ) 
 Here is how much of TeX's memory you used:
- 18196 strings out of 493013
- 335806 string characters out of 6133343
- 481918 words of memory out of 5000000
- 21364 multiletter control sequences out of 15000+600000
- 10773 words of font info for 41 fonts, out of 8000000 for 9000
+ 18191 strings out of 493333
+ 333593 string characters out of 3139184
+ 477275 words of memory out of 3000000
+ 21346 multiletter control sequences out of 15000+200000
+ 11082 words of font info for 42 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,15n,104p,794b,334s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
-}</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
-</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.p
-fb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb
-></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><
-/usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></u
-sr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/
-local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/loc
-al/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/
-texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/tex
-live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texli
-ve/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/local/texlive
-/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2
-016/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb>
-Output written on "Supplementary information.pdf" (4 pages, 187244 bytes).
+ 62i,15n,104p,796b,334s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\PROJECT2\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi6
+00\tcrm0800.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx
+10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx5.pfb><C
+:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cmextra/cmex7.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Program Fil
+es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmr5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
+nts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr
+8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:
+/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti7.pfb><C:/Program 
+Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti8.pfb>
+Output written on "Supplementary information.pdf" (4 pages, 186321 bytes).
 PDF statistics:
- 235 PDF objects out of 1000 (max. 8388607)
- 198 compressed objects within 2 object streams
+ 122 PDF objects out of 1000 (max. 8388607)
  17 named destinations out of 1000 (max. 500000)
  109 words of extra memory for PDF output out of 10000 (max. 10000000)
 
